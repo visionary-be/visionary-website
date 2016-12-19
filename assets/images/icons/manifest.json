@@ -1,0 +1,41 @@
+{
+	"name": "Visionary",
+	"icons": [
+		{
+			"src": "assets\/images\/icons\/android-chrome-36x36.png?v=vMMWa37WBk",
+			"sizes": "36x36",
+			"type": "image\/png",
+			"density": 0.75
+		},
+		{
+			"src": "assets\/images\/icons\/android-chrome-48x48.png?v=vMMWa37WBk",
+			"sizes": "48x48",
+			"type": "image\/png",
+			"density": 1
+		},
+		{
+			"src": "assets\/images\/icons\/android-chrome-72x72.png?v=vMMWa37WBk",
+			"sizes": "72x72",
+			"type": "image\/png",
+			"density": 1.5
+		},
+		{
+			"src": "assets\/images\/icons\/android-chrome-96x96.png?v=vMMWa37WBk",
+			"sizes": "96x96",
+			"type": "image\/png",
+			"density": 2
+		},
+		{
+			"src": "assets\/images\/icons\/android-chrome-144x144.png?v=vMMWa37WBk",
+			"sizes": "144x144",
+			"type": "image\/png",
+			"density": 3
+		},
+		{
+			"src": "assets\/images\/icons\/android-chrome-192x192.png?v=vMMWa37WBk",
+			"sizes": "192x192",
+			"type": "image\/png",
+			"density": 4
+		}
+	]
+}

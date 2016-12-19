@@ -1,0 +1,553 @@
+@import 'underlines';
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* ---------------------------------------------- 
+	BASICS 
+---------------------------------------------- */
+html{
+	font-size:$base-font-size;
+	line-height:1.5;
+}
+body {
+	font-family: $font-sans;
+//	font-weight: lighter;
+font-size:1rem;
+	background-color:$background-grey;
+	color:$text-black;
+}
+a {
+    color: $blue;
+    @include link-underline($white, $blue, $color-selection);
+    &:hover{
+	    color:$dark-blue;
+    }
+    abbr[title]{
+	    border-bottom: none;
+    }
+}
+u,.underline{
+	// Pretty underlines
+    @include link-underline($white, $text-black, $color-selection);
+}
+h1,h2,h3{
+	font-family: $font-serif;
+	font-weight:normal;
+}
+
+p {
+	margin-bottom:1rem;
+}
+
+strong {
+    font-weight: bolder;
+}
+fieldset{
+	border-color: $light-grey;
+}
+select{
+	width:auto;
+	max-width:200px; //to make sure select boxes stay inside their container
+}
+
+footer{
+	border-top:1px solid $light-grey;
+	margin-top:3rem;
+	opacity:.5;
+	transition: all 0.2s ease;
+	text-align: center;
+	p{
+		color:$grey;
+	}
+	&:hover{
+		opacity:1;
+	}
+}
+
+// HELPERS
+// quick fix classes
+.content {
+	padding-top:30px;
+	padding-bottom:30px;
+}
+
+.hide {
+    display: none;
+    opacity: 0;
+}
+
+.block {
+    display: block;
+}
+.block-full {
+    width: 100%;
+}
+.show {
+    display: block;
+    opacity: 1;
+}
+.text-center {
+    text-align: center;
+}
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+
+.pull-left {
+    float: left;
+}
+.pull-right {
+    float: left;
+}
+.offst-top-20 {
+    padding-top: 16px;
+}
+.inner-row {
+    padding: 0 14px;
+}
+
+.no-underline{
+  background-size:0px !important;
+}
+
+// OVERWRITE SOME PURE-CSS
+.pure-menu-item{height:auto;}
+/*
+.pure-form-stacked label{
+	margin-top:1em;
+}
+*/
+a.pure-button-primary{
+	background-color:$blue;
+	color:white;
+}
+
+.pure-g > div {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.l-box {
+    padding: 0.5rem 0.8rem;
+}
+/* ---------------------------------------------- 
+	BUTTONS & CALLS TO ACTION 
+---------------------------------------------- */
+.logo-home{
+	background:transparent;
+	text-align:center;
+}
+.pure-button,
+.pure-button-primary,
+.button-primary,
+.btn-primary {
+	background-color:$blue;
+	border-radius: 4px;
+	text-shadow: none;
+	font-weight: 300;
+	padding:8px 25px 6px;
+	transition: background-color 0.2s ease;
+	&:hover,
+	&:active,
+	&:focus {
+		background-color:$dark-blue;
+	}
+}
+.button-small {
+	font-size: 85%;
+}
+.button-success,
+.button-error,
+.button-warning,
+.button-secondary {
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.button-success {
+    background: rgb(28, 184, 65); /* this is a green */
+}
+
+.button-error {
+    background: rgb(202, 60, 60); /* this is a maroon */
+}
+
+.button-warning {
+    background: rgb(223, 117, 20); /* this is an orange */
+}
+
+.button-secondary {
+	border:none;
+    background: transparent;
+   //  font-size: 92%;
+     color:$blue;
+     text-shadow: none;
+     padding:.5rem 1rem;
+}
+.button-as-link{
+	background:none;
+	color: $blue;
+	border:none;
+	@include link-underline($white, $text-black, $color-selection);
+	text-shadow: none;
+}
+
+.fa{
+	vertical-align: middle;
+	font-size: inherit;
+	line-height: 2;
+	margin-right:6px;
+}
+
+.link {
+    display: inline-block;
+    border: none;
+    background: none;
+	color : #0277BD;
+	text-decoration : underline;
+	outline : 0;
+}
+.btn-block { display:block; width:100%; }
+.button-social {
+	background-color: #0277BD;
+    border-radius: 4px;
+    text-shadow: none;
+    font-weight: 300;
+    padding: 8px 25px 6px;
+    -webkit-transition: background-color 0.2s ease;
+    transition: background-color 0.2s ease;
+    border: 0 transparent;
+    color: #fff;
+}
+.button-facebook {
+	background : $color-facebook;
+	&:hover {
+		background : darken($color-facebook, 25%);
+	}
+} 
+.button-twitter {
+	background : $color-twitter;
+	&:hover {
+		background : darken($color-twitter, 25%);
+	}
+} 
+.button-google {
+	background : $color-google;
+	&:hover {
+		background : darken($color-google, 25%);
+	}
+}
+.button-email {
+	background : darken($white, 10%);
+	color:#333;
+	&:hover {
+		background : darken($white, 25%);
+		color:#000;
+	}
+} 
+
+.subscribre {
+	//margin : 0 auto;
+	//width : 386px;
+	.button-social {
+		width: 100%;
+		margin-bottom: 6px;
+	}
+	.separator {
+	    background: none;
+	    height: 34px;
+	    position: relative;
+	    text-align: center;
+	    margin-bottom: 6px;
+
+	    span {
+		    background-color: #ffffff;
+		    display: inline-block;
+		    padding: 8px;
+		}
+		hr {
+		    margin: -18px auto 10px;
+		    width: 100%;
+		    border: 0;
+		    border-top: 1px solid #DDD;
+		}
+	}
+	.btn-block {
+		outline: none;
+	}
+
+}
+/* ---------------------------------------------- 
+	THE VOICE
+	// this class set is used to convey specific expressions in a coherent, global system: the voice of your application. 
+---------------------------------------------- */
+
+.voice{
+	font-size:100%;
+	font-family: $font-sans !important;
+	&--info{
+		background-color:#FFFFDD;
+	}
+	&--loud{
+		font-size:133%;
+	}
+	&--discreete{
+		opacity:.8;
+		font-size:88%;
+	}
+	&--whisper{
+		font-size:72%;
+		opacity:.6;
+	}
+	&--error{
+		color: $red;
+		font-weight: bold;
+	}
+}
+
+.feedback{
+	background:#FFFFDD;
+	border-left:2px solid $blue;
+	padding:.2rem 1rem;
+	&--error{
+		border-left-color:$red;
+	}
+}
+/* ---------------------------------------------- 
+	INDEX.HTML // START PAGE 
+---------------------------------------------- */
+.home, .result {
+	margin:50px 0;
+
+	h1 {
+		text-align: center;
+	}
+}
+main {
+	background-color:white;
+	padding:3rem;
+	border-top:solid 2px $blue;
+	margin-top:3rem;
+	border-radius:3px;
+}
+.center {
+	max-width: 900px;
+	margin:0 auto;
+}
+
+
+.form{
+	border:1px solid $light-grey;
+	border-radius: 5px;
+	padding:0 2rem 2rem;
+	&--register{
+		
+	}
+}
+.no-padding { padding : 0; }
+
+/*
+	admin tests
+*/
+.admin-tests {
+	 #info {
+        position: absolute;
+        /*left: 20px;*/
+        border-radius: 4px;
+        background: #fff;
+        box-shadow: 2px 4px 10px rgba(0,0,0, 0.4);
+        border:1px solid rgba(0,0,0, 0.4);
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    #info:after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 6px 0 6px 10px;
+        border-color: transparent transparent transparent rgba(0, 0, 0, 0.8);
+        top: calc(50% - 6px);
+        left: 100%;
+    }
+    .color-list {
+        list-style: none;
+        padding: 0;
+    }
+    .color-list li {
+        width: 14px;
+        height: 14px;
+        float: left;
+    }
+}
+/*
+	admin analytics
+*/
+.admin-analytics {
+	svg {
+        /*border: 1px solid black;*/
+    }
+    g {}
+    
+    .user polyline { stroke-width: 1px;  }
+    .user:hover circle { stroke: white; stroke-width : 2px; }
+    .user:hover polyline { stroke-width : 4px;   }
+
+    .red { color:red; }
+    .blue { color:blue; }
+    .green { color:green; }
+
+    .unique-color .protans circle {
+        fill :red;
+    }
+    .unique-color .protans polyline {
+        stroke :red;
+    }
+
+    .unique-color .deutans circle {
+        fill :blue;
+    }
+    .unique-color .deutans polyline {
+        stroke :blue;
+    }
+    .unique-color .tritans circle {
+        fill :green;
+    }
+    .unique-color .tritans polyline {
+        stroke :green;
+    }
+    
+    .unique-line .user { display: none;  }
+    .unique-line .user.first { display: block;  }
+    
+    .profiles .hovered .user { opacity: 0.4 !important; }
+    .profiles .hovered .user.hover { opacity: 1 !important;  }
+    .profiles .hovered .user.hover polyline {  stroke-width : 4px !important;  }
+
+    .graph-container { 
+    	position:relative;
+
+    	.user {
+    		-webkit-transition: all 0.2s;
+    		transition: all 0.2s;
+    	}
+    }
+    
+    .tooltipdiv {
+        position: absolute;
+        /*left: 20px;*/
+        border-radius: 4px;
+        background: #fff; /*rgba(255,255,255, 0.84);*/
+        box-shadow: 2px 4px 10px rgba(0,0,0, 0.4);
+        border:1px solid rgba(0,0,0, 0.4);
+        padding: 10px;
+        font-size: 12px;
+        word-break: break-word;
+        width: 200px;
+    }
+    .color-list {
+        list-style: none;
+        padding: 0;
+    }
+    .color-list li {
+        width: 11px;
+        height: 14px;
+        float: left;
+    }
+
+    .list-nbr {}
+    .list-nbr span { padding : 2px; border-radius: 2px; background: rgba(100,200,255, .3); }
+
+}
+/*
+	RESULT
+*/
+#js-revoir{
+	border:1px solid $light-grey;
+	margin:1rem 0;
+	#js-revoir-content{
+		
+		padding:1rem;
+		
+	}
+}
+
+.separator-or {
+	display: table;
+    width: 100%;
+    height: 100%;
+    span {
+    	display: table-cell;
+	    vertical-align: middle;
+	    text-align: center;
+	    font-size: 1.8em;
+    }
+}
+
+.form--login  {
+	padding: 0.5rem 0;
+	margin-bottom: 1rem;
+	input {
+		width: 100%;
+	}
+	.link {
+		float:right;
+		letter-spacing: initial;
+		cursor: pointer;
+	}
+}
+/* 
+	tables 
+*/
+table.tablesorter {
+	font-family:arial;
+	background-color: #CDCDCD;
+	margin:10px 0pt 15px;
+	font-size: 8pt;
+	width: 100%;
+	text-align: left;
+}
+
+table.tablesorter thead tr th, table.tablesorter tfoot tr th {
+	background-color: #e6EEEE;
+	border: 1px solid #FFF;
+	font-size: 8pt;
+	padding: 4px;
+}
+table.tablesorter thead tr .header {
+	background-image: url(../images/bg.gif);
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+}
+table.tablesorter tbody td {
+	color: #3D3D3D;
+	padding: 4px;
+	background-color: #FFF;
+	vertical-align: top;
+}
+table.tablesorter tbody tr.odd td {
+	background-color:#F0F0F6;
+}
+table.tablesorter thead tr .headerSortUp {
+	background-image: url(../images/asc.gif);
+}
+table.tablesorter thead tr .headerSortDown {
+	background-image: url(../images/desc.gif);
+}
+table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
+background-color: #8dbdd8;
+}
+table.tablesorter tbody tr:hover td { background:#ebebeb; }
+
