@@ -14,3 +14,9 @@ Pour lancer un serveur local:
 utiliser les fonctions gettext de php
 Exemple: 
 `<p><?= _("Bonjour!"); ?></p>` ou `<?php _e('Bonjour'); ?>`
+
+## Framework CSS
+http://purecss.io/grids/
+
+## Static Site Generators ?
+https://www.staticgen.com/

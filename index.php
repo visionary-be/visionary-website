@@ -13,11 +13,10 @@
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="msapplication-TileImage" content="/mstile-144x144.png">
         <meta name="theme-color" content="#000000">
-        <meta name="viewport" content="width=device-width" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Test du daltonisme</title>
+        <title>Visionary</title>
     
-        <base href="https://dev.colour-blindness.org:443//" />
         <link rel="apple-touch-icon" sizes="57x57" href="assets/images/icons/apple-touch-icon-57x57.png?v=vMMWa37WBk">
         <link rel="apple-touch-icon" sizes="60x60" href="assets/images/icons/apple-touch-icon-60x60.png?v=vMMWa37WBk">
         <link rel="apple-touch-icon" sizes="72x72" href="assets/images/icons/apple-touch-icon-72x72.png?v=vMMWa37WBk">
@@ -51,9 +50,21 @@
         <meta property="og:description" content="Visionary - Test du daltonisme"/>
         
         <link rel="stylesheet" href="assets/css/app.css">
+        
     </head>
     
     <body>
-    	<p>See <a href="http://purecss.io/grids/">purecss.io</a> (especially Grids and Forms) to quickly create your screens.</p>	
+	    <div class="pure-g">
+        <div class="pure-u-1">
+	        <h1>Ce que voient les daltoniens</h1>
+        </div>
+    	</div>
+    	
+    	<div class="pure-g">
+        <div class="pure-u-1-3"><p>Thirds</p></div>
+        <div class="pure-u-1-3"><p>Thirds</p></div>
+        <div class="pure-u-1-3"><p>Thirds</p></div>
+    	</div>
+    	
     </body>
 </html>

@@ -802,7 +802,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/assets\/scss\/_0.settings.css",
+		"oAP": "\/assets\/css\/_0.settings.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -815,7 +815,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/assets\/scss\/_1.pure.css",
+		"oAP": "\/assets\/css\/_1.pure.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -828,7 +828,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/assets\/scss\/_2.base.css",
+		"oAP": "\/assets\/css\/_2.base.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -841,7 +841,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/assets\/scss\/_3.test-de-classement.css",
+		"oAP": "\/assets\/css\/_3.test-de-classement.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -854,7 +854,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/assets\/scss\/_4.tablet.css",
+		"oAP": "\/assets\/css\/_4.tablet.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -867,7 +867,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/assets\/scss\/_5.desktop.css",
+		"oAP": "\/assets\/css\/_5.desktop.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -880,7 +880,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/assets\/scss\/_6.print.css",
+		"oAP": "\/assets\/css\/_6.print.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -893,7 +893,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/assets\/scss\/_underlines.css",
+		"oAP": "\/assets\/css\/_underlines.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -906,7 +906,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/assets\/scss\/admin.css",
+		"oAP": "\/assets\/css\/admin.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -920,7 +920,7 @@
 		"ma": 1,
 		"oA": 0,
 		"oAP": "\/assets\/css\/app.css",
-		"oF": 3,
+		"oF": 2,
 		"oS": 3,
 		"uL": 1
 		},
@@ -932,7 +932,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/assets\/scss\/font-awesome\/_animated.css",
+		"oAP": "\/assets\/scss\/css\/_animated.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -945,7 +945,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/assets\/scss\/font-awesome\/_bordered-pulled.css",
+		"oAP": "\/assets\/scss\/css\/_bordered-pulled.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -958,7 +958,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/assets\/scss\/font-awesome\/_core.css",
+		"oAP": "\/assets\/scss\/css\/_core.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -971,7 +971,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/assets\/scss\/font-awesome\/_fixed-width.css",
+		"oAP": "\/assets\/scss\/css\/_fixed-width.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -984,7 +984,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/assets\/scss\/font-awesome\/_icons.css",
+		"oAP": "\/assets\/scss\/css\/_icons.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -997,7 +997,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/assets\/scss\/font-awesome\/_larger.css",
+		"oAP": "\/assets\/scss\/css\/_larger.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1010,7 +1010,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/assets\/scss\/font-awesome\/_list.css",
+		"oAP": "\/assets\/scss\/css\/_list.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1023,7 +1023,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/assets\/scss\/font-awesome\/_mixins.css",
+		"oAP": "\/assets\/scss\/css\/_mixins.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1036,7 +1036,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/assets\/scss\/font-awesome\/_path.css",
+		"oAP": "\/assets\/scss\/css\/_path.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1049,7 +1049,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/assets\/scss\/font-awesome\/_rotated-flipped.css",
+		"oAP": "\/assets\/scss\/css\/_rotated-flipped.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1062,7 +1062,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/assets\/scss\/font-awesome\/_screen-reader.css",
+		"oAP": "\/assets\/scss\/css\/_screen-reader.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1075,7 +1075,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/assets\/scss\/font-awesome\/_stacked.css",
+		"oAP": "\/assets\/scss\/css\/_stacked.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1088,7 +1088,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/assets\/scss\/font-awesome\/_variables.css",
+		"oAP": "\/assets\/scss\/css\/_variables.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1100,17 +1100,41 @@
 		"dS": 0,
 		"ft": 4,
 		"ma": 0,
-		"oA": 1,
-		"oAP": "\/assets\/scss\/font-awesome\/font-awesome.css",
+		"oA": 0,
+		"oAP": "\/assets\/scss\/css\/font-awesome.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/index.html": {
+	"\/inc\/footer.inc.php": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/index.html",
+		"oAP": "\/inc\/footer.inc.php",
 		"oF": 0
+		},
+	"\/index.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/index.php",
+		"oF": 0
+		},
+	"\/README.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/README.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
 		}
 	},
 "hooks": [
@@ -1119,13 +1143,13 @@
 	},
 "projectAttributes": {
 	"creationDate": 503839050,
-	"displayValue": "html-css-js-boilerplate",
-	"displayValueWasSetByUser": 0,
+	"displayValue": "Visionary",
+	"displayValueWasSetByUser": 1,
 	"iconImageName": "meme-soon"
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
-	"alwaysUseExternalServer": 0,
+	"alwaysUseExternalServer": 1,
 	"animateCSSInjections": 1,
 	"autoBuildNewItems": 1,
 	"autoprefixerBrowserString": "> 1%, last 2 versions, Firefox ESR, Opera 12.1",
@@ -2447,7 +2471,7 @@
 			}
 		},
 	"esLintSourceType": 0,
-	"externalServerAddress": "http:\/\/localhost:8888",
+	"externalServerAddress": "http:\/\/localhost:8000",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
 	"jsCheckerReservedNamesString": "",
@@ -2963,7 +2987,7 @@
 		"autoOutputPathRelativePath": "..\/css",
 		"autoOutputPathReplace1": "sass",
 		"autoOutputPathReplace2": "css",
-		"autoOutputPathStyle": 0,
+		"autoOutputPathStyle": 2,
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,

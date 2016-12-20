@@ -5,24 +5,24 @@
 
 // MOBILE-FIRST
 
-@import "2.base";
+//@import "2.base";
 //@import "3.test-de-classement";
 
 // TABLET (AND UP) OVERWRITES
 
 @media (min-width: 40em) {
-	@import '4.tablet';
+	//@import '4.tablet';
 }
 
 // DESKTOP (AND UP) OVERWRITES
 
 @media (min-width: 60em) {
-	@import '5.desktop';
+	//@import '5.desktop';
 }
 
 
 // PRINT VERSION
 
 @media print {
-	@import '6.print';
+	//@import '6.print';
 }
