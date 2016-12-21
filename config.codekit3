@@ -359,6 +359,14 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/assets\/images\/placeholder.png": {
+		"ft": 32768,
+		"iS": 12907,
+		"oA": 0,
+		"oAP": "\/assets\/images\/placeholder.png",
+		"oF": 0,
+		"opt": 1
+		},
 	"\/assets\/images\/test\/deutan.png": {
 		"ft": 32768,
 		"iS": 26766,
