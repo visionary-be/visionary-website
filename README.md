@@ -26,3 +26,5 @@ https://www.staticgen.com/
 1. Dans le terminal se rendre dans le dossier racine: `cd ~/path/to/folder`
 2. une fois dedans :  `npm install gulp -g` pour installer gulp globalement
 3. Installer gulp localement: `npm install gulp --save-dev`
+4. Installer les modules spécifiques utilisés dans notre gulpfile: `npm install --save-dev`
+
