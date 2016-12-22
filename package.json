@@ -1,0 +1,23 @@
+{
+  "name": "visionary-website",
+  "version": "2.0.0",
+  "description": "Le site de Visionary",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pixeline/Visionary-website.git"
+  },
+  "author": "Benoit Vrins, Alexandre Plennevaux",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pixeline/Visionary-website/issues"
+  },
+  "homepage": "https://github.com/pixeline/Visionary-website#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.5",
+    "gulp": "^3.9.1"
+  }
+}

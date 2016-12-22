@@ -20,3 +20,9 @@ http://purecss.io/grids/
 
 ## Static Site Generators ?
 https://www.staticgen.com/
+
+
+## Installer Gulp
+1. Dans le terminal se rendre dans le dossier racine: `cd ~/path/to/folder`
+2. une fois dedans :  `npm install gulp -g` pour installer gulp globalement
+3. Installer gulp localement: `npm install gulp --save-dev`
