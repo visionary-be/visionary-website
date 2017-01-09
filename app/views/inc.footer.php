@@ -6,7 +6,7 @@
 			        <h3 class="pure-menu-heading">Visionary</h3>
 			        <p></p>
 			        <ul class="pure-menu-list">
-				        <li class="pure-menu-item"><a href="#" class="pure-menu-link"><strong><?php echo $f3->get('love'); ?>Tester l'extension</strong></a></li>
+				        <li class="pure-menu-item"><a href="#" class="pure-menu-link"><strong>Tester l'extension</strong></a></li>
 				        <li class="pure-menu-item"><a href="#" class="pure-menu-link"><strong>Développer pour les daltoniens</strong></a></li>
 				        <li class="pure-menu-item"><a href="#" class="pure-menu-link"><strong>Qu'est-ce que le daltonisme</strong></a></li>
 			        </ul>

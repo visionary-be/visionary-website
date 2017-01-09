@@ -29,7 +29,9 @@ https://www.staticgen.com/
 * Doit-on déclarer les classes à chaque function ?
 * Comment mettre en place une page 404 ?
 
+
 ## Problèmes actuels
 
-* pas moyen de récupérer des variables déclarées dans index.php (erreur dans fichier footer)
+* pas moyen de récupérer des variables déclarées dans index.php ou des globales dans le .ini (erreur PHP quand on imprime le GET)
+* Voir comment mettre en place le système de templating
 * Multilingue pas opérationnel

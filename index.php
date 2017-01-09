@@ -3,12 +3,22 @@
 // Kickstart the framework
 $f3=require('lib/base.php');
 
-$f3->set('DEBUG',1);
+//
+$f3->set('DEBUG',3);
 if ((float)PCRE_VERSION<7.9)
 	trigger_error('PCRE version is out of date');
 
+//
+$f3->mset(
+    array(
+        'love1'=>'bar',
+        'love2'=>123
+    )
+);
+
 // Load configuration
 $f3->config('config.ini');
+$f3->config('setup.cfg');
 $f3->set('LOCALES','dict/');
 $f3->set('LANGUAGE','fr');
 
@@ -17,7 +27,7 @@ $f3->route('GET /',
 	function($f3) {
 		$f3->set('classes',$classes); // les classes doivent-elles toujours être redéclarées ?
 		$f3->set('header','inc.header.html');
-		$f3->set('content','page.home.html');
+		$f3->set('content','page.home.php');
 		$f3->set('footer','inc.footer.php');
 		echo View::instance()->render('layout.htm');
 	}
