@@ -1120,6 +1120,12 @@
 		"oAP": "\/inc\/footer.inc.php",
 		"oF": 0
 		},
+	"\/inc\/header.inc.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/header.inc.php",
+		"oF": 0
+		},
 	"\/index.php": {
 		"ft": 8192,
 		"oA": 2,
