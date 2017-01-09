@@ -18,5 +18,24 @@ Exemple:
 ## Framework CSS
 http://purecss.io/grids/
 
+## Framework CSS
+http://purecss.io/grids/
+
+## Backend solution (static PHP)
+https://fatfreeframework.com/
+
+## Static Site Generators ?
+https://www.staticgen.com/
+
+## Questions 
+
+* Doit-on déclarer les classes à chaque function ?
+* Comment mettre en place une page 404 ?
+
+## Problèmes actuels
+
+* pas moyen de récupérer des variables déclarées dans index.php (erreur dans fichier footer)
+* Multilingue pas opérationnel
+
 ## Static Site Generators ?
 https://www.staticgen.com/
