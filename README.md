@@ -33,6 +33,3 @@ https://www.staticgen.com/
 
 * pas moyen de récupérer des variables déclarées dans index.php (erreur dans fichier footer)
 * Multilingue pas opérationnel
-
-## Static Site Generators ?
-https://www.staticgen.com/
