@@ -18,9 +18,6 @@ Exemple:
 ## Framework CSS
 http://purecss.io/grids/
 
-## Framework CSS
-http://purecss.io/grids/
-
 ## Backend solution (static PHP)
 https://fatfreeframework.com/
 
