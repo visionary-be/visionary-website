@@ -10,12 +10,13 @@ $f3->config('config.ini');
 // Définis tes routes ici:
 
 $f3->route('GET /',
-    function($f3) {
+    function($f3) { 
 	    
 		$f3->set('meta_title','Visionary Homepage');
 		echo View::instance()->render('header.html');
 		echo View::instance()->render('home.html');
 		echo View::instance()->render('footer.html');
+		
     }
 );
 $f3->run();
