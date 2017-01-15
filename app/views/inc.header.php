@@ -49,6 +49,12 @@
         <meta property="og:description" content="Visionary - Test du daltonisme"/>
         
         <link rel="stylesheet" href="assets/css/app.css">
+        <!--[if lte IE 8]>
+        <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.1/build/grids-responsive-old-ie-min.css">
+		    <![endif]-->
+		    <!--[if gt IE 8]><!-->
+		        <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.1/build/grids-responsive-min.css">
+		    <!--<![endif]-->
         
         <style >
 	        .wrapper1{
@@ -66,6 +72,14 @@
 	        }
 	        .center > *{
 		        text-align: center;
+	        }
+	        .pure-g > div {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+	        }
+	        .l-box {
+	            padding: 1em;
 	        }
         </style>
         

@@ -26,7 +26,7 @@ $f3->set('LANGUAGE','fr');
 $f3->route('GET /',
 	function($f3) {
 		$f3->set('classes',$classes); // les classes doivent-elles toujours être redéclarées ?
-		$f3->set('header','inc.header.html');
+		$f3->set('header','inc.header.php');
 		$f3->set('content','page.home.php');
 		$f3->set('footer','inc.footer.php');
 		echo View::instance()->render('layout.htm');
@@ -37,9 +37,9 @@ $f3->route('GET /',
 $f3->route('GET /about',
     function($f3) { 	
 		$f3->set('classes',$classes);
-		$f3->set('header','inc.header.html');
-		$f3->set('content','page.about.html');
-		$f3->set('footer','inc.footer.html');
+		$f3->set('header','inc.header.php');
+		$f3->set('content','page.about.php');
+		$f3->set('footer','inc.footer.php');
 		echo View::instance()->render('layout.htm');
     }
 );
@@ -48,9 +48,9 @@ $f3->route('GET /about',
 $f3->route('GET /colour-blindness',
     function($f3) {  	
 		$f3->set('classes',$classes);
-		$f3->set('header','inc.header.html');
-		$f3->set('content','page.colour.html');
-		$f3->set('footer','inc.footer.html');
+		$f3->set('header','inc.header.php');
+		$f3->set('content','page.colour.php');
+		$f3->set('footer','inc.footer.php');
 		echo View::instance()->render('layout.htm');
     }
 );
@@ -59,9 +59,9 @@ $f3->route('GET /colour-blindness',
 $f3->route('GET /guide',
     function($f3) {      	
 		$f3->set('classes',$classes);
-		$f3->set('header','inc.header.html');
-		$f3->set('content','page.guide.html');
-		$f3->set('footer','inc.footer.html');
+		$f3->set('header','inc.header.php');
+		$f3->set('content','page.guide.php');
+		$f3->set('footer','inc.footer.php');
 		echo View::instance()->render('layout.htm');
     }
 );
@@ -70,9 +70,9 @@ $f3->route('GET /guide',
 $f3->route('GET /download',
     function($f3) {       	
 		$f3->set('classes',$classes);
-		$f3->set('header','inc.header.html');
-		$f3->set('content','page.download.html');
-		$f3->set('footer','inc.footer.html');
+		$f3->set('header','inc.header.php');
+		$f3->set('content','page.download.php');
+		$f3->set('footer','inc.footer.php');
 		echo View::instance()->render('layout.htm');
     }
 );
@@ -81,9 +81,9 @@ $f3->route('GET /download',
 $f3->route('GET /contact',
     function($f3) {       	
 		$f3->set('classes',$classes);
-		$f3->set('header','inc.header.html');
-		$f3->set('content','page.contact.html');
-		$f3->set('footer','inc.footer.html');
+		$f3->set('header','inc.header.php');
+		$f3->set('content','page.contact.php');
+		$f3->set('footer','inc.footer.php');
 		echo View::instance()->render('layout.htm');
     }
 );

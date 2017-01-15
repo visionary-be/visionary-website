@@ -9,6 +9,136 @@
 	],
 "creatorBuild": "25479",
 "files": {
+	"\/.gitignore": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/.gitignore",
+		"oF": 0
+		},
+	"\/app\/dict\/en.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/dict\/en.php",
+		"oF": 0
+		},
+	"\/app\/dict\/fr.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/dict\/fr.php",
+		"oF": 0
+		},
+	"\/app\/views\/css\/base.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/app\/views\/css\/base-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/app\/views\/css\/theme.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/app\/views\/css\/theme-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/app\/views\/images\/bitcoin.png": {
+		"ft": 32768,
+		"iS": 5939,
+		"oA": 0,
+		"oAP": "\/app\/views\/images\/bitcoin.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/app\/views\/images\/logo.png": {
+		"ft": 32768,
+		"iS": 9895,
+		"oA": 0,
+		"oAP": "\/app\/views\/images\/logo.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/app\/views\/images\/paypal.png": {
+		"ft": 32768,
+		"iS": 3127,
+		"oA": 0,
+		"oAP": "\/app\/views\/images\/paypal.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/app\/views\/images\/twitter.png": {
+		"ft": 32768,
+		"iS": 7675,
+		"oA": 0,
+		"oAP": "\/app\/views\/images\/twitter.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/app\/views\/inc.footer.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/views\/inc.footer.php",
+		"oF": 0
+		},
+	"\/app\/views\/inc.header.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/views\/inc.header.php",
+		"oF": 0
+		},
+	"\/app\/views\/layout.htm": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/views\/layout.htm",
+		"oF": 0
+		},
+	"\/app\/views\/page.about.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/views\/page.about.php",
+		"oF": 0
+		},
+	"\/app\/views\/page.colour.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/views\/page.colour.php",
+		"oF": 0
+		},
+	"\/app\/views\/page.contact.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/views\/page.contact.php",
+		"oF": 0
+		},
+	"\/app\/views\/page.download.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/views\/page.download.php",
+		"oF": 0
+		},
+	"\/app\/views\/page.guide.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/views\/page.guide.php",
+		"oF": 0
+		},
+	"\/app\/views\/page.home.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/views\/page.home.php",
+		"oF": 0
+		},
+	"\/app\/views\/userref.htm": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/views\/userref.htm",
+		"oF": 0
+		},
 	"\/assets\/css\/app.css": {
 		"aP": 0,
 		"bl": 0,
@@ -86,6 +216,14 @@
 		"iS": 5939,
 		"oA": 0,
 		"oAP": "\/assets\/images\/bitcoin.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/images\/Browser.png": {
+		"ft": 32768,
+		"iS": 9597,
+		"oA": 0,
+		"oAP": "\/assets\/images\/Browser.png",
 		"oF": 0,
 		"opt": 0
 		},
@@ -343,11 +481,27 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/assets\/images\/lecri.png": {
+		"ft": 32768,
+		"iS": 6773,
+		"oA": 0,
+		"oAP": "\/assets\/images\/lecri.png",
+		"oF": 0,
+		"opt": 1
+		},
 	"\/assets\/images\/logo.png": {
 		"ft": 32768,
 		"iS": 2930,
 		"oA": 0,
 		"oAP": "\/assets\/images\/logo.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/images\/metro-ko.png": {
+		"ft": 32768,
+		"iS": 11375,
+		"oA": 0,
+		"oAP": "\/assets\/images\/metro-ko.png",
 		"oF": 0,
 		"opt": 0
 		},
@@ -1114,22 +1268,244 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/inc\/footer.inc.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/inc\/footer.inc.php",
-		"oF": 0
+	"\/composer.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/composer-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
 		},
-	"\/inc\/header.inc.php": {
+	"\/config.ini": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/inc\/header.inc.php",
+		"oAP": "\/config.ini",
 		"oF": 0
 		},
 	"\/index.php": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/index.php",
+		"oF": 0
+		},
+	"\/lib\/audit.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/lib\/audit.php",
+		"oF": 0
+		},
+	"\/lib\/auth.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/lib\/auth.php",
+		"oF": 0
+		},
+	"\/lib\/base.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/lib\/base.php",
+		"oF": 0
+		},
+	"\/lib\/basket.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/lib\/basket.php",
+		"oF": 0
+		},
+	"\/lib\/bcrypt.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/lib\/bcrypt.php",
+		"oF": 0
+		},
+	"\/lib\/CHANGELOG": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/lib\/CHANGELOG",
+		"oF": 0
+		},
+	"\/lib\/cli\/ws.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/lib\/cli\/ws.php",
+		"oF": 0
+		},
+	"\/lib\/code.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/lib\/code-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/lib\/COPYING": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/lib\/COPYING",
+		"oF": 0
+		},
+	"\/lib\/db\/cursor.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/lib\/db\/cursor.php",
+		"oF": 0
+		},
+	"\/lib\/db\/jig.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/lib\/db\/jig.php",
+		"oF": 0
+		},
+	"\/lib\/db\/jig\/mapper.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/lib\/db\/jig\/mapper.php",
+		"oF": 0
+		},
+	"\/lib\/db\/jig\/session.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/lib\/db\/jig\/session.php",
+		"oF": 0
+		},
+	"\/lib\/db\/mongo.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/lib\/db\/mongo.php",
+		"oF": 0
+		},
+	"\/lib\/db\/mongo\/mapper.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/lib\/db\/mongo\/mapper.php",
+		"oF": 0
+		},
+	"\/lib\/db\/mongo\/session.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/lib\/db\/mongo\/session.php",
+		"oF": 0
+		},
+	"\/lib\/db\/sql.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/lib\/db\/sql.php",
+		"oF": 0
+		},
+	"\/lib\/db\/sql\/mapper.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/lib\/db\/sql\/mapper.php",
+		"oF": 0
+		},
+	"\/lib\/db\/sql\/session.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/lib\/db\/sql\/session.php",
+		"oF": 0
+		},
+	"\/lib\/f3.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/lib\/f3.php",
+		"oF": 0
+		},
+	"\/lib\/image.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/lib\/image.php",
+		"oF": 0
+		},
+	"\/lib\/log.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/lib\/log.php",
+		"oF": 0
+		},
+	"\/lib\/magic.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/lib\/magic.php",
+		"oF": 0
+		},
+	"\/lib\/markdown.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/lib\/markdown.php",
+		"oF": 0
+		},
+	"\/lib\/matrix.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/lib\/matrix.php",
+		"oF": 0
+		},
+	"\/lib\/session.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/lib\/session.php",
+		"oF": 0
+		},
+	"\/lib\/smtp.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/lib\/smtp.php",
+		"oF": 0
+		},
+	"\/lib\/template.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/lib\/template.php",
+		"oF": 0
+		},
+	"\/lib\/test.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/lib\/test.php",
+		"oF": 0
+		},
+	"\/lib\/utf.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/lib\/utf.php",
+		"oF": 0
+		},
+	"\/lib\/web.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/lib\/web.php",
+		"oF": 0
+		},
+	"\/lib\/web\/geo.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/lib\/web\/geo.php",
+		"oF": 0
+		},
+	"\/lib\/web\/google\/staticmap.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/lib\/web\/google\/staticmap.php",
+		"oF": 0
+		},
+	"\/lib\/web\/oauth2.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/lib\/web\/oauth2.php",
+		"oF": 0
+		},
+	"\/lib\/web\/openid.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/lib\/web\/openid.php",
+		"oF": 0
+		},
+	"\/lib\/web\/pingback.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/lib\/web\/pingback.php",
 		"oF": 0
 		},
 	"\/README.md": {
@@ -1149,6 +1525,12 @@
 		"pME": 1,
 		"rFN": 0,
 		"uCM": 0
+		},
+	"\/setup.cfg": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/setup.cfg",
+		"oF": 0
 		}
 	},
 "hooks": [
