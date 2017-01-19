@@ -35,7 +35,7 @@ $f3->route('GET /',
 
 //route ABOUT
 $f3->route('GET /about',
-    function($f3) { 	
+    function($f3) {
 		$f3->set('classes',$classes);
 		$f3->set('header','inc.header.php');
 		$f3->set('content','page.about.php');
@@ -46,7 +46,7 @@ $f3->route('GET /about',
 
 //route COLOUR-BLINDNESS
 $f3->route('GET /colour-blindness',
-    function($f3) {  	
+    function($f3) {
 		$f3->set('classes',$classes);
 		$f3->set('header','inc.header.php');
 		$f3->set('content','page.colour.php');
@@ -57,7 +57,7 @@ $f3->route('GET /colour-blindness',
 
 //route GUIDE
 $f3->route('GET /guide',
-    function($f3) {      	
+    function($f3) {
 		$f3->set('classes',$classes);
 		$f3->set('header','inc.header.php');
 		$f3->set('content','page.guide.php');
@@ -68,7 +68,7 @@ $f3->route('GET /guide',
 
 //route DOWNLOAD
 $f3->route('GET /download',
-    function($f3) {       	
+    function($f3) {
 		$f3->set('classes',$classes);
 		$f3->set('header','inc.header.php');
 		$f3->set('content','page.download.php');
@@ -79,7 +79,7 @@ $f3->route('GET /download',
 
 //route CONTACT
 $f3->route('GET /contact',
-    function($f3) {       	
+    function($f3) {
 		$f3->set('classes',$classes);
 		$f3->set('header','inc.header.php');
 		$f3->set('content','page.contact.php');
@@ -88,7 +88,20 @@ $f3->route('GET /contact',
     }
 );
 
-//VARIABLES
+//route 404
+$f3->route('GET /','App->home');
+$f3->set('ONERROR',
+	function($f3){
+	$f3->set('classes',$classes);
+	$f3->set('header','inc.header.php');
+	$f3->set('footer','inc.footer.php');
+  echo \Template::instance()->render('error.htm');
+});
 
+// VARIABLES
+$f3->set('brand', 'Visionary');
+$f3->set('footerLink1', 'Tester l\'extension');
+$f3->set('footerLink2', 'Développer pour les daltoniens');
+$f3->set('footerLink3', 'Qu\'est-ce que le daltonisme');
 // RUN
 $f3->run();

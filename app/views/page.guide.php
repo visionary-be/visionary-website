@@ -1,5 +1,4 @@
-	        
-	    <!-- -->
+			<!-- -->
     	<section id="content-bloc-1" class="wrapper2">
 	    	<div class="pure-g">
 	        <div class="pure-u-1-3">
@@ -21,12 +20,13 @@
                   <li class="pure-menu-item"><a href="#" class="pure-menu-link">Alerts</a></li>
                 </ul>
               </li>
-              
-              <li class="pure-menu-item"><a href="#" class="pure-menu-link">Ressources</a></li>
+
+        			<li class="pure-menu-item"><a href="#" class="pure-menu-link">Ressources</a></li>
               <li class="pure-menu-item"><a href="#" class="pure-menu-link">W3C</a></li>
           	</ul>
 		      </div>
 	        <div class="pure-u-2-3">
+						<div class="pure-menu pure-menu-scrollable custom-restricted l-box">
 		        <h2>Getting started</h2>
 		        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 		        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -39,9 +39,8 @@
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-		      </div>
+						</div>
+					</div>
 
 	    	</div>
     	</section>
-    	
-    	

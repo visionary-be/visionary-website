@@ -3,12 +3,12 @@
 	    	<div class="pure-g">
 	        <div class="pure-u-1-3">
 		        <nav class="pure-menu custom-restricted-width">
-			        <h3 class="pure-menu-heading">Visionary</h3>
+			        <h3 class="pure-menu-heading"><?php echo $brand; ?></h3>
 			        <p></p>
 			        <ul class="pure-menu-list">
-				        <li class="pure-menu-item"><a href="#" class="pure-menu-link"><strong>Tester l'extension</strong></a></li>
-				        <li class="pure-menu-item"><a href="#" class="pure-menu-link"><strong>Développer pour les daltoniens</strong></a></li>
-				        <li class="pure-menu-item"><a href="#" class="pure-menu-link"><strong>Qu'est-ce que le daltonisme</strong></a></li>
+				        <li class="pure-menu-item"><a href="#" class="pure-menu-link"><strong><?php echo $footerLink1; ?></strong></a></li>
+				        <li class="pure-menu-item"><a href="#" class="pure-menu-link"><strong><?php echo $footerLink1; ?></strong></a></li>
+				        <li class="pure-menu-item"><a href="#" class="pure-menu-link"><strong><?php echo $footerLink1; ?></strong></a></li>
 			        </ul>
 		        </nav>
 		      </div>
@@ -34,6 +34,7 @@
 		        </nav>
 	        </div>
 	    	</div>
-    	</footer>    	
+    	</footer>
+      <script src="assets/js/menu.js" >
     </body>
 </html>
