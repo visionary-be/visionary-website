@@ -67,11 +67,11 @@
     	<section id="content-bloc-3" class="wrapper2">
 	    	<div class="pure-g">
 	        <div class="pure-u-1 center">
-		        <h2>Tip of the day</h2>
+		        <h2>Conseil du jour</h2>
 		        <blockquote>
 			        <p>« Designer, make sure there is enough contrast between text and its background colour  »</p>
 		        </blockquote>
-		        <p><a href="#" class="pure-button pure-button-secondary">Learn to design for the colour blind</a></p>
+		        <p><a href="#" class="pure-button pure-button-secondary">Apprenez à concevoir des interfaces pour les daltoniens</a></p>
 	        </div>
 	    	</div>
     	</section>
