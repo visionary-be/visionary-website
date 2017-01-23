@@ -12,6 +12,7 @@ var autoprefixer = require('gulp-autoprefixer');
 var browsersync = require('browser-sync').create();
 var reload = browsersync.reload;
 var runSequence = require('run-sequence');
+var php = require('gulp-connect-php');
 
 
 project = require('./project.json');
@@ -97,17 +98,34 @@ gulp.task('imagemin', function() {
 	.pipe(gulp.dest( project.build_dir + 'assets/images/'));
 });
 
+//////////////////////////////////////// MAIN WORKFLOW
 
+// Build a fresh copy
+gulp.task('build', function(){
+	runSequence( 'clean', 'scripts', 'styles', 'copy:php', 'copy:fonts', 'copy:images', 'copy:js', 'copy:css', function (error) {
+		if (error) {
+        	console.log(error.message);
+		} else {
+        	console.log('Build Successful.');
+		}
+    })
+});
+
+// Starts a local php
+gulp.task('php', ['build'], function() {
+   return php.server({ base: './' + project.build_dir, port: 8010, keepalive: true});
+});
 
 // BrowserSync
-gulp.task('browsersync', ['build'], function() {
+gulp.task('browsersync', ['php'], function() {
 	browsersync.init({
 		injectChanges: true,
-		proxy: project.mamp_install,
-		files: ['./' + project.build_dir + '/**/*'],
-		notify: true
+        proxy: '127.0.0.1:8010',
+        port: 2017,
+        open: true,
+        notify: true
+    });
 
-	});
 });
 
 /*
@@ -125,18 +143,6 @@ gulp.task('watch', ['browsersync'], function() {
 	gulp.watch([ project.src_dir + 'assets/images/**/*'], ['copy:images', reload]);
 	gulp.watch([ project.src_dir + 'assets/js/min/app.min.js'], ['copy:js', reload]);
 	gulp.watch([ project.src_dir + 'assets/fonts/**/*'], ['copy:fonts', reload]);
-});
-
-// Build a fresh copy
-
-gulp.task('build', function(){
-	runSequence( 'clean', 'scripts', 'styles', 'copy:php', 'copy:fonts', 'copy:images', 'copy:js', 'copy:css', function (error) {
-		if (error) {
-        	console.log(error.message);
-		} else {
-        	console.log('Build Successful.');
-		}
-    })
 });
 
 // Define the default task as a sequence of the above tasks
