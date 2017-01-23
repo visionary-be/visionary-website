@@ -7,8 +7,8 @@
 			        <p></p>
 			        <ul class="pure-menu-list">
 				        <li class="pure-menu-item"><a href="#" class="pure-menu-link"><strong><?php echo $footerLink1; ?></strong></a></li>
-				        <li class="pure-menu-item"><a href="#" class="pure-menu-link"><strong><?php echo $footerLink1; ?></strong></a></li>
-				        <li class="pure-menu-item"><a href="#" class="pure-menu-link"><strong><?php echo $footerLink1; ?></strong></a></li>
+				        <li class="pure-menu-item"><a href="#" class="pure-menu-link"><strong><?php echo $footerLink2; ?></strong></a></li>
+				        <li class="pure-menu-item"><a href="#" class="pure-menu-link"><strong><?php echo $footerLink3; ?></strong></a></li>
 			        </ul>
 		        </nav>
 		      </div>
