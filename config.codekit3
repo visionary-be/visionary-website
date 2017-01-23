@@ -9,12 +9,6 @@
 	],
 "creatorBuild": "25504",
 "files": {
-	"\/.gitignore": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/.gitignore",
-		"oF": 0
-		},
 	"\/app\/dict\/en.php": {
 		"ft": 8192,
 		"oA": 2,
