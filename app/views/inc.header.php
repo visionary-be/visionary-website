@@ -179,10 +179,10 @@
           <div class="pure-u-1 pure-u-lg-1-3">
               <nav class="pure-menu pure-menu-horizontal custom-can-transform">
                   <ul class="pure-menu-list">
-                      <li id="menu-item-1" class="pure-menu-item"><a href="/about" class="pure-menu-link">About</a></li>
-          	          <li id="menu-item-2" class="pure-menu-item"><a href="/colour-blindness" class="pure-menu-link">Colour blindness</a></li>
+                      <li id="menu-item-1" class="pure-menu-item"><a href="/about" class="pure-menu-link">A propos</a></li>
+          	          <li id="menu-item-2" class="pure-menu-item"><a href="/colour-blindness" class="pure-menu-link">Daltonimse</a></li>
           	          <li id="menu-item-3" class="pure-menu-item"><a href="/guide" class="pure-menu-link">Guide</a></li>
-          	          <li id="menu-item-4" class="pure-menu-item"><a href="/download" class="pure-menu-link">Download</a></li>
+          	          <li id="menu-item-4" class="pure-menu-item"><a href="/download" class="pure-menu-link">Télécharger</a></li>
           	          <li id="menu-item-5" class="pure-menu-item"><a href="/contact" class="pure-menu-link">Contact</a></li>
                   </ul>
               </nav>
