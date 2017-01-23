@@ -16,5 +16,5 @@
 	"ftp_port" : "22",
 	"ftp_user": "visionary",
 	"ftp_pass": "Kédiss3,tis!",
-	"ftp_remote_path": "/home/visionary/www/next.colour-blindness.org/public"
+	"ftp_remote_path": "www/next.colour-blindness.org/public/"
 }
