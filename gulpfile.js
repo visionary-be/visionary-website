@@ -27,7 +27,7 @@ gulp.task('clean', function() {
 
 gulp.task('copy:php', function() {
 	// Copy html  & php
-	return gulp.src([ '*.ini','**/*.html', '**/*.php',  '!composer.json', '!composer.lock'], {cwd: project.src_dir+ '**'})
+	return gulp.src([ '*.ini','**/*.html', '**/*.htm', '**/*.php',  '!composer.json', '!composer.lock'], {cwd: project.src_dir+ '**'})
 	.pipe(changed(project.build_dir))
 	.pipe(gulp.dest(project.build_dir))
 	.pipe(reload({ stream:true }));
@@ -139,7 +139,7 @@ gulp.task('watch', ['browsersync'], function() {
 	gulp.watch([ project.src_dir + 'assets/css/**/*.scss'], ['styles']);
 	gulp.watch([ project.src_dir + 'assets/css/min/*'], ['copy:css', reload]);
 	gulp.watch([ 'assets/js/vendors/**/*.js', 'assets/js/app.js'],{cwd: project.src_dir}, ['scripts', reload]);	
-	gulp.watch([ '**/*.php', '**/*.html', '*.*'],{cwd: project.src_dir}, ['copy:php', reload ]);
+	gulp.watch([ '**/*.php', '**/*.html', '**/*.htm', '*.*'],{cwd: project.src_dir}, ['copy:php', reload ]);
 	gulp.watch([ project.src_dir + 'assets/images/**/*'], ['copy:images', reload]);
 	gulp.watch([ project.src_dir + 'assets/js/min/app.min.js'], ['copy:js', reload]);
 	gulp.watch([ project.src_dir + 'assets/fonts/**/*'], ['copy:fonts', reload]);
