@@ -14,7 +14,7 @@
 		      </div>
 	        <div class="pure-u-1 pure-u-md-1-3">
 		        <nav class="pure-menu custom-restricted-width">
-			        <h4 class="pure-menu-heading">Partners</h4>
+			        <h4 class="pure-menu-heading">Partenaires</h4>
 			        <ul class="pure-menu-list">
 				        <li class="pure-menu-item"><a href="#" class="pure-menu-link">UNamur</a></li>
 				        <li class="pure-menu-item"><a href="#" class="pure-menu-link">HEAJ</a></li>
@@ -26,7 +26,7 @@
 	        </div>
 	        <div class="pure-u-1 pure-u-md-1-3">
 		        <nav class="pure-menu custom-restricted-width">
-			        <h4 class="pure-menu-heading">Network</h4>
+			        <h4 class="pure-menu-heading">Réseaux sociaux</h4>
 			        <ul class="pure-menu-list">
 				        <li class="pure-menu-item"><a href="#" class="pure-menu-link">W3C</a></li>
 				        <li class="pure-menu-item"><a href="#" class="pure-menu-link">Facebook</a></li>
