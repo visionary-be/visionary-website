@@ -7,7 +7,7 @@
 		"uuidString": "1211D920-003A-4EB8-9318-36C024C3AA1B"
 		}
 	],
-"creatorBuild": "25479",
+"creatorBuild": "25504",
 "files": {
 	"\/.gitignore": {
 		"ft": 8192,
@@ -27,57 +27,11 @@
 		"oAP": "\/app\/dict\/fr.php",
 		"oF": 0
 		},
-	"\/app\/views\/css\/base.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
+	"\/app\/views\/error.htm": {
+		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/app\/views\/css\/base-min.css",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/app\/views\/css\/theme.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 2,
-		"oAP": "\/app\/views\/css\/theme-min.css",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/app\/views\/images\/bitcoin.png": {
-		"ft": 32768,
-		"iS": 5939,
-		"oA": 0,
-		"oAP": "\/app\/views\/images\/bitcoin.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/views\/images\/logo.png": {
-		"ft": 32768,
-		"iS": 9895,
-		"oA": 0,
-		"oAP": "\/app\/views\/images\/logo.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/views\/images\/paypal.png": {
-		"ft": 32768,
-		"iS": 3127,
-		"oA": 0,
-		"oAP": "\/app\/views\/images\/paypal.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/views\/images\/twitter.png": {
-		"ft": 32768,
-		"iS": 7675,
-		"oA": 0,
-		"oAP": "\/app\/views\/images\/twitter.png",
-		"oF": 0,
-		"opt": 0
+		"oAP": "\/app\/views\/error.htm",
+		"oF": 0
 		},
 	"\/app\/views\/inc.footer.php": {
 		"ft": 8192,
@@ -232,6 +186,14 @@
 		"iS": 54,
 		"oA": 0,
 		"oAP": "\/assets\/images\/desc.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/images\/giphy.gif": {
+		"ft": 4194304,
+		"iS": 11619456,
+		"oA": 0,
+		"oAP": "\/assets\/images\/giphy.gif",
 		"oF": 0,
 		"opt": 0
 		},
@@ -661,6 +623,15 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/assets\/js\/jquery.tooltipster-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/js\/menu.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/menu-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -1531,6 +1502,24 @@
 		"oA": 2,
 		"oAP": "\/setup.cfg",
 		"oF": 0
+		},
+	"\/tmp\/1rhmuqyegwrps.2vvcss5ufcmc8.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/tmp\/1rhmuqyegwrps.2vvcss5ufcmc8.php",
+		"oF": 0
+		},
+	"\/tmp\/1rhmuqyegwrps.2zs27zgscq2ok.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/tmp\/1rhmuqyegwrps.2zs27zgscq2ok.php",
+		"oF": 0
+		},
+	"\/tmp\/1rhmuqyegwrps.3h31n1yj254w8.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/tmp\/1rhmuqyegwrps.3h31n1yj254w8.php",
+		"oF": 0
 		}
 	},
 "hooks": [
@@ -2189,6 +2178,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-await-in-loop": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-bitwise": {
 			"active": 0,
 			"optionString": "{'allow': ['~'], 'int32Hint': true}"
@@ -2728,6 +2721,10 @@
 		"prefer-const": {
 			"active": 0,
 			"optionString": "{'destructuring': 'any', 'ignoreReadBeforeAssign': false}"
+			},
+		"prefer-destructuring": {
+			"active": 0,
+			"optionString": "{'array': true, 'object': true}, {'enforceForRenamedProperties': false}"
 			},
 		"prefer-numeric-literals": {
 			"active": 0,

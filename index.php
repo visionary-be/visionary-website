@@ -9,12 +9,6 @@ if ((float)PCRE_VERSION<7.9)
 	trigger_error('PCRE version is out of date');
 
 //
-$f3->mset(
-    array(
-        'love1'=>'bar',
-        'love2'=>123
-    )
-);
 
 // Load configuration
 $f3->config('config.ini');
@@ -22,13 +16,15 @@ $f3->config('setup.cfg');
 $f3->set('LOCALES','dict/');
 $f3->set('LANGUAGE','fr');
 
+$f3->set('footer','inc.footer.php');
+$f3->set('header','inc.header.php');
 //route HOME
 $f3->route('GET /',
 	function($f3) {
 		$f3->set('classes',$classes); // les classes doivent-elles toujours être redéclarées ?
-		$f3->set('header','inc.header.php');
+
 		$f3->set('content','page.home.php');
-		$f3->set('footer','inc.footer.php');
+
 		echo View::instance()->render('layout.htm');
 	}
 );
@@ -89,13 +85,10 @@ $f3->route('GET /contact',
 );
 
 //route 404
-$f3->route('GET /','App->home');
 $f3->set('ONERROR',
 	function($f3){
-	$f3->set('classes',$classes);
-	$f3->set('header','inc.header.php');
-	$f3->set('footer','inc.footer.php');
-  echo \Template::instance()->render('error.htm');
+	$f3->set('content','error.htm');
+  echo \Template::instance()->render('layout.htm');
 });
 
 // VARIABLES

@@ -172,7 +172,7 @@
       <div class="custom-wrapper pure-g" id="menu">
           <div class="pure-u-1 pure-u-md-1-3">
               <div class="pure-menu">
-                  <a href="#" class="pure-menu-heading custom-brand">Visionary</a>
+                  <a href="/" class="pure-menu-heading custom-brand">Visionary</a>
                   <a href="#" class="custom-toggle" id="toggle"><s class="bar"></s><s class="bar"></s></a>
               </div>
           </div>
