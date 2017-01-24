@@ -1,0 +1,8 @@
+/node_modules
+/build
+node_modules
+build/*
+*.codekit3
+*.scssc
+*/.sass-cache
+src/assets/scss/.sass-cache/*

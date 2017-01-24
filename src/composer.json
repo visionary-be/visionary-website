@@ -1,0 +1,10 @@
+{
+	"autoload": {
+		"psr-4": {
+			"": "vendor/bcosca/fatfree"
+		}
+	},
+	"require": {
+		"bcosca/fatfree": "^3.6"
+	}
+}

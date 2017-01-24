@@ -1,0 +1,20 @@
+{
+	"project_name": "Visionary Website",
+	"project_slug": "visionary-website",
+	"mamp_install": "visionary.loc",
+	"src_dir": "src/",
+	"build_dir": "build/",
+	
+	"___comment": "// The git branch to commit to",
+	"git_branch": "development",
+
+	"___comment": "// your GitHub token or use an environment variable",
+	"git_token" : "570cfe8f8d7c394a767ce91cd1ed68707c8a4f5b",
+
+	"___comment": "// FTP for deployment",
+	"ftp_host" : "82.196.5.162",
+	"ftp_port" : "22",
+	"ftp_user": "visionary",
+	"ftp_pass": "Kédiss3,tis!",
+	"ftp_remote_path": "www/next.colour-blindness.org/public/"
+}
