@@ -65,7 +65,7 @@ gulp.task('copy:css', function() {
 
 gulp.task('copy:php', function() {
 	// Copy html  & php
-	return gulp.src([ '*.ini','**/*.html', '**/*.htm', '**/*.php',  '!composer.json', '!composer.lock'], {cwd: project.src_dir+ '**'})
+	return gulp.src([ '*.ini','.htaccess','**/*.html', '**/*.htm', '**/*.php',  '!composer.json', '!composer.lock'], {cwd: project.src_dir+ '**'})
 	.pipe(changed(project.build_dir))
 	.pipe(gulp.dest(project.build_dir));
 	//.pipe(reload({ stream:true }));
