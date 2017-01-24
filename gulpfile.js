@@ -105,7 +105,7 @@ gulp.task('styles', function() {
 
 // Build a fresh copy
 gulp.task('build', function(){
-	runSequence( 'clean', 'copy:images', 'scripts', 'styles', 'copy:php', 'copy:fonts', 'copy:js', 'copy:css', function (error) {
+	runSequence( 'clean',  'copy:fonts','scripts', 'styles', 'copy:js', 'copy:css','copy:images', 'copy:php', function (error) {
 		if (error) {
         	console.log(error.message);
 		} else {
@@ -116,12 +116,11 @@ gulp.task('build', function(){
 
 // Starts a local php
 gulp.task('php', function() {
-  // return php.server({ base: project.build_dir, port: 8010, keepalive: true});
    return php.server({ base: project.build_dir, port: 9185 });
 });
 
 // BrowserSync
-gulp.task('browsersync', ['php'], function() {
+gulp.task('browsersync', function() {
 	return browsersync.init({
 		injectChanges: true,
         proxy: '127.0.0.1:9185',
