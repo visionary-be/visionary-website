@@ -14,7 +14,6 @@ $f3->set('LANGUAGE','fr');
 $f3->set('footer','inc.footer.php');
 $f3->set('header','inc.header.php');
 
-
 //route HOME
 $f3->route('GET /',
 	function($f3) {
