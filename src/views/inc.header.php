@@ -48,13 +48,8 @@
         <meta property="og:site_name" content="Visionary"/>
         <meta property="og:description" content="Visionary - Test du daltonisme"/>
 
-        <link rel="stylesheet" href="assets/css/app.css">
-        <!--[if lte IE 8]>
-        <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.1/build/grids-responsive-old-ie-min.css">
-		    <![endif]-->
-		    <!--[if gt IE 8]><!-->
-		        <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.1/build/grids-responsive-min.css">
-		    <!--<![endif]-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.11/css/uikit.min.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.11/js/uikit.min.js"></script>
 
         <style >
 	        .wrapper1{
