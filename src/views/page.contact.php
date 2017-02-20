@@ -1,45 +1,31 @@
-			<!-- -->
-	    <section id="hero" class="wrapper1">
-		    <div class="pure-g">
-	        <div class="pure-u-1 center">
-		        <h1>Contacter Visionary</h1>
+			<!-- HERO -->
+			<section id="hero" class="wrapper1">
+				<div class="uk-grid-collapse uk-child-width-expand@s" uk-grid>
+					<div class="uk-width-1-2@s uk-align-center">
+						<h1>Contacter Visionary</h1>
 		        <p>Complétez le formulaire ci-dessous ou adressez-nous un email à <a href="mailto:team@colour-blindness.org">team@colour-blindness.org</a>. Nous reviendrons vers vous dès que possible.</p>
-		        <form class="pure-form pure-form-stacked">
-			        <fieldset>
-
-			            <div class="pure-g">
-			                <div class="pure-u-1 pure-u-md-1-2">
-			                    <label for="first-name">Votre nom</label>
-			                    <input id="first-name" class="pure-u-23-24" type="text">
-			                </div>
-
-			                <div class="pure-u-1 pure-u-md-1-2">
-			                    <label for="email">Votre e-mail</label>
-			                    <input id="email" class="pure-u-23-24" type="email" required>
-			                </div>
-			            </div>
-
-			            <label for="state">Votre message</label>
-			            <textarea class="pure-input-1-2" placeholder="Je souhaiterais entrer en contact avec vous car..."></textarea>
-
-			            <button type="submit" class="pure-button pure-button-primary">Envoyer votre message</button>
+						<form>
+			        <fieldset class="uk-fieldset">
+								<div class="uk-margin">
+            			<label for="first-name">Votre nom</label>
+									<input id="first-name" class="uk-input" type="text">
+        				</div>
+								<div class="uk-margin">
+            			<label for="first-name">Votre prénom</label>
+									<input id="first-name" class="uk-input" type="text">
+        				</div>
+								<div class="uk-margin">
+            			<label for="first-name">Votre e-mail</label>
+									<input id="first-name" class="uk-input"  type="email" required>
+        				</div>
+								<div class="uk-margin">
+									<label for="message">Votre message</label>
+			            <textarea class="uk-textarea" rows="5" placeholder="Je souhaiterais entrer en contact avec vous car..."></textarea>
+			        	</div>
+			          <button type="submit" class="uk-button uk-button-primary uk-button-large">Envoyer votre message</button>
 			        </fieldset>
 			    </form>
-	        </div>
-	    	</div>
-	    </section>
-
-	    <!-- -->
-    	<section id="content-bloc-1" class="wrapper2">
-	    	<div class="pure-g">
-	        <div class="pure-u-1-3">
-
-		      </div>
-	        <div class="pure-u-1-3">
-
-		      </div>
-	        <div class="pure-u-1-3">
-
-		      </div>
-	    	</div>
-    	</section>
+					</div>
+				</div>
+			</section>
+			<!-- -->
