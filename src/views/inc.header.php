@@ -45,7 +45,7 @@
         <meta property="og:site_name" content="Visionary"/>
         <meta property="og:description" content="Visionary - Test du daltonisme"/>
 
-        <link rel="stylesheet" href="assets/css/uikit.min.css" />
+        <link rel="stylesheet" href="assets/css/uikit.css" />
         <script src="assets/js/jquery.js"></script>
         <script src="assets/js/uikit.min.js"></script>
 

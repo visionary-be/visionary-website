@@ -22,7 +22,6 @@ $f3->route('GET /',
 		echo View::instance()->render('layout.htm');
 	}
 );
-
 //route ABOUT
 $f3->route('GET /about',
     function($f3) {

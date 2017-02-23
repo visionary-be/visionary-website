@@ -25,7 +25,7 @@ gulp.task('clean', function() {
 	return del([project.build_dir + '**/*']);
 });
 
-// Imagemin images and ouput them in dist 
+// Imagemin images and ouput them in dist
 gulp.task('imagemin', function() {
 	return gulp.src(['**/*.png', '**/*.jpg', '**/*.jpeg', '**/*.gif'], { cwd: project.build_dir + 'assets/images/**'})
 	.pipe(imagemin())
@@ -69,7 +69,7 @@ gulp.task('copy:php', function() {
 	.pipe(changed(project.build_dir))
 	.pipe(gulp.dest(project.build_dir));
 	//.pipe(reload({ stream:true }));
-	
+
 });
 
 gulp.task('scripts', function() {
@@ -134,7 +134,7 @@ gulp.task('browsersync', function() {
 gulp.task('watch', function() {
 	gulp.watch([ project.src_dir + 'assets/css/**/*.scss'], ['styles']);
 	gulp.watch([ project.src_dir + 'assets/css/min/*'], ['copy:css', reload]);
-	gulp.watch([ 'assets/js/vendors/**/*.js', 'assets/js/app.js'],{cwd: project.src_dir}, ['scripts', reload]);	
+	gulp.watch([ 'assets/js/vendors/**/*.js', 'assets/js/app.js'],{cwd: project.src_dir}, ['scripts', reload]);
 	gulp.watch([ '**/*.php', '**/*.html', '**/*.htm', '*.*'],{cwd: project.src_dir}, ['copy:php', reload ]);
 	gulp.watch([ project.src_dir + 'assets/images/**/*'], ['copy:images', reload]);
 	gulp.watch([ project.src_dir + 'assets/js/min/app.min.js'], ['copy:js', reload]);

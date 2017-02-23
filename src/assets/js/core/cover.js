@@ -1,67 +1,87 @@
-import { Class } from '../mixin/index';
-import { Dimensions } from '../util/index';
+/*! UIkit 2.27.2 | http://www.getuikit.com | (c) 2014 YOOtheme | MIT License */
+(function(UI){
 
-export default function (UIkit) {
+    "use strict";
 
-    UIkit.component('cover', {
+    UI.component('cover', {
 
-        mixins: [Class],
-
-        props: {
-            automute: Boolean,
-            width: Number,
-            height: Number
+        defaults: {
+            automute : true
         },
 
-        defaults: {automute: true},
+        boot: function() {
 
-        ready() {
+            // auto init
+            UI.ready(function(context) {
 
-            if (!this.$el.is('iframe')) {
-                return;
-            }
+                UI.$('[data-uk-cover]', context).each(function(){
 
-            this.$el.css('pointerEvents', 'none');
+                    var ele = UI.$(this);
 
-            if (this.automute) {
+                    if(!ele.data('cover')) {
+                        var plugin = UI.cover(ele, UI.Utils.options(ele.attr('data-uk-cover')));
+                    }
+                });
+            });
+        },
 
-                var src = this.$el.attr('src');
+        init: function() {
 
-                this.$el
-                    .attr('src', `${src}${~src.indexOf('?') ? '&' : '?'}enablejsapi=1&api=1`)
-                    .on('load', ({target}) => target.contentWindow.postMessage('{"event": "command", "func": "mute", "method":"setVolume", "value":0}', '*'));
+            this.parent = this.element.parent();
+
+            UI.$win.on('load resize orientationchange', UI.Utils.debounce(function(){
+                this.check();
+            }.bind(this), 100));
+
+            this.on('display.uk.check', function(e) {
+                if (this.element.is(':visible')) this.check();
+            }.bind(this));
+
+            this.check();
+
+            if (this.element.is('iframe') && this.options.automute) {
+
+                var src = this.element.attr('src');
+
+                this.element.attr('src', '').on('load', function(){
+                    this.contentWindow.postMessage('{ "event": "command", "func": "mute", "method":"setVolume", "value":0}', '*');
+                }).attr('src', [src, (src.indexOf('?') > -1 ? '&':'?'), 'enablejsapi=1&api=1'].join(''));
             }
         },
 
-        update: {
+        check: function() {
 
-            write() {
+            this.element.css({ width  : '', height : '' });
 
-                if (this.$el[0].offsetHeight === 0) {
-                    return;
-                }
+            this.dimension = {w: this.element.width(), h: this.element.height()};
 
-                this.$el
-                    .css({width: '', height: ''})
-                    .css(Dimensions.cover(
-                        {width: this.width || this.$el.width(), height: this.height || this.$el.height()},
-                        {width: this.$el.parent().outerWidth(), height: this.$el.parent().outerHeight()}
-                    ));
-
-            },
-
-            events: ['load', 'resize', 'orientationchange']
-
-        },
-
-        events: {
-
-            loadedmetadata() {
-                this.$emit();
+            if (this.element.attr('width') && !isNaN(this.element.attr('width'))) {
+                this.dimension.w = this.element.attr('width');
             }
 
+            if (this.element.attr('height') && !isNaN(this.element.attr('height'))) {
+                this.dimension.h = this.element.attr('height');
+            }
+
+            this.ratio = this.dimension.w / this.dimension.h;
+
+            var w = this.parent.width(), h = this.parent.height(), width, height;
+
+            // if element height < parent height (gap underneath)
+            if ((w / this.ratio) < h) {
+
+                width  = Math.ceil(h * this.ratio);
+                height = h;
+
+            // element width < parent width (gap to right)
+            } else {
+
+                width  = w;
+                height = Math.ceil(w / this.ratio);
+            }
+
+            this.element.css({ width  : width, height : height });
         }
-
     });
 
-}
+})(UIkit2);
