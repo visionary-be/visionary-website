@@ -41,13 +41,12 @@
         <meta name="theme-color" content="#ffffff">
 
         <meta property="og:title" content="Test du daltonisme"/>
-        <meta property="og:image" content="http://dev.colour-blindness.org/assets/images/logo.png"/>
+        <meta property="og:image" content="/assets/images/logo.png"/>
         <meta property="og:site_name" content="Visionary"/>
         <meta property="og:description" content="Visionary - Test du daltonisme"/>
 
-        <link rel="stylesheet" href="assets/css/uikit.css" />
-        <script src="assets/js/jquery.js"></script>
-        <script src="assets/js/uikit.min.js"></script>
+        <link rel="stylesheet" href="assets/css/app.css" />
+
 
         <style >
 	        .wrapper1{

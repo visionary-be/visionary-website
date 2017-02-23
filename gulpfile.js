@@ -49,7 +49,7 @@ gulp.task('copy:fonts', function() {
 
 gulp.task('copy:js', function(){
 	// Copy lib scripts into build, maintaining the original directory structure
-	return gulp.src( [project.src_dir + 'assets/js/min/*.js'] )
+	return gulp.src( ['app.min.js.map', 'app.min.js'], { cwd: project.src_dir + 'assets/js/min/' } )
 	.pipe(changed(project.build_dir + 'assets/js'))
 	.pipe(gulp.dest(project.build_dir + 'assets/js'))
 	.pipe(reload({ stream:true }));
@@ -57,7 +57,7 @@ gulp.task('copy:js', function(){
 
 gulp.task('copy:css', function() {
 	// copy compiled css into build
-	return gulp.src(['min/app.css'], { cwd: project.src_dir + 'assets/css/' })
+	return gulp.src(['min/app.css', 'min/app.css.map'], { cwd: project.src_dir + 'assets/css/' })
 	.pipe(changed(project.build_dir + 'assets/css'))
 	.pipe(gulp.dest(project.build_dir + 'assets/css'))
 	.pipe(reload({ stream:true }));
@@ -75,18 +75,21 @@ gulp.task('copy:php', function() {
 gulp.task('scripts', function() {
 	// Process scripts and concatenate them into one output file
 
-	return gulp.src( ['vendors/**/*.js', 'app.js'], {cwd: project.src_dir + 'assets/js/'})
+	return gulp.src( ['jquery.js', 'uikit.min.js'], {cwd: project.src_dir + 'assets/js/'})
 	.pipe(changed(project.src_dir + 'assets/js/min/'))
+	.pipe(sourcemaps.init())
 	.pipe(jshint())
 	.pipe(jshint.reporter('default'))
 	.pipe(uglify())
 	.pipe(concat('app.min.js'))
+    .pipe(sourcemaps.write('./'))
 	.pipe(gulp.dest(project.src_dir + 'assets/js/min/'));
 });
 
 // Process sass files into one minified app.css
 gulp.task('styles', function() {
-	return gulp.src('**/*.scss', {cwd: project.src_dir + 'assets/css/'} )
+//	return gulp.src('**/*.scss', {cwd: project.src_dir + 'assets/css/'} )
+	return gulp.src('app.scss', {cwd: project.src_dir + 'assets/scss/'} )
 	.pipe(changed(project.src_dir + 'assets/css/min/'))
 	.pipe(sourcemaps.init())
 	.pipe(sass().on('error', sass.logError))
