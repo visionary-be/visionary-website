@@ -1,36 +1,40 @@
 			<!-- HERO -->
 			<section id="hero" class="wrapper1">
-				<div class="uk-grid-collapse uk-child-width-expand@s" uk-grid>
-	        <div class="uk-width-1-2@s uk-align-center">
-						<h1>A propos</h1>
-						<p>Visionary est un projet de recherche de solutions améliorant l’accessibilité du web pour les personnes souffrant de déficiences visuelles, et en particulier, le daltonisme.</p>
-						<p>Visionary est financé par la Région Wallonne et est poursuivi dans un partenariat associant une Haute Ecole (l’HEAJ), une université (centre PReCISE de l’Université de Namur) et une entreprise privée (Dogstudio). A ce partenariat s’ajoutent l’AWIPH et l’Accetics, ASBL spécialisée dans l’accessibilité en CFWB, dont le rôle est d’accompagner et conseiller l’équipe de chercheurs. </p>
+				<div class="uk-grid">
+					<div class="uk-width-medium-1-3 uk-container-center">
+						<div class="uk-panel uk-panel-box uk-panel-box-primary">
+							<h1>A propos</h1>
+							<p>Visionary est un projet de recherche de solutions améliorant l’accessibilité du web pour les personnes souffrant de déficiences visuelles, et en particulier, le daltonisme.</p>
+							<p>Visionary est financé par la Région Wallonne et est poursuivi dans un partenariat associant une Haute Ecole (l’HEAJ), une université (centre PReCISE de l’Université de Namur) et une entreprise privée (Dogstudio). A ce partenariat s’ajoutent l’AWIPH et l’Accetics, ASBL spécialisée dans l’accessibilité en CFWB, dont le rôle est d’accompagner et conseiller l’équipe de chercheurs. </p>
+						</div>
 					</div>
 				</div>
 			</section>
 
 	    <!-- STRATEGIE -->
     	<section id="content-bloc-1" class="wrapper2">
-	    	<div class="uk-child-width-expand@s" uk-grid>
-	        <div class="uk-width-2-5@s">
-		        <h2>La stratégie Visionary</h2>
-		        <ul>
-			        <li>Etat des lieux des recherches sur le daltonisme (lecture et rencontre avec des daltoniens, réalisation de tests d’oculométrie);</li>
-			        <li>Etat des lieux des solutions actuelles en terme d’accessibilité pour le web aux mal-voyants et daltoniens;</li>
-			        <li>Définition, sur base de ces tests d’oculométrie, de recommandations d’accessibilité à destination des web designers et développeurs;</li>
-			        <li>Conception et réalisation d’une liste de délivrables permettant d’améliorer leur confort d’utilisation et le risque d’erreurs induites par les interfaces en ligne.</li>
-		        </ul>
-		      </div>
-	        <div class="uk-width-3-5@s">
-		        <img src="assets/images/placeholder.png" class="">
-		      </div>
-	    	</div>
+				<div class="uk-container uk-container-center">
+		    	<div class="uk-grid">
+		        <div class="uk-width-medium-2-5">
+			        <h2>La stratégie Visionary</h2>
+			        <ul>
+				        <li>Etat des lieux des recherches sur le daltonisme (lecture et rencontre avec des daltoniens, réalisation de tests d’oculométrie);</li>
+				        <li>Etat des lieux des solutions actuelles en terme d’accessibilité pour le web aux mal-voyants et daltoniens;</li>
+				        <li>Définition, sur base de ces tests d’oculométrie, de recommandations d’accessibilité à destination des web designers et développeurs;</li>
+				        <li>Conception et réalisation d’une liste de délivrables permettant d’améliorer leur confort d’utilisation et le risque d’erreurs induites par les interfaces en ligne.</li>
+			        </ul>
+			      </div>
+		        <div class="uk-width-medium-3-5">
+			        <img src="assets/images/placeholder.png" class="">
+			      </div>
+		    	</div>
+				</div>
     	</section>
 
     	<!-- LIVRABLES -->
     	<section id="content-bloc-2" class="wrapper1">
-	    	<div class="uk-grid-collapse uk-child-width-expand@s" uk-grid>
-	        <div class="uk-width-1-2 uk-align-center">
+	    	<div class="uk-grid">
+	        <div class="uk-width-medium-1-2 uk-align-center">
 		        <h3>Livrables</h3>
 		        <p>Notre intention est de développer les livrables suivants:</p>
 	        </div>

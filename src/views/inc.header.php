@@ -67,31 +67,38 @@
     <body>
       <!-- -->
       <header id="header">
-        <nav class="uk-navbar-container uk-navbar-transparent uk-dark" uk-navbar="mode: click">
-          <div class="uk-navbar-left">
-             <a href="/" class="uk-navbar-item uk-logo">Visionary</a>
-              <ul class="uk-navbar-nav">
-                <li id="menu-item-1" class="uk-active"><a href="/about">A propos</a></li>
-                <li id="menu-item-2"><a href="/colour-blindness">Daltonisme</a></li>
-                <li id="menu-item-3"><a href="/guide">Guide</a></li>
-                <li id="menu-item-4"><a href="/download">Télécharger</a></li>
-                <li id="menu-item-5"><a href="/contact">Contact</a></li>
-              </ul>
+        <nav class="uk-navbar">
+          <a href="/" class="uk-navbar-brand">Visionary</a>
+
+          <ul class="uk-navbar-nav uk-hidden-small">
+            <li id="menu-item-1" class="uk-active"><a href="/about">A propos</a></li>
+            <li id="menu-item-2"><a href="/colour-blindness">Daltonisme</a></li>
+            <li id="menu-item-3"><a href="/guide">Guide</a></li>
+            <li id="menu-item-4"><a href="/download">Télécharger</a></li>
+            <li id="menu-item-5"><a href="/contact">Contact</a></li>
+          </ul>
+
+          <div class="uk-navbar-content uk-navbar-flip uk-hidden-small">
+            <div class="uk-button-dropdown" data-uk-dropdown="{mode:'click'}">
+              <div><a href="">Français</a></div>
+              <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-bottom">
+                <ul class="uk-nav uk-nav-navbar">
+                  <li><a href="#">Anglais</a></li>
+                  <li><a href="#">Français</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="uk-button-group">
+              <button class="uk-button uk-button-default" href="#">S'inscrire</button>
+              <button class="uk-button uk-button-dprimary">Se connecter</button>
+            </div>
           </div>
-          <div class="uk-navbar-right">
-              <ul class="uk-navbar-nav">
-                  <li>
-                      <a href="#">Français</a>
-                      <div class="uk-navbar-dropdown">
-                          <ul class="uk-nav uk-navbar-dropdown-nav">
-                            <li><a href="#">English</a></li>
-                            <li class="uk-active"><a href="#">Français</a></li>
-                          </ul>
-                      </div>
-                  </li>
-                  <li><a href="#" class="uk-button uk-button-default uk-button-small" title="Gratuit !Tester la solution Visionary" uk-tooltip>S'inscrire</a></li>
-                  <li><a href="#" class="uk-button uk-button-primary uk-button-small">Se connecter</a></li>
-              </ul>
+
+          <div class="uk-navbar-flip uk-visible-small">
+            <a href="#menu" class="uk-navbar-toggle" data-uk-offcanvas></a>
+            <div id="my-id" class="uk-offcanvas">
+                Menu Off canvas
+            </div>
           </div>
         </nav>
 	    </header>
