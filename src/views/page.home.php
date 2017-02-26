@@ -1,15 +1,17 @@
-
 			<!-- HERO -->
-	    <section id="hero" class="uk-grid">
-				<div class="uk-width-1-1">
+	    <section id="hero">
+				<div class="uk-cover-background uk-position-relative">
 					<img src="assets/images/bg-home.jpg" alt="">
+					<div class="uk-position-cover uk-flex uk-flex-center uk-flex-middle">
+						<div class="uk-panel uk-panel-box uk-panel-box-primary">
+						<h1 class="uk-text-center">Ce que voient les daltoniens</h1>
+						<p>Nous n’avons pas tous la même perception des couleurs. Visionary travaille à améliorer le confort des utilisateurs daltoniens face aux interfaces digitales </p>
+						<p class="uk-text-center"><a href="#" class="uk-button uk-button-primary uk-button-large">Voir la vidéo</a></p>
+						</div>
+					</div>
 				</div>
 				<div class="uk-width-medium-1-3 uk-container-center">
-					<div class="uk-panel uk-panel-box uk-panel-box-primary">
-					<h1>Ce que voient les daltoniens</h1>
-					<p>Nous n’avons pas tous la même perception des couleurs. Visionary travaille à améliorer le confort des utilisateurs daltoniens face aux interfaces digitales </p>
-					<p><a href="#" class="uk-button uk-button-primary uk-button-large">Voir la vidéo</a></p>
-					</div>
+
 				</div>
 	    </section>
 

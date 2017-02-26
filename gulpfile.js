@@ -49,7 +49,7 @@ gulp.task('copy:fonts', function() {
 
 gulp.task('copy:js', function(){
 	// Copy lib scripts into build, maintaining the original directory structure
-	return gulp.src( ['app.min.js.map', 'app.min.js'], { cwd: project.src_dir + 'assets/js/min/' } )
+	return gulp.src( ['app.min.js.map', 'app.min.js'], { cwd: project.src_dir + 'assets/js/' } )
 	.pipe(changed(project.build_dir + 'assets/js'))
 	.pipe(gulp.dest(project.build_dir + 'assets/js'))
 	.pipe(reload({ stream:true }));

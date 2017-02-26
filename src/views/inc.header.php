@@ -47,6 +47,7 @@
 
         <link rel="stylesheet" href="assets/css/app.css" />
 
+        <script src="assets/js/app.min.js"></script>
 
         <style >
 	        .wrapper1{
@@ -89,8 +90,8 @@
               </div>
             </div>
             <div class="uk-button-group">
-              <button class="uk-button uk-button-default" href="#">S'inscrire</button>
-              <button class="uk-button uk-button-dprimary">Se connecter</button>
+              <button class="uk-button uk-button-secondary" href="#" data-uk-tooltip title="test">S'inscrire</button>
+              <button class="uk-button uk-button-primary" href="#">Se connecter</button>
             </div>
           </div>
 
