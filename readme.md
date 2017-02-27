@@ -17,6 +17,7 @@ Exemple:
 
 ## Framework CSS
 https://getuikit.com/
+v2 > scss
 
 ## Framework PHP
 https://fatfreeframework.com/
@@ -34,3 +35,9 @@ https://fatfreeframework.com/
 ## Livrer
 Pour pusher une nouvelle version sur le serveur:
 `gulp release`
+
+## Questions
+### Twig ?
+Il faut la version 7 de PHP sur l'ordi (Sierra est en 5.6)
+### Comment mettre en place le multilinguisme avec F3 ?
+### Comment stocker la variabkle de la page courante en F3 pour avoir un menu dynamique ?
