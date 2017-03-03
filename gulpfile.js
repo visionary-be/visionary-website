@@ -49,7 +49,7 @@ gulp.task('copy:fonts', function() {
 
 gulp.task('copy:js', function(){
 	// Copy lib scripts into build, maintaining the original directory structure
-	return gulp.src( ['app.min.js.map', 'app.min.js'], { cwd: project.src_dir + 'assets/js/' } )
+	return gulp.src( ['app.min.js.map', 'app.min.js'], { cwd: project.src_dir + 'assets/js/min/' } )
 	.pipe(changed(project.build_dir + 'assets/js'))
 	.pipe(gulp.dest(project.build_dir + 'assets/js'))
 	.pipe(reload({ stream:true }));
@@ -75,7 +75,7 @@ gulp.task('copy:php', function() {
 gulp.task('scripts', function() {
 	// Process scripts and concatenate them into one output file
 
-	return gulp.src( ['jquery.js', 'uikit.min.js'], {cwd: project.src_dir + 'assets/js/'})
+	return gulp.src( ['jquery.js', 'uikit.min.js', 'app.js'], {cwd: project.src_dir + 'assets/js/'})
 	.pipe(changed(project.src_dir + 'assets/js/min/'))
 	.pipe(sourcemaps.init())
 	.pipe(jshint())
@@ -134,20 +134,24 @@ gulp.task('browsersync', function() {
 });
 
 // A development task to run anytime a file changes
-gulp.task('watch', function() {
-	gulp.watch([ project.src_dir + 'assets/css/**/*.scss'], ['styles']);
+gulp.task('watch', ['php'], function() {
+	gulp.watch([ project.src_dir + 'assets/scss/**/*.scss'], ['styles']);
 	gulp.watch([ project.src_dir + 'assets/css/min/*'], ['copy:css', reload]);
-	gulp.watch([ 'assets/js/vendors/**/*.js', 'assets/js/app.js'],{cwd: project.src_dir}, ['scripts', reload]);
-	gulp.watch([ '**/*.php', '**/*.html', '**/*.htm', '*.*'],{cwd: project.src_dir}, ['copy:php', reload ]);
-	gulp.watch([ project.src_dir + 'assets/images/**/*'], ['copy:images', reload]);
+	gulp.watch([ 'app.js'],{cwd: project.src_dir+ '/assets/js/'}, ['scripts', reload]);
 	gulp.watch([ project.src_dir + 'assets/js/min/app.min.js'], ['copy:js', reload]);
 	gulp.watch([ project.src_dir + 'assets/fonts/**/*'], ['copy:fonts', reload]);
+	gulp.watch([ project.src_dir + 'assets/images/**/*'], ['copy:images', reload]);
+	gulp.watch([ '**/*.php', '**/*.html', '**/*.htm', '*.*'],{cwd: project.src_dir}, ['copy:php', reload ]);
 });
 
 // Define the default task as a sequence of the above tasks
 gulp.task('default',function(callback){
 	return runSequence('build', 'php', 'browsersync', 'watch', callback);
 });
+
+
+//////// RELEASE
+gulp.task('release', ['sftp-deploy'] );
 
 // Upload
 var errorHandler;
@@ -161,5 +165,3 @@ gulp.task( 'sftp-deploy',function () {
 			remotePath: project.ftp_remote_path
 		}));
 });
-//////// RELEASE
-gulp.task('release', ['sftp-deploy'] );

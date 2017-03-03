@@ -45,10 +45,7 @@
         <meta property="og:site_name" content="Visionary"/>
         <meta property="og:description" content="Visionary - Test du daltonisme"/>
 
-        <link rel="stylesheet" href="assets/css/app.css" />
-
-        <script src="assets/js/app.min.js"></script>
-
+        <link rel="stylesheet" href="/assets/css/app.css" />
         <style >
 	        .wrapper1{
 		        border-top:1px solid #ccc;
