@@ -68,11 +68,11 @@
           <a href="/" class="uk-navbar-brand">Visionary</a>
 
           <ul class="uk-navbar-nav uk-hidden-small">
-            <li id="menu-item-1" class="uk-active"><a href="/about">A propos</a></li>
-            <li id="menu-item-2"><a href="/colour-blindness">Daltonisme</a></li>
-            <li id="menu-item-3"><a href="/guide">Guide</a></li>
-            <li id="menu-item-4"><a href="/download">Télécharger</a></li>
-            <li id="menu-item-5"><a href="/contact">Contact</a></li>
+            <li id="menu-item-1"<?php echo ($current_url === 'about') ? ' class="uk-active"': ''; ?>><a href="/about">A propos</a></li>
+            <li id="menu-item-2"<?php echo ($current_url === 'colour') ? ' class="uk-active"': ''; ?>><a href="/colour-blindness">Daltonisme</a></li>
+            <li id="menu-item-3"<?php echo ($current_url === 'guide') ? ' class="uk-active"': ''; ?>><a href="/guide">Guide</a></li>
+            <li id="menu-item-4"<?php echo ($current_url === 'download') ? ' class="uk-active"': ''; ?>><a href="/download">Télécharger</a></li>
+            <li id="menu-item-5"<?php echo ($current_url === 'contact') ? ' class="uk-active"': ''; ?>><a href="/contact">Contact</a></li>
           </ul>
 
           <div class="uk-navbar-content uk-navbar-flip uk-hidden-small">

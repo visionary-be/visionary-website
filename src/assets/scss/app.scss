@@ -1,8 +1,12 @@
-// LESS related
-@import "core/variables.scss";
+
+
+// related
+@import "uikit-mixins"; // added by Ben
+@import "core/variables";
 
 // Defaults
-@import "_base.scss";
+//@import "core/base";
+@import "_base";
 
 // Layout
 @import "core/grid.scss";
@@ -53,7 +57,3 @@
 
 // Visionary Specific Stuff
 @import "_fonts.scss";
-
-section{
-	background:red !important;
-}
