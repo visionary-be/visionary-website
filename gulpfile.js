@@ -48,17 +48,6 @@ gulp.task('copy:fonts', function() {
 	}).pipe(changed(project.build_dir + 'assets/fonts/')).pipe(gulp.dest(project.build_dir + 'assets/fonts/'));
 });
 
-
-
-gulp.task('copy:css', function() {
-	// copy compiled css into build
-	return gulp.src(['min/app.css', 'min/app.css.map'], {
-		cwd: project.src_dir + 'assets/css/'
-	}).pipe(changed(project.build_dir + 'assets/css')).pipe(gulp.dest(project.build_dir + 'assets/css')).pipe(reload({
-		stream: true
-	}));
-});
-
 gulp.task('copy:php', function() {
 	// Copy html  & php
 	return gulp.src(['*.ini', '.htaccess', '**/*.html', '**/*.htm', '**/*.php', '!composer.json', '!composer.lock'], {
@@ -78,27 +67,49 @@ gulp.task('copy:js', function() {
 	// Copy lib scripts into build, maintaining the original directory structure
 	return gulp.src(['app.min.js.map', 'app.min.js'], {
 		cwd: project.src_dir + 'assets/js/min/'
-	}).pipe(changed(project.build_dir + 'assets/js')).pipe(gulp.dest(project.build_dir + 'assets/js')).pipe(reload({
+	}).pipe(changed(project.build_dir + 'assets/js')).pipe(gulp.dest(project.build_dir + 'assets/js'))
+	.pipe(reload({
 		stream: true
 	}));
 });
 
-// Process sass files into one minified app.css
 gulp.task('styles', function() {
-	//	return gulp.src('**/*.scss', {cwd: project.src_dir + 'assets/css/'} )
+	
+	// Process sass files into one minified app.css
+		
 	return gulp.src('app.scss', {
 		cwd: project.src_dir + 'assets/scss/'
-	}).pipe(changed(project.src_dir + 'assets/css/min/')).pipe(sourcemaps.init()).pipe(sass().on('error', sass.logError)).pipe(autoprefixer({
+	})
+	.pipe(sourcemaps.init())
+	.pipe(sass().on('error', sass.logError))
+	.pipe(autoprefixer({
 		browsers: ['last 2 versions'],
 		cascade: false
-	})).pipe(cssnano()).pipe(sourcemaps.write('./')).pipe(gulp.dest(project.src_dir + 'assets/css/min/'))
+	}))
+	.pipe(cssnano())
+	.pipe(sourcemaps.write('./'))
+	.pipe(gulp.dest(project.src_dir + 'assets/css/min/'))
+});
+
+gulp.task('copy:css', function() {
+	
+	// copy compiled css into build
+	
+	return gulp.src(['min/app.css', 'min/app.css.map'], {
+		cwd: project.src_dir + 'assets/css/'
+	})
+	.pipe(gulp.dest(project.build_dir + 'assets/css'))
+	.pipe(reload({
+		stream: true
+	}));
 });
 
 
-
 //////////////////////////////////////// MAIN WORKFLOW
-// Build a fresh copy
 gulp.task('build', function() {
+	
+	// Build a fresh copy
+
 	runSequence('clean', 'copy:fonts', 'scripts', 'styles', 'copy:js', 'copy:css', 'copy:images', 'copy:php', function(error) {
 		if (error) {
 			console.log(error.message);
