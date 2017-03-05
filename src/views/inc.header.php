@@ -53,7 +53,7 @@
       <!-- -->
       <header id="header">
         <nav class="uk-navbar">
-          <a href="/" class="uk-navbar-brand"><img src="/assets/images/visionary.svg" alt="Visionary"></a>
+          <a href="/" class="uk-navbar-brand"><img src="/assets/images/visionary.svg" alt="<?php echo $brand; ?>"></a>
 
           <ul class="uk-navbar-nav uk-hidden-small">
             <li id="menu-item-1"<?php echo ($current_url === 'about') ? ' class="uk-active"': ''; ?>><a href="/about">A propos</a></li>
