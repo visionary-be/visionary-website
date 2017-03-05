@@ -27,14 +27,14 @@ gulp.task('clean', function() {
 
 // Imagemin images and ouput them in dist
 gulp.task('imagemin', function() {
-	return gulp.src(['**/*.png', '**/*.jpg', '**/*.jpeg', '**/*.gif'], {
+	return gulp.src(['**/*.png', '**/*.jpg', '**/*.jpeg', '**/*.gif', '**/*.svg'], {
 		cwd: project.build_dir + 'assets/images/**'
 	}).pipe(imagemin()).pipe(gulp.dest(project.build_dir + 'assets/images/'));
 });
 
 gulp.task('copy:images', function() {
 	// Copy Images into build
-	return gulp.src(['**/*.png', '**/*.jpg', '**/*.jpeg', '**/*.gif'], {
+	return gulp.src(['**/*.png', '**/*.jpg', '**/*.jpeg', '**/*.gif', '**/*.svg'], {
 		cwd: project.src_dir + 'assets/images/**'
 	}).pipe(changed(project.build_dir + 'assets/images/')).pipe(imagemin({
 		optimizationLevel: 5
