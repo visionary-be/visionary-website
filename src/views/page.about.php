@@ -1,18 +1,16 @@
 			<!-- HERO -->
-			<section id="hero" class="wrapper1">
+			<section id="hero" class="wrapper wrapper-blue">
 				<div class="uk-grid">
-					<div class="uk-width-medium-1-3 uk-container-center">
-						<div class="uk-panel uk-panel-box uk-panel-box-primary">
+					<div class="uk-width-medium-1-2 uk-container-center">
 							<h1 class="uk-text-center">A propos</h1>
-							<p>Visionary est un projet de recherche de solutions améliorant l’accessibilité du web pour les personnes souffrant de déficiences visuelles, et en particulier, le daltonisme.</p>
-							<p>Visionary est financé par la Région Wallonne et est poursuivi dans un partenariat associant une Haute Ecole (l’HEAJ), une université (centre PReCISE de l’Université de Namur) et une entreprise privée (Dogstudio). A ce partenariat s’ajoutent l’AWIPH et l’Accetics, ASBL spécialisée dans l’accessibilité en CFWB, dont le rôle est d’accompagner et conseiller l’équipe de chercheurs. </p>
-						</div>
+							<p class="uk-text-center yell">Visionary est un projet de recherche de solutions améliorant l’accessibilité du web pour les personnes souffrant de déficiences visuelles, et en particulier, le daltonisme.</p>
+							<p class="uk-text-center yell">Visionary est financé par la Région Wallonne et est poursuivi dans un partenariat associant une Haute Ecole (l’HEAJ), une université (centre PReCISE de l’Université de Namur) et une entreprise privée (Dogstudio). A ce partenariat s’ajoutent l’AWIPH et l’Accetics, ASBL spécialisée dans l’accessibilité en CFWB, dont le rôle est d’accompagner et conseiller l’équipe de chercheurs. </p>
 					</div>
 				</div>
 			</section>
 
 	    <!-- STRATEGIE -->
-    	<section id="content-bloc-1" class="wrapper2">
+    	<section id="content-bloc-1" class="wrapper wrapper-white">
 				<div class="uk-container uk-container-center">
 		    	<div class="uk-grid">
 		        <div class="uk-width-medium-2-5">
@@ -32,12 +30,12 @@
     	</section>
 
     	<!-- LIVRABLES -->
-    	<section id="content-bloc-2" class="wrapper1">
+    	<section id="content-bloc-2" class="wrapper wrapper-gray">
 				<div class="uk-container uk-container-center">
 		    	<div class="uk-grid">
 		        <div class="uk-width-medium-1-2 uk-container-center">
 			        <h3 class="uk-text-center">Livrables</h3>
-			        <p class="uk-text-center">Notre intention est de développer les livrables suivants:</p>
+			        <p class="uk-text-center yell">Notre intention est de développer les livrables suivants:</p>
 		        </div>
 		    	</div>
 		    	<div class="uk-grid">

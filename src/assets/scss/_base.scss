@@ -1,6 +1,55 @@
 $base-heading-font-family:                       $sans-serif;
 $base-body-font-family:                          $sans-serif;
-$base-body-font-size:                            22px !default;
-$base-body-line-height:                          34px !default;
+$base-body-font-size:                            14px !default;
+$base-body-line-height:                          21px !default;
+$base-body-font-weight:                          400 !default;
 $base-link-color:                                $blue !default;
-$base-body-color:                                $black !default;
+$base-body-color:                                $gray !default;
+
+$base-heading-font-family:                       $sans-serif;
+$base-heading-font-weight:                       100 !default;
+$base-heading-color:                             $black !default;
+$base-heading-text-transform:                    none !default;
+$base-heading-margin-top:                        20px !default;
+$base-h1-font-size:                              46px !default;
+$base-h1-line-height:                            52px !default;
+$base-h2-font-size:                              28px !default;
+$base-h2-line-height:                            39px !default;
+$base-h3-font-size:                              16px !default;
+$base-h3-line-height:                            24px !default;
+$base-h4-font-size:                              16px !default;
+$base-h4-line-height:                            22px !default;
+$base-h5-font-size:                              14px !default;
+$base-h5-line-height:                            20px !default;
+$base-h6-font-size:                              12px !default;
+$base-h6-line-height:                            18px !default;
+
+$navbar-background:                              $black !default;
+$navbar-nav-height:                              40px !default;
+$navbar-nav-line-height:                         $navbar-nav-height !default;
+$navbar-nav-padding-horizontal:                  15px !default;
+$navbar-nav-color:                               $white !default;
+$navbar-nav-font-size:                           12px !default;
+$navbar-nav-font-weight:                         700 !default;
+$navbar-nav-font-family:                         $sans-serif;
+$navbar-nav-hover-background:                    transparent !default;
+$navbar-nav-hover-color:                         $gray !default;
+$navbar-nav-onclick-background:                  transparent !default;
+$navbar-nav-onclick-color:                       $gray !default;
+$navbar-nav-active-background:                   transparent !default;
+$navbar-nav-active-color:                        $blue !default;
+
+h1, .uk-h1 {
+  letter-spacing: 0.82px;
+  margin-bottom: 20px;
+}
+h2, .uk-h2 {
+  letter-spacing: 0.82px;
+  font-weight: 400 !important;
+}
+h3, .uk-h3 {
+  text-transform: uppercase !important;
+  font-weight: 500 !important;
+  margin-bottom: 20px;
+  letter-spacing: 0.82px;
+}

@@ -1,5 +1,5 @@
 			<!-- -->
-    	<footer id="footer" class="wrapper1">
+    	<footer id="footer" class="wrapper wrapper-dark">
 	    	<div class="uk-grid">
 	        <div class="uk-width-medium-1-2">
             <ul class="uk-nav uk-nav-default">

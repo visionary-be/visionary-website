@@ -46,18 +46,6 @@
         <meta property="og:description" content="Visionary - Test du daltonisme"/>
 
         <link rel="stylesheet" href="/assets/css/app.css" />
-        <style >
-	        .wrapper1{
-		        border-top:1px solid #ccc;
-		        padding: 50px 20px;
-		        background-color: #eee;
-	        }
-	        .wrapper2{
-		        border-top:1px solid #ccc;
-		        padding: 50px 20px;
-		        background-color: #fff;
-	        }
-        </style>
 
     </head>
 
@@ -65,7 +53,7 @@
       <!-- -->
       <header id="header">
         <nav class="uk-navbar">
-          <a href="/" class="uk-navbar-brand"><img src="/assets/images/visionary.svg" alt="Visionary"</a>
+          <a href="/" class="uk-navbar-brand"><img src="/assets/images/visionary.svg" alt="Visionary"></a>
 
           <ul class="uk-navbar-nav uk-hidden-small">
             <li id="menu-item-1"<?php echo ($current_url === 'about') ? ' class="uk-active"': ''; ?>><a href="/about">A propos</a></li>

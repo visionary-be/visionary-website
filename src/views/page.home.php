@@ -1,27 +1,21 @@
 			<!-- HERO -->
-	    <section id="hero">
-				<div class="uk-cover-background uk-position-relative">
-					<img src="assets/images/bg-home.jpg" alt="">
-					<div class="uk-position-cover uk-flex uk-flex-center uk-flex-middle">
-						<div class="uk-panel uk-panel-box uk-panel-box-primary">
-						<h1 class="uk-text-center">Ce que voient les daltoniens</h1>
-						<p>Nous n’avons pas tous la même perception des couleurs. Visionary travaille à améliorer le confort des utilisateurs daltoniens face aux interfaces digitales </p>
-						<p class="uk-text-center"><a href="#" class="uk-button uk-button-primary uk-button-large">Voir la vidéo</a></p>
-						</div>
-					</div>
-				</div>
+	    <section id="hero" class="wrapper" style="background-image:url(assets/images/bg-home.jpg);">
 				<div class="uk-width-medium-1-3 uk-container-center">
-
+					<div class="uk-panel uk-panel-box uk-panel-box-primary off-bottom">
+						<h1 class="uk-text-center">Ce que voient les daltoniens</h1>
+						<p class="yell">Nous n’avons pas tous la même perception des couleurs. Visionary travaille à améliorer le confort des utilisateurs daltoniens face aux interfaces digitales </p>
+						<p class="uk-text-center"><a href="#" class="uk-button uk-button-primary uk-button-large">Voir la vidéo</a></p>
+					</div>
 				</div>
 	    </section>
 
     	<!-- DALTONIENS -->
-    	<section id="content-bloc-1" class="wrapper1">
+    	<section id="content-bloc-1" class="wrapper wrapper-white">
 				<div class="uk-container uk-container-center">
 		    	<div class="uk-grid">
 		        <div class="uk-width-medium-2-5">
 			        	<h2>Daltoniens et interfaces digitales</h2>
-			        	<p>Smartphones, écrans tactiles de commande dans les gares, les métros, portables, tablets… La conception de ces interfaces sont-elles réellement accessibles à tous ? Les concepteurs tiennent-ils compte des différences de perception des couleurs ? Ces questions sont à l’origine de la mise en place de différents outils pour améliorer la situation.</p>
+			        	<p class="yell">Smartphones, écrans tactiles de commande dans les gares, les métros, portables, tablets… La conception de ces interfaces sont-elles réellement accessibles à tous ? Les concepteurs tiennent-ils compte des différences de perception des couleurs ? Ces questions sont à l’origine de la mise en place de différents outils pour améliorer la situation.</p>
 			      </div>
 		        <div class="uk-width-medium-3-5">
 			        <img src="assets/images/placeholder.png" class="">
@@ -60,12 +54,12 @@
 			<!-- -->
 
     	<!-- VISIONARY -->
-    	<section id="content-bloc-2" class="wrapper2">
+    	<section id="content-bloc-2" class="wrapper wrapper-blue">
 	    	<div class="uk-grid">
 	        <div class="uk-width-medium-1-2 uk-container-center">
 						<div>
 		        	<h2>A propos de Visionary</h2>
-		        	<p>Visionary est un projet de recherche de solutions améliorant l’accessibilité du web pour les personnes souffrant de déficiences visuelles et, en particulier, le daltonisme.</p>
+		        	<p class="yell">Visionary est un projet de recherche de solutions améliorant l’accessibilité du web pour les personnes souffrant de déficiences visuelles et, en particulier, le daltonisme.</p>
 		        	<p><a href="#" class="uk-button uk-button-primary">Tout savoir sur ce projet</a></p>
 						</div>
 	        </div>

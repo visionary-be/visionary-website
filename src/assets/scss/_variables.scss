@@ -7,10 +7,13 @@ $blue:                       #0099F3;
 $green:                      #B0C932;
 $red:                        #D85322;
 $orange:                     #F08C3B;
+
 $gutter:                     40px;
+
 $sans-serif:                 "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $serif:                      Georgia, serif !default;
-$primary-color:              #01ADD5;
+
+$primary-color:              $black;
 $secondary-color:            $gray;
 $border-color:               $primary-color;
 $primary-blue:               $blue;
