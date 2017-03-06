@@ -1,6 +1,9 @@
+// Visionary own styles
+// ========================================================================
 body{
   border:20px solid $white;
 }
+//wrappers
 .wrapper{
   border-top:20px solid $white;
   padding: 80px 0;
@@ -17,7 +20,36 @@ body{
     color:$white;
     h1,h2,h3,h4,h5,h6,p{color:$white;}
   }
+  &.wrapper-diagonal {
+    //clip-path: polygon(0px 100%,100% 100%,100% 20px,0 380px);
+    @include clip-path(polygon(0px 100%,100% 100%,100% 20px,0 380px));
+    padding-top: 380px;
+  }
 }
+//wrappers intersection
+.off-bottom{margin-bottom: -150px;}
+.off-top{margin-top: -250px;}
+//wrappers depth
+.depth-2{
+  position:relative;
+  z-index:1;
+}
+.depth-1{
+  position:relative;
+  z-index:0;
+}
+.depth-0{
+  position:relative;
+  z-index:-1;
+}
+// wrappers hero
+.hero{
+  min-height: 400px;
+  &.hero-homepage{
+    background-image:url('../images/bg-home.jpg');
+  }
+}
+//tone of voice
 .yell{
   font-size: 22px;
   line-height: 34px;
@@ -28,4 +60,42 @@ body{
   line-height: 18px;
   font-weight: 400;
 }
-.off-bottom{margin-bottom: -150px;}
+// misc
+.negative{
+  color:$white;
+  h1,h2,h3,h4,h5,h6,p{color:$white;}
+}
+// UIKIT customisation
+// ========================================================================
+// base
+h1, .uk-h1 {
+  letter-spacing: 0.82px;
+  margin-bottom: 20px;
+}
+h2, .uk-h2 {
+  letter-spacing: 0.82px;
+  font-weight: 400 !important;
+}
+h3, .uk-h3 {
+  text-transform: uppercase !important;
+  font-weight: 500 !important;
+  margin-bottom: 20px;
+  letter-spacing: 0.82px;
+}
+//navbar
+.uk-navbar {
+    padding:20px;
+}
+.uk-navbar-nav > li > a {
+    text-transform: uppercase;
+    letter-spacing: 0.1px;
+}
+//panels
+.uk-panel-box-primary {
+    background-color: none!important;
+    background-image: linear-gradient(-133deg, #0099F3 0%, #0079C1 100%)!important;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.18);
+}
+.uk-panel-box-secondary {
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.18);
+}

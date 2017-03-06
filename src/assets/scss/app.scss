@@ -1,32 +1,31 @@
 // Default
 @import "uikit-mixins"; // added by Ben
-@import "variables";
 @import "core/variables";
+@import "variables";
 //@import "_uikit-variables"; // added by Ben
 
 // UIKIT
-@import "base";
 @import "core/base";
 
 // Layout
 @import "core/grid.scss";
-@import "core/panel.scss";
+@import "core/panel";
+
+
 @import "core/block.scss";
 @import "core/article.scss";
-@import "core/comment.scss";
+//@import "core/comment.scss";
 @import "core/cover.scss";
 
 // Navs
 @import "core/nav.scss";
-
-@import "navbar";
 @import "core/navbar";
 
 @import "core/subnav.scss";
-@import "core/breadcrumb.scss";
+//@import "core/breadcrumb.scss";
 @import "core/pagination.scss";
 @import "core/tab.scss";
-@import "core/thumbnav.scss";
+//@import "core/thumbnav.scss";
 
 // Elements
 @import "core/list.scss";
@@ -59,5 +58,6 @@
 //@import "core/print.scss";
 
 // Visionary Specific Stuff
+
 @import "fonts";
 @import "layout";
