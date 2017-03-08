@@ -27,7 +27,7 @@ $base-heading-font-family:                       $sans-serif;
 $base-body-font-family:                          $sans-serif;
 $base-body-font-size:                            14px !default;
 $base-body-line-height:                          21px !default;
-$base-body-font-weight:                          400 !default;
+$base-body-font-weight:                          300 !default;
 $base-link-color:                                $blue !default;
 $base-body-color:                                $gray !default;
 
@@ -48,6 +48,13 @@ $base-h5-font-size:                              14px !default;
 $base-h5-line-height:                            20px !default;
 $base-h6-font-size:                              12px !default;
 $base-h6-line-height:                            18px !default;
+
+$base-blockquote-padding-left:                   0px !default;
+$base-blockquote-border-width:                   0 !default;
+$base-blockquote-font-size:                      32px !default;
+$base-blockquote-line-height:                    48px !default;
+$base-blockquote-font-style:                     italic !default;
+
 //navbar variables
 $navbar-background:                              $black !default;
 $navbar-nav-height:                              40px !default;
@@ -66,7 +73,66 @@ $navbar-nav-active-color:                        $blue !default;
 //panel variables
 $panel-box-padding:                              40px !default;
 $panel-box-secondary-background:                 $white !default;
+// blocks
+$block-padding-vertical:                         40px !default;
+$block-padding-vertical-large:                   80px !default;
+$block-large-padding-vertical-large:             100px !default;
+$block-default-background:                       $white !default;
+$block-muted-background:                         $grayLight !default;
+$block-primary-background:                       $blue !default;
+$block-secondary-background:                     $black !default;
+// buttons
+$button-height:                                  40px !default;
+$button-mini-height:                             20px !default;
+$button-small-height:                            25px !default;
+$button-large-height:                            60px !default;
 
+$button-line-height:                             40px !default;
+$button-mini-line-height:                        20px !default;
+$button-small-line-height:                       25px !default;
+$button-large-line-height:                       60px !default;
+
+$button-mini-font-size:                          11px !default;
+$button-small-font-size:                         12px !default;
+$button-large-font-size:                         15px !default;
+
+$button-padding-horizontal:                      16px !default;
+$button-mini-padding-horizontal:                 10px !default;
+$button-small-padding-horizontal:                10px !default;
+$button-large-padding-horizontal:                20px !default;
+
+$button-background:                              $white !default;
+$button-color:                                   $blue !default;
+$button-hover-background:                        $white !default;
+$button-hover-color:                             darken($blue,10%) !default;
+$button-active-background:                       $white !default;
+$button-active-color:                            darken($blue,10%) !default;
+
+$button-primary-background:                      $blue !default;
+$button-primary-color:                           $white !default;
+$button-primary-hover-background:                darken($blue,10%) !default;
+$button-primary-hover-color:                     $white !default;
+$button-primary-active-background:               darken($blue,10%) !default;
+$button-primary-active-color:                    $white !default;
+
+$button-success-background:                      $green !default;
+$button-success-color:                           $white !default;
+$button-success-hover-background:                darken($green,10%) !default;
+$button-success-hover-color:                     $white !default;
+$button-success-active-background:               darken($green,10%) !default;
+$button-success-hover-color:                     $white !default;
+
+$button-danger-background:                       $red !default;
+$button-danger-color:                            $white !default;
+$button-danger-hover-background:                 darken($red,10%) !default;
+$button-danger-hover-color:                      $white !default;
+$button-danger-active-background:                darken($red,10%) !default;
+$button-danger-hover-color:                      $white !default;
+
+$button-link-color:                              $blue !default;
+$button-link-hover-color:                        darken($blue,10%) !default;
+$button-link-hover-text-decoration:              underline !default;
+$button-link-disabled-color:                     #999 !default;
 // additional mixins
 @mixin clip-path($clip) {
   -webkit-clip-path: $clip;

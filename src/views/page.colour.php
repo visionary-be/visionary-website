@@ -1,6 +1,6 @@
 
 			<!-- HERO -->
-			<section id="hero" class="wrapper wrapper-blue">
+			<section id="colour-hero" class="uk-block uk-block-primary uk-text-contrast">
 				<div class="uk-grid">
 					<div class="uk-width-medium-1-2 uk-container-center">
 						<h1 class="uk-text-center">Qu'est-ce que le daltonisme</h1>
@@ -11,7 +11,7 @@
 			</section>
 
 	    <!-- FORMES DE DALTONISME -->
-			<section id="content-bloc-2" class="wrapper wrapper-white">
+			<section id="colour-types" class="uk-block uk-block-default">
 				<div class="uk-container uk-container-center">
 		    	<div class="uk-grid">
 		        <div class="uk-width-medium-1-2 uk-container-center">
@@ -40,7 +40,7 @@
     	</section>
 
     	<!-- SOLUTIONS -->
-    	<section id="content-bloc-2" class="wrapper wrapper-gray">
+    	<section id="colour-solutions" class="uk-block uk-block-muted">
 				<div class="uk-container uk-container-center">
 		    	<div class="uk-grid">
 		        <div class="uk-width-medium-3-5">
@@ -54,7 +54,7 @@
 				</div>
 			</div>
 
-			<section id="content-bloc-3" class="wrapper wrapper-gray">
+			<section id="content-bloc-3" class="uk-block uk-block-muted uk-block-no-padding-bottom">
 				<div class="uk-container uk-container-center">
 	    		<div class="uk-grid">
 		        <div class="uk-width-medium-3-5 uk-push-2-5">

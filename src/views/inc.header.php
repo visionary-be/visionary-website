@@ -64,8 +64,8 @@
           </ul>
 
           <div class="uk-navbar-content uk-navbar-flip uk-hidden-small">
-            <div class="uk-button-dropdown" data-uk-dropdown="{mode:'click'}">
-              <div><a href="">Français</a></div>
+            <div class="uk-button-dropdown" data-uk-dropdown>
+              <div><a href="">Français <i class="uk-icon-caret-down"></i></a></div>
               <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-bottom">
                 <ul class="uk-nav uk-nav-navbar">
                   <li><a href="#">Anglais</a></li>
@@ -73,10 +73,8 @@
                 </ul>
               </div>
             </div>
-            <div class="uk-button-group">
-              <button class="uk-button uk-button-secondary" href="#" data-uk-tooltip title="test">S'inscrire</button>
-              <button class="uk-button uk-button-primary" href="#">Se connecter</button>
-            </div>
+            <button class="uk-button uk-button-default" href="#" data-uk-tooltip title="test">S'inscrire</button>
+            <button class="uk-button uk-button-primary" href="#">Se connecter</button>
           </div>
 
           <div class="uk-navbar-flip uk-visible-small">

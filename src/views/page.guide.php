@@ -1,10 +1,10 @@
 			<!-- -->
-      <section id="content-bloc-2">
+      <section id="guide">
 	    	<div class="uk-grid">
 	        <div class="uk-width-medium-1-3">
+            <div class="uk-block uk-block-primary uk-text-contrast">
 		         <h1>Le guide</h1>
 		         <p>Comment concevoir des écrans accessibles aux daltoniens.</p>
-             <div class="uk-panel uk-panel-box">
   		         <ul class="uk-nav uk-nav-side uk-nav-parent-icon">
                 <li><a href="#">Getting started</a></li>
                 <li class="uk-nav-divider"></li>
