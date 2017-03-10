@@ -14,59 +14,56 @@ $f3->set('LANGUAGE','fr');
 $f3->set('footer','inc.footer.php');
 $f3->set('header','inc.header.php');
 
-
 //route HOME
 $f3->route('GET /',
 	function($f3) {
-
 		$f3->set('content','page.home.php');
 		echo View::instance()->render('layout.htm');
 	}
 );
-
 //route ABOUT
 $f3->route('GET /about',
     function($f3) {
-
-		$f3->set('content','page.about.php');
-		echo View::instance()->render('layout.htm');
+			$f3->set('content','page.about.php');
+			$f3->set('current_url','about');
+			echo View::instance()->render('layout.htm');
     }
 );
 
 //route COLOUR-BLINDNESS
 $f3->route('GET /colour-blindness',
-    function($f3) {
-
+  function($f3) {
+		$f3->set('current_url','colour');
 		$f3->set('content','page.colour.php');
 		echo View::instance()->render('layout.htm');
-    }
+  }
 );
 
 //route GUIDE
 $f3->route('GET /guide',
-    function($f3) {
-
-
+  function($f3) {
+		$f3->set('current_url','guide');
 		$f3->set('content','page.guide.php');
-
 		echo View::instance()->render('layout.htm');
-    }
+  }
 );
 
 //route DOWNLOAD
 $f3->route('GET /download',
-    function($f3) {
+  function($f3) {
+		$f3->set('current_url','download');
 		$f3->set('content','page.download.php');
 		echo View::instance()->render('layout.htm');
-    }
+  }
 );
 
 //route CONTACT
 $f3->route('GET /contact',
-    function($f3) {
+  function($f3) {
+		$f3->set('current_url','contact');
 		$f3->set('content','page.contact.php');
 		echo View::instance()->render('layout.htm');
-    }
+  }
 );
 
 //route 404

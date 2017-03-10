@@ -1,0 +1,141 @@
+// Visionary own styles
+// ========================================================================
+body{
+  border:20px solid $white;
+}
+//blocks custom
+.block-diagonal {
+  //clip-path: polygon(0px 100%,100% 100%,100% 20px,0 380px);
+  @include clip-path(polygon(0px 100%,100% 100%,100% 20px,0 380px));
+  padding-top: 380px;
+}
+.off-bottom{margin-bottom: -150px;}
+.off-top{margin-top: -250px;}
+//wrappers depth
+.depth-2{
+  position:relative;
+  z-index:1;
+}
+.depth-1{
+  position:relative;
+  z-index:0;
+}
+.depth-0{
+  position:relative;
+  z-index:-1;
+}
+// wrappers hero
+.hero{
+  min-height: 400px;
+  &.hero-homepage{
+    background-image:url('../images/bg-home.jpg');
+  }
+}
+//tone of voice
+.yell{
+  font-size: 22px;
+  line-height: 34px;
+  font-weight: 200;
+}
+.whisper{
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 300;
+}
+// misc
+.negative{
+  color:$white;
+  h1,h2,h3,h4,h5,h6,p{color:$white;}
+  &a{color:$white;text-decoration: underline;}
+}
+.positive{
+  color:$gray;
+  h1,h2,h3,h4,h5,h6{color:$black!important;}
+  p,blockquote{color:$gray!important;}
+
+}
+// UIKIT customisation
+// ========================================================================
+// base
+h1, .uk-h1 {
+  letter-spacing: 0.82px;
+  margin-bottom: 20px;
+}
+h2, .uk-h2 {
+  letter-spacing: 0.82px;
+  font-weight: 300 !important;
+  :before{
+    border: 1px solid $black;
+    width:100px;
+  }
+}
+h3, .uk-h3 {
+  text-transform: uppercase !important;
+  font-weight: 500 !important;
+  margin-bottom: 20px;
+  letter-spacing: 0.82px;
+}
+blockquote {
+    border-left: none;
+    font-family: $serif;
+}
+.uk-text-contrast h1,
+.uk-text-contrast h2,
+.uk-text-contrast h3,
+.uk-text-contrast h4,
+.uk-text-contrast h5,
+.uk-text-contrast h6{
+  color:$white;
+}
+
+//navbar
+.uk-navbar {
+    padding:20px;
+}
+.uk-navbar-nav > li > a {
+    text-transform: uppercase;
+    letter-spacing: 0.1px;
+}
+//panels
+.uk-panel-box-primary {
+    background-color: none!important;
+    background-image: linear-gradient(-133deg, #0099F3 0%, #0079C1 100%)!important;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.18);
+}
+.uk-panel-box-secondary {
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.18);
+}
+// blocks
+.uk-block {
+    border-top:20px solid $white;
+    &.uk-block-no-padding-bottom{padding-bottom: 0;}
+}
+// buttons
+.uk-button {
+    letter-spacing: 0.1px;
+    border-radius:4px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.uk-button-secondary {
+    background-color: transparent;
+    border:2px solid $blue;
+    color: $blue;
+    @include hook-button-primary();
+}
+
+/* Hover */
+.uk-button-secondary:hover,
+.uk-button-secondary:focus {
+    border-color: darken($blue,10%);
+    color: darken($blue,10%);
+    @include hook-button-primary-hover();
+}
+
+/* Active */
+.uk-button-secondary:active,
+.uk-button-secondary.uk-active {
+    background-color: $button-primary-active-background;
+    color: $button-primary-active-color;
+    @include hook-button-primary-active();
+}

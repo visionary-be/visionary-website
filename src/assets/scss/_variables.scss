@@ -1,0 +1,147 @@
+// visionary variables
+$white:                      #FFF;
+$black:                      #222321;
+$gray:                       #7A7B7A;
+$grayLight:                  #EBEAEA;
+$grayDark:                   #979797;
+$blue:                       #0099F3;
+$green:                      #B0C932;
+$red:                        #D85322;
+$orange:                     #F08C3B;
+
+$gutter:                     40px;
+
+$sans-serif:                 "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$serif:                      Georgia, serif !default;
+
+$primary-color:              $black;
+$secondary-color:            $gray;
+$border-color:               $primary-color;
+$primary-blue:               $blue;
+$primary-green:              $green;
+$primary-violet:             $orange;
+$primary-red:                $red;
+
+// base variables
+$base-heading-font-family:                       $sans-serif;
+$base-body-font-family:                          $sans-serif;
+$base-body-font-size:                            14px !default;
+$base-body-line-height:                          21px !default;
+$base-body-font-weight:                          300 !default;
+$base-link-color:                                $blue !default;
+$base-body-color:                                $gray !default;
+
+$base-heading-font-family:                       $sans-serif;
+$base-heading-font-weight:                       100 !default;
+$base-heading-color:                             $black !default;
+$base-heading-text-transform:                    none !default;
+$base-heading-margin-top:                        20px !default;
+$base-h1-font-size:                              46px !default;
+$base-h1-line-height:                            52px !default;
+$base-h2-font-size:                              28px !default;
+$base-h2-line-height:                            39px !default;
+$base-h3-font-size:                              16px !default;
+$base-h3-line-height:                            24px !default;
+$base-h4-font-size:                              16px !default;
+$base-h4-line-height:                            22px !default;
+$base-h5-font-size:                              14px !default;
+$base-h5-line-height:                            20px !default;
+$base-h6-font-size:                              12px !default;
+$base-h6-line-height:                            18px !default;
+
+$base-blockquote-padding-left:                   0px !default;
+$base-blockquote-border-width:                   0 !default;
+$base-blockquote-font-size:                      32px !default;
+$base-blockquote-line-height:                    48px !default;
+$base-blockquote-font-style:                     italic !default;
+
+//navbar variables
+$navbar-background:                              $black !default;
+$navbar-nav-height:                              40px !default;
+$navbar-nav-line-height:                         $navbar-nav-height !default;
+$navbar-nav-padding-horizontal:                  15px !default;
+$navbar-nav-color:                               $white !default;
+$navbar-nav-font-size:                           12px !default;
+$navbar-nav-font-weight:                         700 !default;
+$navbar-nav-font-family:                         $sans-serif;
+$navbar-nav-hover-background:                    transparent !default;
+$navbar-nav-hover-color:                         $gray !default;
+$navbar-nav-onclick-background:                  transparent !default;
+$navbar-nav-onclick-color:                       $gray !default;
+$navbar-nav-active-background:                   transparent !default;
+$navbar-nav-active-color:                        $blue !default;
+//panel variables
+$panel-box-padding:                              40px !default;
+$panel-box-secondary-background:                 $white !default;
+// blocks
+$block-padding-vertical:                         40px !default;
+$block-padding-vertical-large:                   80px !default;
+$block-large-padding-vertical-large:             100px !default;
+$block-default-background:                       $white !default;
+$block-muted-background:                         $grayLight !default;
+$block-primary-background:                       $blue !default;
+$block-secondary-background:                     $black !default;
+// buttons
+$button-height:                                  40px !default;
+$button-mini-height:                             20px !default;
+$button-small-height:                            25px !default;
+$button-large-height:                            60px !default;
+
+$button-line-height:                             40px !default;
+$button-mini-line-height:                        20px !default;
+$button-small-line-height:                       25px !default;
+$button-large-line-height:                       60px !default;
+
+$button-mini-font-size:                          11px !default;
+$button-small-font-size:                         12px !default;
+$button-large-font-size:                         15px !default;
+
+$button-padding-horizontal:                      16px !default;
+$button-mini-padding-horizontal:                 10px !default;
+$button-small-padding-horizontal:                10px !default;
+$button-large-padding-horizontal:                20px !default;
+
+$button-background:                              $white !default;
+$button-color:                                   $blue !default;
+$button-hover-background:                        $white !default;
+$button-hover-color:                             darken($blue,10%) !default;
+$button-active-background:                       $white !default;
+$button-active-color:                            darken($blue,10%) !default;
+
+$button-primary-background:                      $blue !default;
+$button-primary-color:                           $white !default;
+$button-primary-hover-background:                darken($blue,10%) !default;
+$button-primary-hover-color:                     $white !default;
+$button-primary-active-background:               darken($blue,10%) !default;
+$button-primary-active-color:                    $white !default;
+
+$button-success-background:                      $green !default;
+$button-success-color:                           $white !default;
+$button-success-hover-background:                darken($green,10%) !default;
+$button-success-hover-color:                     $white !default;
+$button-success-active-background:               darken($green,10%) !default;
+$button-success-hover-color:                     $white !default;
+
+$button-danger-background:                       $red !default;
+$button-danger-color:                            $white !default;
+$button-danger-hover-background:                 darken($red,10%) !default;
+$button-danger-hover-color:                      $white !default;
+$button-danger-active-background:                darken($red,10%) !default;
+$button-danger-hover-color:                      $white !default;
+
+$button-link-color:                              $blue !default;
+$button-link-hover-color:                        darken($blue,10%) !default;
+$button-link-hover-text-decoration:              underline !default;
+$button-link-disabled-color:                     #999 !default;
+// additional mixins
+@mixin clip-path($clip) {
+  -webkit-clip-path: $clip;
+  -moz-clip-path: $clip;
+  -ms-clip-path: $clip;
+  clip-path: $clip;
+}
+@mixin linear-gradient($direction, $color-stops...) {
+  background: nth(nth($color-stops, 1), 1);
+  background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
+  background: linear-gradient($direction, $color-stops);
+}

@@ -1,40 +1,42 @@
 			<!-- -->
-    	<footer id="footer" class="wrapper1">
-	    	<div class="pure-g">
-	        <div class="pure-u-1 pure-u-md-1-3">
-		        <nav class="pure-menu custom-restricted-width">
-			        <h3 class="pure-menu-heading"><?php echo $brand; ?></h3>
-			        <p></p>
-			        <ul class="pure-menu-list">
-				        <li class="pure-menu-item"><a href="#" class="pure-menu-link"><strong><?php echo $footerLink1; ?></strong></a></li>
-				        <li class="pure-menu-item"><a href="#" class="pure-menu-link"><strong><?php echo $footerLink2; ?></strong></a></li>
-				        <li class="pure-menu-item"><a href="#" class="pure-menu-link"><strong><?php echo $footerLink3; ?></strong></a></li>
-			        </ul>
-		        </nav>
-		      </div>
-	        <div class="pure-u-1 pure-u-md-1-3">
-		        <nav class="pure-menu custom-restricted-width">
-			        <h4 class="pure-menu-heading">Partenaires</h4>
-			        <ul class="pure-menu-list">
-				        <li class="pure-menu-item"><a href="#" class="pure-menu-link">UNamur</a></li>
-				        <li class="pure-menu-item"><a href="#" class="pure-menu-link">HEAJ</a></li>
-				        <li class="pure-menu-item"><a href="#" class="pure-menu-link">Région Wallonne</a></li>
-				        <li class="pure-menu-item"><a href="#" class="pure-menu-link">DogStudio</a></li>
-				        <li class="pure-menu-item"><a href="#" class="pure-menu-link">ACCETICS</a></li>
-			        </ul>
-		        </nav>
-	        </div>
-	        <div class="pure-u-1 pure-u-md-1-3">
-		        <nav class="pure-menu custom-restricted-width">
-			        <h4 class="pure-menu-heading">Réseaux sociaux</h4>
-			        <ul class="pure-menu-list">
-				        <li class="pure-menu-item"><a href="#" class="pure-menu-link">W3C</a></li>
-				        <li class="pure-menu-item"><a href="#" class="pure-menu-link">Facebook</a></li>
-			        </ul>
-		        </nav>
-	        </div>
-	    	</div>
+    	<footer id="footer" class="uk-block uk-block-secondary uk-text-contrast">
+        <div class="uk-container uk-container-center">
+  	    	<div class="uk-grid">
+  	        <div class="uk-width-medium-1-2">
+              <ul class="uk-nav uk-nav-default">
+                <li class="uk-nav-header"><h3 class=""><a href="/"><img src="/assets/images/visionary.svg" alt="<?php echo $brand; ?>"></a></h3></li>
+                <li><a href="#"><?php echo $footerLink1; ?></a></li>
+                <li><a href="#"><?php echo $footerLink2; ?></a></a></li>
+                <li><a href="#"><?php echo $footerLink3; ?></a></li>
+              </ul>
+  		      </div>
+  	        <div class="uk-width-medium-1-6">
+              <ul class="uk-nav uk-nav-default">
+                <li class="uk-nav-header"><h3 class="">Partenaires</h3></li>
+  			        <li><a href="#">UNamur</a></li>
+  			        <li><a href="#">HEAJ</a></li>
+  			        <li><a href="#">Région Wallonne</a></li>
+  			        <li><a href="#">DogStudio</a></li>
+  			        <li><a href="#">ACCETICS</a></li>
+  		        </ul>
+  	        </div>
+            <div class="uk-width-medium-1-6">
+              <ul class="uk-nav uk-nav-default">
+                <li class="uk-nav-header"><h3 class="">Réseaux</h3></li>
+                <li><a href="#" class="pure-menu-link">W3C</a></li>
+  			        <li><a href="#" class="pure-menu-link">Facebook</a></li>
+  		        </ul>
+  	        </div>
+  	        <div class="uk-width-medium-1-6">
+              <ul class="uk-nav uk-nav-default">
+                <li class="uk-nav-header"><h3 class="">Langues</h3></li>
+                <li><a href="#">Français</a></li>
+                <li><a href="#">English</a></li>
+              </ul>
+  	        </div>
+  	    	</div>
+        </div>
     	</footer>
-      <script src="assets/js/app.min.js"></script>
+        <script src="/assets/js/app.min.js"></script>
     </body>
 </html>
