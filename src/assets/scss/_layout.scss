@@ -9,8 +9,10 @@ body{
   @include clip-path(polygon(0px 100%,100% 100%,100% 20px,0 380px));
   padding-top: 380px;
 }
-.off-bottom{margin-bottom: -150px;}
-.off-top{margin-top: -250px;}
+.off-bottom{
+  margin-bottom: -150px;
+}
+.off-top{margin-top: -300px;}
 //wrappers depth
 .depth-2{
   position:relative;
@@ -29,6 +31,7 @@ body{
   min-height: 400px;
   &.hero-homepage{
     background-image:url('../images/bg-home.jpg');
+    min-height: 700px;
   }
 }
 //tone of voice
@@ -52,7 +55,20 @@ body{
   color:$gray;
   h1,h2,h3,h4,h5,h6{color:$black!important;}
   p,blockquote{color:$gray!important;}
-
+}
+.lettrine{
+  display: block;
+  position: relative;
+  &:before{
+    content: attr(data-lettrine);
+    color:rgba(0,0,0,.05);
+    font-weight: bold;
+    font-size: 200px;
+    display: block;
+    position: absolute;
+    top:0px;
+    left:-50px;
+  }
 }
 // UIKIT customisation
 // ========================================================================
@@ -79,13 +95,11 @@ blockquote {
     border-left: none;
     font-family: $serif;
 }
-.uk-text-contrast h1,
-.uk-text-contrast h2,
-.uk-text-contrast h3,
-.uk-text-contrast h4,
-.uk-text-contrast h5,
-.uk-text-contrast h6{
-  color:$white;
+.uk-text-contrast {
+  h1,h2,h3,h4,h5,h6{
+    color:$white;
+  }
+  &a{text-decoration: underline;}
 }
 
 //navbar
@@ -104,6 +118,9 @@ blockquote {
 }
 .uk-panel-box-secondary {
     box-shadow: 0 10px 20px 0 rgba(0,0,0,0.18);
+}
+.uk-panel-box-large{
+    padding:$panel-box-padding*3.5;
 }
 // blocks
 .uk-block {

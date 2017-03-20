@@ -5,9 +5,9 @@
   	        <div class="uk-width-medium-1-2">
               <ul class="uk-nav uk-nav-default">
                 <li class="uk-nav-header"><h3 class=""><a href="/"><img src="/assets/images/visionary.svg" alt="<?php echo $brand; ?>"></a></h3></li>
-                <li><a href="#"><?php echo $footerLink1; ?></a></li>
-                <li><a href="#"><?php echo $footerLink2; ?></a></a></li>
-                <li><a href="#"><?php echo $footerLink3; ?></a></li>
+                <li><a href="/download"><?php echo $footerLink1; ?></a></li>
+                <li><a href="/guide"><?php echo $footerLink2; ?></a></a></li>
+                <li><a href="/colour-blindness"><?php echo $footerLink3; ?></a></li>
               </ul>
   		      </div>
   	        <div class="uk-width-medium-1-6">
