@@ -31,7 +31,7 @@
               <ul class="uk-nav uk-nav-default">
                 <li class="uk-nav-header"><h3 class="">Langues</h3></li>
                 <li><a href="#">Français</a></li>
-                <li><a href="#">English</a></li>
+                <!--<li><a href="#">English</a></li>-->
               </ul>
   	        </div>
   	    	</div>

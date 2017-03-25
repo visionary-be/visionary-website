@@ -10,4 +10,8 @@ $(document).ready(function() {
      }
   });
   $(".lettrine").changeLettrine();
+  // close off-canvas
+  $( "#menu-offcanvas-close" ).click(function() {
+    UIkit.offcanvas.hide();
+  });
 });/* jshint ignore:start */

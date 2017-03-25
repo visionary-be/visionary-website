@@ -64,7 +64,7 @@
           </ul>
 
           <div class="uk-navbar-content uk-navbar-flip uk-hidden-small">
-            <div class="uk-button-dropdown" data-uk-dropdown>
+            <!--<div class="uk-button-dropdown" data-uk-dropdown>
               <div><a href="">Français <i class="uk-icon-caret-down"></i></a></div>
               <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-bottom">
                 <ul class="uk-nav uk-nav-navbar">
@@ -72,15 +72,29 @@
                   <li><a href="#">Français</a></li>
                 </ul>
               </div>
-            </div>
-            <button class="uk-button uk-button-default" href="#" data-uk-tooltip title="test">S'inscrire</button>
+            </div>-->
+            <button class="uk-button uk-button-default" href="#" data-uk-tooltip="{pos:'bottom',animation:true}" title="L'inscription est gratuite et permet le téléchargement de la solution">S'inscrire</button>
             <button class="uk-button uk-button-primary" href="#">Se connecter</button>
           </div>
 
           <div class="uk-navbar-flip uk-visible-small">
-            <a href="#menu" class="uk-navbar-toggle" data-uk-offcanvas></a>
-            <div id="my-id" class="uk-offcanvas">
-                Menu Off canvas
+            <a href="#menu" class="uk-navbar-toggle"  data-uk-offcanvas="{target:'#menu-offcanvas',mode:'slide'}"></a>
+            <div id="menu-offcanvas" class="uk-offcanvas">
+                <div class="uk-offcanvas-bar uk-offcanvas-bar-flip">
+                  <a href="#" class="uk-close uk-close-offcanvas" id="menu-offcanvas-close"></a>
+                  <ul class="uk-nav uk-nav-offcanvas" data-uk-nav>
+                    <li id="menu-item-1"<?php echo ($current_url === 'about') ? ' class="uk-active"': ''; ?>><a href="/about">A propos</a></li>
+                    <li id="menu-item-2"<?php echo ($current_url === 'colour') ? ' class="uk-active"': ''; ?>><a href="/colour-blindness">Daltonisme</a></li>
+                    <li id="menu-item-3"<?php echo ($current_url === 'guide') ? ' class="uk-active"': ''; ?>><a href="/guide">Guide</a></li>
+                    <li id="menu-item-4"<?php echo ($current_url === 'download') ? ' class="uk-active"': ''; ?>><a href="/download">Télécharger</a></li>
+                    <li id="menu-item-5"<?php echo ($current_url === 'contact') ? ' class="uk-active"': ''; ?>><a href="/contact">Contact</a></li>
+                  </ul>
+                  <div class="uk-panel">
+                    <button class="uk-button uk-button-default" href="#" data-uk-tooltip title="test">S'inscrire</button>
+                    <button class="uk-button uk-button-primary" href="#">Se connecter</button>
+
+                  </div>
+                </div>
             </div>
           </div>
         </nav>

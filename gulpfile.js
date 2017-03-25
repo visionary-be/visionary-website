@@ -58,7 +58,7 @@ gulp.task('copy:php', function() {
 
 gulp.task('scripts', function() {
 	// Process scripts and concatenate them into one output file
-	return gulp.src(['jquery.js', 'uikit.min.js', 'app.js'], {
+	return gulp.src(['jquery.js', 'uikit.min.js', 'tooltip.min.js', 'app.js'], {
 		cwd: project.src_dir + 'assets/js/'
 	}).pipe(changed(project.src_dir + 'assets/js/min/')).pipe(sourcemaps.init()).pipe(jshint()).pipe(jshint.reporter('default')).pipe(uglify()).pipe(concat('app.min.js')).pipe(sourcemaps.write('./')).pipe(gulp.dest(project.src_dir + 'assets/js/min/'));
 });
@@ -74,9 +74,9 @@ gulp.task('copy:js', function() {
 });
 
 gulp.task('styles', function() {
-	
+
 	// Process sass files into one minified app.css
-		
+
 	return gulp.src('app.scss', {
 		cwd: project.src_dir + 'assets/scss/'
 	})
@@ -92,9 +92,9 @@ gulp.task('styles', function() {
 });
 
 gulp.task('copy:css', function() {
-	
+
 	// copy compiled css into build
-	
+
 	return gulp.src(['min/app.css', 'min/app.css.map'], {
 		cwd: project.src_dir + 'assets/css/'
 	})
@@ -107,7 +107,7 @@ gulp.task('copy:css', function() {
 
 //////////////////////////////////////// MAIN WORKFLOW
 gulp.task('build', function() {
-	
+
 	// Build a fresh copy
 
 	runSequence('clean', 'copy:fonts', 'scripts', 'styles', 'copy:js', 'copy:css', 'copy:images', 'copy:php', function(error) {

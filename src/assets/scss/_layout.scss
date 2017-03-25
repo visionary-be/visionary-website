@@ -31,7 +31,8 @@ body{
   min-height: 400px;
   &.hero-homepage{
     background-image:url('../images/bg-home.jpg');
-    min-height: 700px;
+    min-height: 600px;
+    .uk-position-cover{top:150px;}
   }
 }
 //tone of voice
@@ -70,6 +71,13 @@ body{
     left:-50px;
   }
 }
+.uk-close-offcanvas{
+  position: absolute;
+  right:10px;
+  top:10px;
+  color: $white;
+}
+.uk-navbar-toggle{color: $white;}
 // UIKIT customisation
 // ========================================================================
 // base
@@ -98,6 +106,11 @@ blockquote {
 .uk-text-contrast {
   h1,h2,h3,h4,h5,h6{
     color:$white;
+  }
+  .lettrine{
+    &:before{
+      color:rgba(225,225,225,.2);
+    }
   }
   &a{text-decoration: underline;}
 }

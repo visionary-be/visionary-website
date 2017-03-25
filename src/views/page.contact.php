@@ -5,7 +5,7 @@
 						<div class="uk-panel uk-panel-box uk-panel-box-secondary positive">
 							<h1 class="uk-text-center">Contacter Visionary</h1>
 			        <p>Complétez le formulaire ci-dessous ou adressez-nous un email à <a href="mailto:team@colour-blindness.org">team@colour-blindness.org</a>. Nous reviendrons vers vous dès que possible.</p>
-							<form class="uk-form">
+							<form class="uk-form uk-form-stacked">
 				        <fieldset>
 									<div class="uk-form-row">
 	            			<label for="first-name">Votre nom</label>
