@@ -21,17 +21,17 @@
 		    	</div>
 					<div class="uk-grid">
 						<div class="uk-width-medium-1-3">
-			        <img src="assets/images/munch-protanopie.jpg" class="Le Cri de E. Munch vu par un protanope">
+			        <img src="assets/images/munch-protanopie.jpg" alt="Le Cri de E. Munch vu par un protanope" class="uk-border-rounded">
 			        <h3>Protanopie</h3>
 			        <p>Absence des récepteurs rétinals au rouge ; cette couleur est indétectable par le sujet.</p>
 						</div>
 			      <div class="uk-width-medium-1-3">
-			        <img src="assets/images/munch-deuteranopie.jpg" class="Le Cri de E. Munch vu par un deutéranope">
+			        <img src="assets/images/munch-deuteranopie.jpg" alt="Le Cri de E. Munch vu par un deutéranope" class="uk-border-rounded">
 			        <h3>Deutéranopie</h3>
 			        <p>Absence des récepteurs rétinals  au vert ; les personnes affectées sont incapables de différencier le rouge du vert. C'est la forme dont était atteint John Dalton.</p>
 						</div>
 						<div class="uk-width-medium-1-3">
-							<img src="assets/images/munch-tritanopie.jpg" class="Le Cri de E. Munch vu par un tritanope">
+							<img src="assets/images/munch-tritanopie.jpg" alt="Le Cri de E. Munch vu par un tritanope" class="uk-border-rounded">
 			        <h3>Tritanopie</h3>
 			        <p>Absence des récepteurs rétinals au bleu ; cette couleur est indétectable par le sujet.</p>
 						</div>
@@ -47,12 +47,12 @@
 				        <h2 class="lettrine">Le daltonien face aux interfaces utilisant des codes couleurs</h2>
 				        <p class="yell">Si vous êtes daltonien, vous avez peut-être déjà vécu des moments de confusion face à un écran, à l'utilisation de logiciels ou en surfant sur internet.</p>
 						</div>
-		        <div class="uk-width-medium-2-5">
-			        <img src="assets/images/metro-protanope.png" alt="consultation d'un plan de métro, vue protanope">
+		        <div class="uk-width-medium-2-5 uk-vertical-align">
+			        <img src="assets/images/metro-protanope.png" alt="consultation d'un plan de métro, vue protanope" class="uk-vertical-align-bottom">
 		        </div>
-	    		</div>
+					</div>
 				</div>
-			</div>
+    	</section>
 
 			<section id="content-bloc-3" class="uk-block uk-block-muted uk-block-no-padding-bottom">
 				<div class="uk-container uk-container-center">
@@ -79,8 +79,8 @@
 					        </li>
 				        </ol>
 			      </div>
-						<div class="uk-width-medium-2-5 uk-pull-3-5">
-			        <img src="assets/images/metro-normal.png" alt="consultation d'un plan de métro, vue normale">
+						<div class="uk-width-medium-2-5 uk-pull-3-5 uk-vertical-align">
+			        <img src="assets/images/metro-normal.png" alt="consultation d'un plan de métro, vue normale" class="uk-vertical-align-bottom">
 		        </div>
 					</div>
     		</div>

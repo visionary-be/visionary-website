@@ -1,7 +1,14 @@
 // Visionary own styles
 // ========================================================================
-body{
-  border:20px solid $white;
+@media (min-width: $breakpoint-medium) {
+  body{
+    border:20px solid $white;
+  }
+}
+@media (max-width: $breakpoint-small-max) {
+  body{
+    border:10px solid $white;
+  }
 }
 //blocks custom
 .block-diagonal {
@@ -28,11 +35,22 @@ body{
 }
 // wrappers hero
 .hero{
-  min-height: 400px;
   &.hero-homepage{
     background-image:url('../images/bg-home.jpg');
-    min-height: 600px;
-    .uk-position-cover{top:150px;}
+  }
+}
+@media (min-width: $breakpoint-medium) {
+  .hero{
+    min-height: 400px;
+    &.hero-homepage{
+      min-height: 600px;
+      .uk-position-cover{top:150px;}
+    }
+  }
+}
+@media (max-width: $breakpoint-small-max) {
+  .hero-homepage{
+    .uk-position-cover{margin-left:20px;margin-right:20px;}
   }
 }
 //tone of voice
@@ -76,8 +94,10 @@ body{
   right:10px;
   top:10px;
   color: $white;
+  z-index: 1;
 }
 .uk-navbar-toggle{color: $white;}
+.uk-shadow-remove{box-shadow: none!important;}
 // UIKIT customisation
 // ========================================================================
 // base
@@ -132,13 +152,51 @@ blockquote {
 .uk-panel-box-secondary {
     box-shadow: 0 10px 20px 0 rgba(0,0,0,0.18);
 }
-.uk-panel-box-large{
-    padding:$panel-box-padding*3.5;
+@media (min-width: $breakpoint-medium) {
+  .uk-panel-box-large{
+      padding:$panel-box-padding*3.5;
+  }
+}
+@media (max-width: $breakpoint-small-max) {
+  .uk-panel-space {
+    padding: 0 0 30px 0;
+  }
+}
+.uk-panel-box>.uk-nav-side {
+    margin: 0 0;
 }
 // blocks
 .uk-block {
     border-top:20px solid $white;
     &.uk-block-no-padding-bottom{padding-bottom: 0;}
+}
+@media (max-width: $breakpoint-small-max) {
+  .uk-block {padding-left: 20px;padding-right: 20px;}
+}
+// nav side
+.uk-text-contrast {
+  .uk-nav-side {
+    a{color:$white;}
+    .active{
+      a{color:$black;}
+    }
+  }
+}
+.uk-nav-side{
+  border:1px solid $white;
+  border-radius:4px;
+  >li{
+    border-bottom:1px solid $white;
+    text-transform: uppercase;
+    padding: 12px;
+    .active{}
+  }
+  >li:last-child{border-bottom:none;}
+  .uk-nav-sub{
+    li{
+      text-transform: none;
+    }
+  }
 }
 // buttons
 .uk-button {

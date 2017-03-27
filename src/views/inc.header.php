@@ -45,7 +45,7 @@
         <meta property="og:site_name" content="Visionary"/>
         <meta property="og:description" content="Visionary - Test du daltonisme"/>
 
-        <link rel="stylesheet" href="/assets/css/app.css" />
+        <link rel="stylesheet" href="/assets/css/app.css?v={VERSION}" />
 
     </head>
 
@@ -73,8 +73,8 @@
                 </ul>
               </div>
             </div>-->
-            <button class="uk-button uk-button-default" href="#" data-uk-tooltip="{pos:'bottom',animation:true}" title="L'inscription est gratuite et permet le téléchargement de la solution">S'inscrire</button>
-            <button class="uk-button uk-button-primary" href="#">Se connecter</button>
+            <a class="uk-button uk-button-default" href="https://dev.colour-blindness.org/" data-uk-tooltip="{pos:'bottom',animation:true}" title="L'inscription est gratuite et permet le téléchargement de la solution">S'inscrire</a>
+            <a class="uk-button uk-button-primary" href="https://dev.colour-blindness.org/">Se connecter</a>
           </div>
 
           <div class="uk-navbar-flip uk-visible-small">
@@ -90,9 +90,8 @@
                     <li id="menu-item-5"<?php echo ($current_url === 'contact') ? ' class="uk-active"': ''; ?>><a href="/contact">Contact</a></li>
                   </ul>
                   <div class="uk-panel">
-                    <button class="uk-button uk-button-default" href="#" data-uk-tooltip title="test">S'inscrire</button>
-                    <button class="uk-button uk-button-primary" href="#">Se connecter</button>
-
+                    <a class="uk-button uk-button-default" href="https://dev.colour-blindness.org/" data-uk-tooltip title="test">S'inscrire</a>
+                    <a class="uk-button uk-button-primary" href="https://dev.colour-blindness.org/">Se connecter</a>
                   </div>
                 </div>
             </div>

@@ -15,15 +15,23 @@ var reload = browsersync.reload;
 var runSequence = require('run-sequence');
 var php = require('gulp-connect-php');
 var sftp = require('gulp-sftp');
+var replace = require('gulp-replace');
+var prompt = require('gulp-prompt');
+var bump = require('gulp-bump');
 
-project = require('./project.json');
-pkg = require('./package.json');
-
+var project = require('./project.json');
+var pkg = require('./package.json');
+var app_version = pkg.version;
 
 // Empties the Build folder
 gulp.task('clean', function() {
 	return del([project.build_dir + '**/*']);
 });
+
+gulp.task('clean:tmp-folder', function(){
+		return del([project.build_dir + 'tmp']);
+
+})
 
 // Imagemin images and ouput them in dist
 gulp.task('imagemin', function() {
@@ -110,7 +118,7 @@ gulp.task('build', function() {
 
 	// Build a fresh copy
 
-	runSequence('clean', 'copy:fonts', 'scripts', 'styles', 'copy:js', 'copy:css', 'copy:images', 'copy:php', function(error) {
+	runSequence('clean', 'copy:fonts', 'scripts','cache:bust', 'styles', 'copy:js', 'copy:css', 'copy:images', 'copy:php', function(error) {
 		if (error) {
 			console.log(error.message);
 		} else {
@@ -136,6 +144,33 @@ gulp.task('browsersync', function() {
 		notify: true
 	});
 
+});
+
+// Version
+gulp.task("version:bump", function() {
+	// Versioning update.
+	return gulp.src("*").pipe(
+	prompt.prompt({
+		type: 'list',
+		name: 'bump',
+		message: 'Which type of release: "patch", "minor", or "major" ?',
+		choices: ['patch', 'minor', 'major'],
+	default:
+		'patch'
+	}, function(res) {
+		//value is in res.bump
+		app_version = semver.inc(pkg.version, res.bump);
+		return gulp.src("./package.json").pipe(bump({
+			type: res.bump
+		})).pipe(gulp.dest("./"));
+	}));
+});
+//
+gulp.task('cache:bust', function() {
+	// Append app version to CSS/JS dependencies.
+	return gulp.src([project.build_dir + '/**/*.php'])
+	.pipe(replace('{VERSION}', app_version))
+	.pipe(gulp.dest(project.build_dir));
 });
 
 // A development task to run anytime a file changes
@@ -164,7 +199,7 @@ gulp.task('release', ['sftp-deploy']);
 
 // Upload
 var errorHandler;
-gulp.task('sftp-deploy', function() {
+gulp.task('sftp-deploy', ['clean:tmp-folder'], function() {
 	return gulp.src('./build/**/*').pipe(plumber(errorHandler)).pipe(sftp({
 		host: project.ftp_host,
 		user: project.ftp_user,

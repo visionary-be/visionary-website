@@ -31,7 +31,7 @@
 							<div class="uk-panel uk-panel-divider uk-panel-space">
 				        <h3>Comment voient les daltoniens?</h3>
 				        <p>Un homme sur douze a une forme de daltonisme. Parfois, c’est un avantage.</p>
-				        <p><a href="/colour-blindness" class="uk-button uk-button-secondary" data-uk-tooltip="{animation:true}" title="L'essentiel sur le daltonisme en moins d'une minute.">Comprendre le daltonimse</a></p>
+				        <p><a href="/colour-blindness" class="uk-button uk-button-secondary" data-uk-tooltip="{animation:true}" title="L'essentiel sur le daltonisme en moins d'une minute.">Comprendre le daltonisme</a></p>
 							</div>
 			      </div>
 		        <div class="uk-width-medium-1-3">
