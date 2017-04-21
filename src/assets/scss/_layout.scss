@@ -64,6 +64,63 @@
   line-height: 18px;
   font-weight: 300;
 }
+// list timeline
+.list-timeline{
+  counter-reset: item;
+  list-style: none;
+  margin:0;
+  padding: 0;
+  display: block;
+  position: relative;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-start: 0;
+  font-size: 1em;
+  > li{
+    margin: 0 0 -1px 20px;
+    counter-increment: item;
+    display: block!important;
+    position: relative;
+    border-left:2px solid $white;
+    padding:0 0 10px 25px;
+    &:before{
+      width: 2em;
+      height: 1.8em;
+      text-align: center;
+      display: block;
+      position: absolute;
+      background-color: $white;
+      border-radius: 100%;
+      content: counter(item);
+      color: $black;
+      padding-top: 0.25em;
+      left:-15px;
+    }
+    &:last-child{
+      border-left:none;
+    }
+    &.yell{
+      padding-left:35px;
+      &:before{left:-23px;}
+    }
+  }
+}
+
+
+//guide > box
+.box-guide{
+  background-image: linear-gradient(-133deg, #0099F3 0%, #0079C1 100%)!important;
+  border-top:20px solid $white;
+  .box-guide-menu{
+    padding:$panel-box-padding;
+  }
+  .box-guide-content{
+    padding:$panel-box-padding;
+    background: $white;
+  }
+}
 // misc
 .negative{
   color:$white;

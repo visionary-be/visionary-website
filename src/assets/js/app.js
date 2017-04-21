@@ -14,4 +14,14 @@ $(document).ready(function() {
   $( "#menu-offcanvas-close" ).click(function() {
     UIkit.offcanvas.hide();
   });
+  // window height
+  function setHeight() {
+    windowHeight = $(window).innerHeight();
+    fullHeight = windowHeight - 100;
+    $('.box-guide').css('min-height', fullHeight);
+  };
+  setHeight();
+  $(window).resize(function() {
+    setHeight();
+  });
 });/* jshint ignore:start */

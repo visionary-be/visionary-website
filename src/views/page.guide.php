@@ -1,8 +1,8 @@
 			<!-- -->
-      <section id="guide">
+      <section id="guide" class="box-guide">
 	    	<div class="uk-grid">
 	        <div class="uk-width-medium-1-3">
-            <div class="uk-block uk-panel uk-panel-box uk-panel-box-primary uk-text-contrast uk-shadow-remove" id="guide-content">
+            <div class="box-guide-menu uk-text-contrast" id="guide-menu">
   		         <h1>Le guide</h1>
   		         <p>Comment concevoir des écrans accessibles aux daltoniens.</p>
     		       <ul class="uk-nav uk-nav-side uk-nav-parent-icon" data-uk-nav>
@@ -27,8 +27,8 @@
               </div>
 		      </div>
 	        <div class="uk-width-medium-2-3">
-						<div class="uk-block">
-              <div class="uk-scrollable-text" id="guide-content"></iv>
+						<div class="">
+              <div class="box-guide-content" id="guide-content"></iv>
     		        <h2>Getting started</h2>
     		        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     		        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>

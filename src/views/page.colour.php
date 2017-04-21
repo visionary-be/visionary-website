@@ -40,7 +40,7 @@
     	</section>
 
     	<!-- SOLUTIONS -->
-    	<section id="colour-solutions" class="uk-block uk-block-muted">
+    	<section id="colour-solutions" class="uk-block uk-block-muted uk-padding-bottom-remove">
 				<div class="uk-container uk-container-center">
 		    	<div class="uk-grid">
 		        <div class="uk-width-medium-3-5">
@@ -54,15 +54,15 @@
 				</div>
     	</section>
 
-			<section id="content-bloc-3" class="uk-block uk-block-muted uk-block-no-padding-bottom">
+			<section id="content-bloc-3" class="uk-block uk-block-muted uk-padding-bottom-remove">
 				<div class="uk-container uk-container-center">
 	    		<div class="uk-grid">
 		        <div class="uk-width-medium-3-5 uk-push-2-5">
 				        <h2 class="lettrine">Des solutions existent</h2>
 				        <p class="yell">Améliorer l’acessibilité du web pour les personnes daltoniennes est possible. Visionary a mis au point des outils à destination des concepteurs et des daltoniens.</p>
-				        <ol class="">
+				        <ol class="list-timeline">
 					        <li>
-					        	<h3>Situation de confusion à l'écran</h3>
+					        	<h3 class="uk-margin-bottom-remove">Situation de confusion à l'écran</h3>
 					        	<p>Je vois un visuel à l’écran qui n’est pas clair pour moi.</p>
 					        </li>
 					        <li>
