@@ -111,7 +111,7 @@
 
 //guide > box
 .box-guide{
-  background-image: linear-gradient(-133deg, #0099F3 0%, #0079C1 100%)!important;
+  background-image: linear-gradient(0deg, #0099F3 0%, #0079C1 100%)!important;
   border-top:20px solid $white;
   .box-guide-menu{
     padding:$panel-box-padding;
@@ -119,6 +119,7 @@
   .box-guide-content{
     padding:$panel-box-padding;
     background: $white;
+    margin-right: -1px;
   }
 }
 // misc

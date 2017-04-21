@@ -17,8 +17,12 @@ $(document).ready(function() {
   // window height
   function setHeight() {
     windowHeight = $(window).innerHeight();
-    fullHeight = windowHeight - 100;
-    $('.box-guide').css('min-height', fullHeight);
+    headerHeight = $('#header').innerHeight()+60;
+    fullHeightBox = windowHeight - headerHeight;
+    fullHeightContent = windowHeight - headerHeight - 80;
+    $('.box-guide').css('min-height', fullHeightBox);
+    $('.box-guide-content').css('height', fullHeightContent);
+    console.log(fullHeightContent);
   };
   setHeight();
   $(window).resize(function() {
