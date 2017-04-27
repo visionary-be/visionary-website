@@ -56,11 +56,11 @@
           <a href="/" class="uk-navbar-brand"><img src="/assets/images/visionary.svg" alt="<?php echo $brand; ?>"></a>
 
           <ul class="uk-navbar-nav uk-hidden-small">
-            <li id="menu-item-1"<?php echo ($current_url === 'about') ? ' class="uk-active"': ''; ?>><a href="/about">A propos</a></li>
-            <li id="menu-item-2"<?php echo ($current_url === 'colour') ? ' class="uk-active"': ''; ?>><a href="/colour-blindness">Daltonisme</a></li>
-            <li id="menu-item-3"<?php echo ($current_url === 'guide') ? ' class="uk-active"': ''; ?>><a href="/guide">Guide</a></li>
-            <li id="menu-item-4"<?php echo ($current_url === 'download') ? ' class="uk-active"': ''; ?>><a href="/download">Télécharger</a></li>
-            <li id="menu-item-5"<?php echo ($current_url === 'contact') ? ' class="uk-active"': ''; ?>><a href="/contact">Contact</a></li>
+            <li id="menu-item-1"<?php echo ($current_url === 'about') ? ' class="uk-active"': ''; ?>><a href="/about"><?php echo $nav1; ?></a></li>
+            <li id="menu-item-2"<?php echo ($current_url === 'colour') ? ' class="uk-active"': ''; ?>><a href="/colour-blindness"><?php echo $nav2; ?></a></li>
+            <li id="menu-item-3"<?php echo ($current_url === 'guide') ? ' class="uk-active"': ''; ?>><a href="/guide"><?php echo $nav3; ?></a></li>
+            <li id="menu-item-4"<?php echo ($current_url === 'download') ? ' class="uk-active"': ''; ?>><a href="/download"><?php echo $nav4; ?></a></li>
+            <li id="menu-item-5"<?php echo ($current_url === 'contact') ? ' class="uk-active"': ''; ?>><a href="/contact"><?php echo $nav5; ?></a></li>
           </ul>
 
           <div class="uk-navbar-content uk-navbar-flip uk-hidden-small">
@@ -73,8 +73,8 @@
                 </ul>
               </div>
             </div>-->
-            <a class="uk-button uk-button-default" href="https://dev.colour-blindness.org/" data-uk-tooltip="{pos:'bottom',animation:true}" title="L'inscription est gratuite et permet le téléchargement de la solution">S'inscrire</a>
-            <a class="uk-button uk-button-primary" href="https://dev.colour-blindness.org/">Se connecter</a>
+            <a class="uk-button uk-button-default" href="https://dev.colour-blindness.org/" data-uk-tooltip="{pos:'bottom',animation:true}" title="<?php echo $navButton1Title; ?>"><?php echo $navButton1; ?></a>
+            <a class="uk-button uk-button-primary" href="https://dev.colour-blindness.org/"><?php echo $navButton2; ?></a>
           </div>
 
           <div class="uk-navbar-flip uk-visible-small">
@@ -83,19 +83,20 @@
                 <div class="uk-offcanvas-bar uk-offcanvas-bar-flip">
                   <a href="#" class="uk-close uk-close-offcanvas" id="menu-offcanvas-close"></a>
                   <ul class="uk-nav uk-nav-offcanvas" data-uk-nav>
-                    <li id="menu-item-1"<?php echo ($current_url === 'about') ? ' class="uk-active"': ''; ?>><a href="/about">A propos</a></li>
-                    <li id="menu-item-2"<?php echo ($current_url === 'colour') ? ' class="uk-active"': ''; ?>><a href="/colour-blindness">Daltonisme</a></li>
-                    <li id="menu-item-3"<?php echo ($current_url === 'guide') ? ' class="uk-active"': ''; ?>><a href="/guide">Guide</a></li>
-                    <li id="menu-item-4"<?php echo ($current_url === 'download') ? ' class="uk-active"': ''; ?>><a href="/download">Télécharger</a></li>
-                    <li id="menu-item-5"<?php echo ($current_url === 'contact') ? ' class="uk-active"': ''; ?>><a href="/contact">Contact</a></li>
+                    <li id="menu-item-1"<?php echo ($current_url === 'about') ? ' class="uk-active"': ''; ?>><a href="/about"><?php echo $nav1; ?></a></li>
+                    <li id="menu-item-2"<?php echo ($current_url === 'colour') ? ' class="uk-active"': ''; ?>><a href="/colour-blindness"><?php echo $nav2; ?></a></li>
+                    <li id="menu-item-3"<?php echo ($current_url === 'guide') ? ' class="uk-active"': ''; ?>><a href="/guide"><?php echo $nav3; ?></a></li>
+                    <li id="menu-item-4"<?php echo ($current_url === 'download') ? ' class="uk-active"': ''; ?>><a href="/download"><?php echo $nav4; ?></a></li>
+                    <li id="menu-item-5"<?php echo ($current_url === 'contact') ? ' class="uk-active"': ''; ?>><a href="/contact"><?php echo $nav5; ?></a></li>
                   </ul>
                   <div class="uk-panel">
-                    <a class="uk-button uk-button-default" href="https://dev.colour-blindness.org/" data-uk-tooltip title="test">S'inscrire</a>
-                    <a class="uk-button uk-button-primary" href="https://dev.colour-blindness.org/">Se connecter</a>
+                    <a class="uk-button uk-button-default" href="https://dev.colour-blindness.org/" data-uk-tooltip title="test"><?php echo $navButton1; ?></a>
+                    <a class="uk-button uk-button-primary" href="https://dev.colour-blindness.org/"><?php echo $navButton2; ?></a>
                   </div>
                 </div>
             </div>
           </div>
+          
         </nav>
 	    </header>
       <!-- -->

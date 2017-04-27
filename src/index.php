@@ -75,8 +75,19 @@ $f3->set('ONERROR',
 
 // VARIABLES
 $f3->set('brand', 'Visionary');
+$f3->set('nav1', 'A propos');
+$f3->set('nav2', 'Daltonisme');
+$f3->set('nav3', 'Guide');
+$f3->set('nav4', 'Télécharger');
+$f3->set('nav5', 'Contact');
+$f3->set('navButton1', 'S\'inscrire');
+$f3->set('navButton1Title', 'L\'inscription est gratuite et permet le téléchargement de la solution');
+$f3->set('navButton2', 'Se connecter');
 $f3->set('footerLink1', 'Tester l\'extension');
 $f3->set('footerLink2', 'Développer pour les daltoniens');
 $f3->set('footerLink3', 'Qu\'est-ce que le daltonisme');
+$f3->set('partners', 'Partenaires');
+$f3->set('networks', 'Réseaux');
+$f3->set('languages', 'Langues');
 // RUN
 $f3->run();

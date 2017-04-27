@@ -14,7 +14,7 @@ $(document).ready(function() {
   $( "#menu-offcanvas-close" ).click(function() {
     UIkit.offcanvas.hide();
   });
-  // window height
+  // window height (guide)
   function setHeight() {
     windowHeight = $(window).innerHeight();
     headerHeight = $('#header').innerHeight()+60;
@@ -22,10 +22,10 @@ $(document).ready(function() {
     fullHeightContent = windowHeight - headerHeight - 80;
     $('.box-guide').css('min-height', fullHeightBox);
     $('.box-guide-content').css('height', fullHeightContent);
-    console.log(fullHeightContent);
   };
   setHeight();
   $(window).resize(function() {
     setHeight();
   });
+
 });/* jshint ignore:start */

@@ -9,6 +9,7 @@
   body{
     border:10px solid $white;
   }
+  .uk-grid>*{padding-bottom: 20px;}
 }
 //blocks custom
 .block-diagonal {
@@ -17,7 +18,12 @@
   padding-top: 380px;
 }
 .off-bottom{
-  margin-bottom: -150px;
+  margin-bottom: -50px;
+}
+@media (min-width: $breakpoint-medium) {
+  .off-bottom{
+    margin-bottom: -150px;
+  }
 }
 .off-top{margin-top: -300px;}
 //wrappers depth
