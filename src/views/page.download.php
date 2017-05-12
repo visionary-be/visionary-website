@@ -4,7 +4,7 @@
 					<div class="uk-width-medium-1-3 uk-container-center">
 						<h1 class="uk-text-center">Installer l'extension</h1>
 						<p class="uk-text-center yell">Cette <strong>extension pour Chrome</strong> permet aux personnes daltoniennes d’améliorer la clarté des sites consultés avec ce navigateur.</p>
-						<p class="uk-text-center yell">Pour que cette extension soit correctement configurée, nous avons besoin de la paramétrer selon votre profil.</p>
+						<p class="uk-text-center yell">Pour que cette extension soit correctement configurée, nous avons besoin de la paramétrer selon votre profil via un test de daltonisme.</p>
 						<p class="uk-text-center"><a href="https://dev.colour-blindness.org/" class="uk-button uk-button-default uk-button-large">Lancer le test</a></p>
 					</div>
 				</div>
@@ -86,7 +86,7 @@
 		        <div class="uk-width-medium-1-2 uk-container-center">
 							<div>
 					      <p class="uk-text-center yell">L’extension Chrome mise au point par Visionary est entièrement gratuite. Les informations communiquées lors des tests ne servent qu’un but d’amélioration du service.</p>
-				        <p class="uk-text-center yell"><a href="https://dev.colour-blindness.org/" class="uk-button uk-button-default uk-button-large">Lancer le tester et télécharger l’extension</a></p>
+				        <p class="uk-text-center yell"><a href="https://dev.colour-blindness.org/" class="uk-button uk-button-default uk-button-large">Lancer le test et télécharger l’extension</a></p>
 				        <p class="uk-text-center"><a href="/about" class="negative">En savoir plus sur Visionary</a></p>
 							</div>
 		        </div>
