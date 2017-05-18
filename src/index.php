@@ -82,7 +82,7 @@ $f3->set('nav4', 'Télécharger');
 $f3->set('nav5', 'Contact');
 $f3->set('navButton1', 'S\'inscrire');
 $f3->set('navButton1Title', 'L\'inscription est gratuite et permet le téléchargement de la solution');
-$f3->set('navButton2', 'Faites le test');
+$f3->set('navButton2', 'Faire le test');
 $f3->set('footerLink1', 'Tester l\'extension');
 $f3->set('footerLink2', 'Développer pour les daltoniens');
 $f3->set('footerLink3', 'Qu\'est-ce que le daltonisme');
