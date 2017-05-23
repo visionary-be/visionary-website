@@ -125,7 +125,20 @@
   .box-guide-content{
     padding:$panel-box-padding;
     background: $white;
-    margin-right: -1px;
+    //margin-right: -1px;
+  }
+}
+// Definition Lists
+dl{
+  background-color: rgba(0,0,0,.05);
+
+  > dt{
+    padding: 10px 10px 0;
+    > h3{margin-bottom: 0;}
+  }
+  > dd{
+    padding: 0 10px 5px 10px;
+    border-bottom: 5px solid $white;
   }
 }
 // misc
@@ -182,6 +195,14 @@ h3, .uk-h3 {
   font-weight: 500 !important;
   margin-bottom: 20px;
   letter-spacing: 0.82px;
+}
+h4, .uk-h4 {
+  font-weight: 200 !important;
+  margin-bottom: 20px;
+  letter-spacing: 0;
+  border-left:4px solid $blue;
+  padding-left: 5px;
+  color:$gray;
 }
 blockquote {
     border-left: none;
@@ -254,8 +275,24 @@ blockquote {
     text-transform: uppercase;
     padding: 12px;
     .active{}
+    > a{
+      color: $white;
+      &:hover,&:focus{
+        color: $black;
+        background:none;
+      }
+    }
   }
   >li:last-child{border-bottom:none;}
+  >li.uk-open{
+    > a{
+      background:none;
+      color: $white;
+      &:hover{
+        color: $black;
+      }
+    }
+  }
   .uk-nav-sub{
     li{
       text-transform: none;
