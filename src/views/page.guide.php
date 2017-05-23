@@ -15,6 +15,8 @@
                       <li><a href="#chp2-b" data-uk-smooth-scroll>Graphiques de visualisation de données</a></li>
                       <li><a href="#chp2-c" data-uk-smooth-scroll>Liens</a></li>
                       <li><a href="#chp2-d" data-uk-smooth-scroll>Formulaires</a></li>
+                      <li><a href="#chp2-e" data-uk-smooth-scroll>E-commerce color picker</a></li>
+                      <li><a href="#chp2-f" data-uk-smooth-scroll>Cartes</a></li>
                     </ul>
                   </li>
             			<li ><a href="#chp3" data-uk-smooth-scroll>Ressources</a></li>
@@ -28,11 +30,14 @@
 
                 <article id="chp1">
                   <h2>Démarrer</h2>
-      		        <h3>Il n'y a qu'une seule règle: ne vous fiez pas à la couleur</h3>
+                  <div class="uk-panel uk-panel-box uk-panel-box-secondary uk-panel-box-large positive">
+                  <blockquote>
+                  <p>Il n'y a qu'une seule règle: ne vous fiez pas à la couleur</p>
+                  </blockquote>
                   <p>Si vous réalisez des travaux graphiques et que vous n'êtes pas daltonien(ne), il y a de forte chance pour que vous utilisiez spontanément la couleur comme système visuel principal pour signaler des éléments différents. Sachant que 8% de la population masculine est daltonienne, cela signifie qu'un homme sur 12 aura des difficultés, voire ne pourra pas, utiliser votre création.</p>
                   <p>La solution? Utilisez un autre procédé à la place ou en sus de la couleur, comme par exemple des motifs répétitifs, des différences de trait (pointillé, rectiligne...).</p>
+                </div>
     		        </article>
-                <hr>
 
                 <article id="chp2">
                 <h2>Types de contenu</h2>
@@ -140,14 +145,49 @@ Si possible, augmentez l’effet en jouant sur un autre élément visuel (border
                   Ne pas se fier à la couleur pour indiquer qu’un champ est obligatoire.
                 </p>
                 <h4>Solution</h4>
-                Il est possible de les combiner avec une typographie ou des formes qui relèvent plus fortement l’importance de l’information.
+                <p>Il est possible de les combiner avec une typographie ou des formes qui relèvent plus fortement l’importance de l’information.</p>
                 <p>
-                  <img src="/assets/images/guide/colour-alternative-PPP.png" alt="Liens visités dans une recherche Google vu par un deutéranope"/>
+                  <img src="/assets/images/guide/orange-formulaire-errormessage.png" alt="Message d'erreur dans un formulaire du site Orange"/>
+                </p>
+                <p>Pour un daltonien, l'information viendra plutôt de l'icône avec la crtoix plutôt que des labels et champs passés en rouge.</p>
+                <p>
+                  <img src="/assets/images/guide/orange-formulaire-errormessage-daltonized.png" alt="Message d'erreur dans un formulaire du site Orange"/>
                 </p>
                 <hr />
                 <p>
                   <a href="#chp1" data-uk-smooth-scroll>retour</a>
                 </p>
+
+                <!-- color picker -->
+                <h3 id="chp2-e">E-commerce color picker</h3>
+                <p>Sur un e-commerce, pensez à afficher le nom de la couleur plutôt qu’une pastille.</p>
+                <hr />
+                <p>
+                  <a href="#chp1" data-uk-smooth-scroll>retour</a>
+                </p>
+
+                <!-- carte -->
+                <h3 id="chp2-f">Cartes</h3>
+                <p>Les cartes sont souvent des objets complexes avec beaucoup d'information. Une personne atteint d’une anomalie de la couleur ne pourra pas bénéficier pleinement de ces principes de perception, comme le montre par-exemple cette image : </p>
+                <h4>Exemple</h4>
+                <p>
+                  <img src="/assets/images/guide/visionary_carte-de-france.png" alt="La carte de France avec une légende de couleurs pour la météo"/>
+                </p>
+                <p>
+                  Voici la carte perçue par un <strong>deutéranope</strong>.
+                </p>
+                <p>
+                  <img src="/assets/images/guide/visionary_carte-de-france_deutera.png" alt="La carte de France avec une légende de couleurs pour la météo vue par un Deutéranope"/>
+                </p>
+                <h4>Solution</h4>
+                <p>
+                  Employer un contraste élevé entre les couleurs. Penser à tester le contraste entre deux couleurs via des outils en ligne comme <a href="http://www.snook.ca/technical/colour_contrast/colour.html#fg=33FF33,bg=C73333" target="_blank">Snook Color Contrast Checker</a>.
+                </p>
+                <hr />
+                <p>
+                  <a href="#chp1" data-uk-smooth-scroll>retour</a>
+                </p>
+
                 </article>
 
                 <article id="chp3">
@@ -203,8 +243,12 @@ Si possible, augmentez l’effet en jouant sur un autre élément visuel (border
                       <p>Outil fournissant des palettes de couleurs adaptées aux personnes daltoniennes
                       <br /><a href="http://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3" target="_blank">http://colorbrewer2.org/</a></p>
                     </dd>
-
-
+                    <dt>
+                      <h3>Snook Color Contrast Checker</h3>
+                    </dt>
+                    <dd>
+                      <p>Un indicateur de différence de contraste en précisant la conformité aux critères WCAG 2.
+                      <br /><a href="http://www.snook.ca/technical/colour_contrast/colour.html#fg=33FF33,bg=C73333" target="_blank">http://www.snook.ca/technical/colour_contrast/colour.html#fg=33FF33,bg=C73333</a></p>
                   </dl>
 
                 </article>

@@ -261,7 +261,10 @@ blockquote {
 // nav side
 .uk-text-contrast {
   .uk-nav-side {
-    a{color:$white;}
+    a{
+      color:$white;
+      &:hover{color:$black;}
+    }
     .active{
       a{color:$black;}
     }
