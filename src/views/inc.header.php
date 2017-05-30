@@ -11,7 +11,7 @@
         <meta name="theme-color" content="#000000">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Visionary<?php echo ($current_url === 'about') ? ' : A propos': ''; ?></title>
+        <title>Visionary | <?php echo $title; ?></title>
 
         <link rel="apple-touch-icon" sizes="57x57" href="assets/images/icons/apple-touch-icon-57x57.png?v=vMMWa37WBk">
         <link rel="apple-touch-icon" sizes="60x60" href="assets/images/icons/apple-touch-icon-60x60.png?v=vMMWa37WBk">
@@ -96,7 +96,7 @@
                 </div>
             </div>
           </div>
-          
+
         </nav>
 	    </header>
       <!-- -->

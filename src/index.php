@@ -17,6 +17,7 @@ $f3->set('header','inc.header.php');
 //route HOME
 $f3->route('GET /',
 	function($f3) {
+		$f3->set('title','Le web accessible pour les daltoniens');
 		$f3->set('content','page.home.php');
 		echo View::instance()->render('layout.htm');
 	}
@@ -25,6 +26,7 @@ $f3->route('GET /',
 $f3->route('GET /about',
     function($f3) {
 			$f3->set('content','page.about.php');
+			$f3->set('title','A propos de Visionary');
 			$f3->set('current_url','about');
 			echo View::instance()->render('layout.htm');
     }
@@ -34,6 +36,7 @@ $f3->route('GET /about',
 $f3->route('GET /colour-blindness',
   function($f3) {
 		$f3->set('current_url','colour');
+		$f3->set('title','Qu\'est-ce que le daltonisme');
 		$f3->set('content','page.colour.php');
 		echo View::instance()->render('layout.htm');
   }
@@ -43,6 +46,7 @@ $f3->route('GET /colour-blindness',
 $f3->route('GET /guide',
   function($f3) {
 		$f3->set('current_url','guide');
+		$f3->set('title','Le guide de conception des écrans accessibles aux daltoniens');
 		$f3->set('content','page.guide.php');
 		echo View::instance()->render('layout.htm');
   }
@@ -52,6 +56,7 @@ $f3->route('GET /guide',
 $f3->route('GET /download',
   function($f3) {
 		$f3->set('current_url','download');
+		$f3->set('title','Installer l\'extension pour Chrome');
 		$f3->set('content','page.download.php');
 		echo View::instance()->render('layout.htm');
   }
@@ -61,6 +66,7 @@ $f3->route('GET /download',
 $f3->route('GET /contact',
   function($f3) {
 		$f3->set('current_url','contact');
+		$f3->set('title','Contacter Visionary');
 		$f3->set('content','page.contact.php');
 		echo View::instance()->render('layout.htm');
   }
