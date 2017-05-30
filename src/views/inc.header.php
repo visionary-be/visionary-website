@@ -33,16 +33,16 @@
         <link rel="mask-icon" href="assets/images/icons/safari-pinned-tab.svg?v=vMMWa37WBk" color="#333333">
         <link rel="shortcut icon" href="assets/images/icons/favicon.ico?v=vMMWa37WBk">
 
-        <meta name="apple-mobile-web-app-title" content="Visionary">
+        <meta name="apple-mobile-web-app-title" content="Visionary | <?php echo $title; ?>">
         <meta name="application-name" content="Visionary">
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="msapplication-TileImage" content="assets/images/icons/mstile-144x144.png?v=vMMWa37WBk">
         <meta name="msapplication-config" content="assets/images/icons/browserconfig.xml?v=vMMWa37WBk">
         <meta name="theme-color" content="#ffffff">
 
-        <meta property="og:title" content="Test du daltonisme"/>
+        <meta property="og:title" content="Visionary | <?php echo $title; ?>"/>
         <meta property="og:image" content="/assets/images/logo.png"/>
-        <meta property="og:site_name" content="Visionary"/>
+        <meta property="og:site_name" content="Visionary | <?php echo $title; ?>"/>
         <meta property="og:description" content="Visionary - Test du daltonisme"/>
 
         <link rel="stylesheet" href="/assets/css/app.css?v={VERSION}" />
