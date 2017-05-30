@@ -23,8 +23,8 @@
             <div class="uk-width-medium-1-6">
               <ul class="uk-nav uk-nav-default">
                 <li class="uk-nav-header"><h3><?php echo $networks; ?></h3></li>
-                <li><a href="#" class="pure-menu-link">W3C</a></li>
-  			        <li><a href="#" class="pure-menu-link">Facebook</a></li>
+                <li><a href="https://www.w3.org/community/colourblindness/" class="pure-menu-link" target="_blank">W3C</a></li>
+  			        <li><a href="https://www.facebook.com/visionary.daltonisme/" class="pure-menu-link" target="_blank">Facebook</a></li>
   		        </ul>
   	        </div>
   	        <div class="uk-width-medium-1-6">

@@ -117,17 +117,26 @@
 
 //guide > box
 .box-guide{
-  background-image: linear-gradient(0deg, #0099F3 0%, #0079C1 100%)!important;
   border-top:20px solid $white;
-  .box-guide-menu{
-    padding:$panel-box-padding;
-  }
-  .box-guide-content{
-    padding:$panel-box-padding;
-    background: $white;
-    //margin-right: -1px;
-  }
 }
+.box-guide-menu{
+  padding:$panel-box-padding/2;
+  background-color:$blue;
+}
+.box-guide-content{
+  padding:$panel-box-padding;
+  background: $white;
+  //margin-right: -1px;
+}
+.box-guide-menu-wrapper{
+  padding:$panel-box-padding/2;
+  background-color:$blue;
+}
+@media (min-width: $breakpoint-medium) {
+  .box-guide{background-image: linear-gradient(0deg, #0099F3 0%, #0079C1 100%)!important;}
+  .box-guide-menu{background-color:transparent;padding:$panel-box-padding;}
+}
+.utility1{margin-left:-35px;width:94%!important;}
 // Definition Lists
 dl{
   background-color: rgba(0,0,0,.05);
