@@ -40,7 +40,6 @@ $f3->route('GET /about',
 			$f3->set('current_url','about');
 			$metatags['title'] = "A propos de Visionary";
 			$metatags['description'] = "le contenu de la meta description";
-			$metatags['image'] = WWWROOT.'/assets/images/browser.png';
 			$metatags['url'] = WWWROOT;
 			$f3->set('metatags', $metatags);
 			echo View::instance()->render('layout.htm');
