@@ -40,6 +40,7 @@ $f3->route('GET /about',
 			$f3->set('current_url','about');
 			$metatags['title'] = "A propos de Visionary";
 			$metatags['description'] = "le contenu de la meta description";
+			global $metatags[url];
 			$f3->set('metatags', $metatags);
 			echo View::instance()->render('layout.htm');
     }
