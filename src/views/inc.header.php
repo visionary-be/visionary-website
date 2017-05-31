@@ -11,7 +11,7 @@
         <meta name="theme-color" content="#000000">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Visionary | <?php echo $title; ?></title>
+        <title>Visionary | <?php echo $metatags['title']; ?></title>
 
         <link rel="apple-touch-icon" sizes="57x57" href="assets/images/icons/apple-touch-icon-57x57.png?v=vMMWa37WBk">
         <link rel="apple-touch-icon" sizes="60x60" href="assets/images/icons/apple-touch-icon-60x60.png?v=vMMWa37WBk">
@@ -33,17 +33,19 @@
         <link rel="mask-icon" href="assets/images/icons/safari-pinned-tab.svg?v=vMMWa37WBk" color="#333333">
         <link rel="shortcut icon" href="assets/images/icons/favicon.ico?v=vMMWa37WBk">
 
-        <meta name="apple-mobile-web-app-title" content="Visionary | <?php echo $title; ?>">
-        <meta name="application-name" content="Visionary">
-        <meta name="msapplication-TileColor" content="#da532c">
-        <meta name="msapplication-TileImage" content="assets/images/icons/mstile-144x144.png?v=vMMWa37WBk">
-        <meta name="msapplication-config" content="assets/images/icons/browserconfig.xml?v=vMMWa37WBk">
-        <meta name="theme-color" content="#ffffff">
+        <meta property="og:title" content="Visionary | <?php echo $metatags['title']; ?>"/>
+        <meta property="og:image" content="<?php echo $metatags['image']; ?>"/>
+        <meta property="og:site_name" content="Visionary | <?php echo $metatags['title']; ?>"/>
+        <meta property="og:description" content="<?php echo $metatags['description']; ?>"/>
+        <meta property="og:url" content="<?php echo $metatags['url'].'/'.$current_url; ?>">
+        <meta property="og:type" content="article">
 
-        <meta property="og:title" content="Visionary | <?php echo $title; ?>"/>
-        <meta property="og:image" content="/assets/images/logo.png"/>
-        <meta property="og:site_name" content="Visionary | <?php echo $title; ?>"/>
-        <meta property="og:description" content="Visionary - Test du daltonisme"/>
+        <meta name="twitter:card" content="summary">
+		    <meta name="twitter:title" content="Visionary | <?php echo $metatags['title']; ?>">
+		    <meta name="twitter:description" content="<?php echo $metatags['description']; ?>">
+		    <meta name="twitter:image" content="<?php echo $metatags['image']; ?>">
+
+        <base href="<?php echo WWWROOT; ?>" />
 
         <link rel="stylesheet" href="/assets/css/app.css?v={VERSION}" />
 

@@ -1,4 +1,15 @@
 <?php
+// Setup head info
+define('WWWROOT', '//'.$_SERVER["HTTP_HOST"]);
+define('LOCALROOT', '//'.$_SERVER["DOCUMENT_ROOT"]);
+$metatags = array(
+	'title'=>"Visionary",
+	'image'=>WWWROOT.'/assets/images/browser.png',
+	'image:width'=>800,
+	'image:height'=>574,
+	'url' => WWWROOT,
+	'description'=>"Daltonisme et interfaces"
+);
 
 // Kickstart the framework
 $f3 = require 'vendor/bcosca/fatfree/lib/base.php';
@@ -26,8 +37,12 @@ $f3->route('GET /',
 $f3->route('GET /about',
     function($f3) {
 			$f3->set('content','page.about.php');
-			$f3->set('title','A propos de Visionary');
 			$f3->set('current_url','about');
+			$metatags['title'] = "A propos de Visionary";
+			$metatags['description'] = "le contenu de la meta description";
+			$metatags['image'] = WWWROOT.'/assets/images/browser.png';
+			$metatags['url'] = WWWROOT;
+			$f3->set('metatags', $metatags);
 			echo View::instance()->render('layout.htm');
     }
 );
