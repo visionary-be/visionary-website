@@ -2,7 +2,7 @@
 // Setup head info
 define('WWWROOT', '//'.$_SERVER["HTTP_HOST"]);
 define('LOCALROOT', '//'.$_SERVER["DOCUMENT_ROOT"]);
-$metatags = array(
+global $metatags = array(
 	'title'=>"Visionary",
 	'image'=>WWWROOT.'/assets/images/browser.png',
 	'image:width'=>800,
@@ -40,7 +40,7 @@ $f3->route('GET /about',
 			$f3->set('current_url','about');
 			$metatags['title'] = "A propos de Visionary";
 			$metatags['description'] = "le contenu de la meta description";
-			global $metatags[url];
+			$metatags['url'];
 			$f3->set('metatags', $metatags);
 			echo View::instance()->render('layout.htm');
     }
