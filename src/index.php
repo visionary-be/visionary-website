@@ -2,7 +2,8 @@
 // Setup head info
 define('WWWROOT', '//'.$_SERVER["HTTP_HOST"]);
 define('LOCALROOT', '//'.$_SERVER["DOCUMENT_ROOT"]);
-global $metatags = array(
+//global $metatags = array(
+$metatags = array(
 	'title'=>"Visionary",
 	'image'=>WWWROOT.'/assets/images/browser.png',
 	'image:width'=>800,

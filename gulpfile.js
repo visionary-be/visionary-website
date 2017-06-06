@@ -49,6 +49,13 @@ gulp.task('copy:images', function() {
 	})).pipe(gulp.dest(project.build_dir + 'assets/images/'));
 });
 
+gulp.task('copy:video', function() {
+	// Copy Videos into build
+	return gulp.src(['**/*'], {
+		cwd: project.src_dir + 'assets/video/**'
+	}).pipe(changed(project.build_dir + 'assets/video/')).pipe(gulp.dest(project.build_dir + 'assets/video/'));
+});
+
 gulp.task('copy:fonts', function() {
 	// Copy fonts into build
 	return gulp.src(['**/*'], {
@@ -118,7 +125,7 @@ gulp.task('build', function() {
 
 	// Build a fresh copy
 
-	runSequence('clean', 'copy:fonts', 'scripts','cache:bust', 'styles', 'copy:js', 'copy:css', 'copy:images', 'copy:php', function(error) {
+	runSequence('clean', 'copy:fonts', 'scripts','cache:bust', 'styles', 'copy:js', 'copy:css', 'copy:images', 'copy:video', 'copy:php', function(error) {
 		if (error) {
 			console.log(error.message);
 		} else {
@@ -182,6 +189,7 @@ gulp.task('watch', ['php'], function() {
 	}, ['scripts', reload]);
 	gulp.watch([project.src_dir + 'assets/js/min/app.min.js'], ['copy:js', reload]);
 	gulp.watch([project.src_dir + 'assets/fonts/**/*'], ['copy:fonts', reload]);
+	gulp.watch([project.src_dir + 'assets/video/**/*'], ['copy:video', reload]);
 	gulp.watch([project.src_dir + 'assets/images/**/*'], ['copy:images', reload]);
 	gulp.watch(['**/*.php', '**/*.html', '**/*.htm', '*.*'], {
 		cwd: project.src_dir

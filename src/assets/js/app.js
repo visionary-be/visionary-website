@@ -1,31 +1,35 @@
 $(document).ready(function() {
   //
   jQuery.fn.extend({
+     //lettrine
      changeLettrine: function () {
-
        $(this).each(function(){
           var lettrine = $(this).html().charAt(0);
-           $(this).attr( "data-lettrine", lettrine );
+          $(this).attr( 'data-lettrine', lettrine );
         });
      }
   });
-  $(".lettrine").changeLettrine();
+
+  jQuery.fn.extend({
+    //video
+    setVideoBg: function () {
+      $(this).each(function(){
+         var windowWidth = $( window ).width();
+         var fullWidthBox = windowWidth - 40;
+         $(this).css('width', fullWidthBox);
+       });
+    }
+  });
+
+  $('.lettrine').changeLettrine();
   // close off-canvas
-  $( "#menu-offcanvas-close" ).click(function() {
+  $( '#menu-offcanvas-close' ).click(function() {
     UIkit.offcanvas.hide();
   });
-  // window height (guide)
-  /*function setHeight() {
-    windowHeight = $(window).innerHeight();
-    headerHeight = $('#header').innerHeight()+60;
-    fullHeightBox = windowHeight - headerHeight;
-    fullHeightContent = windowHeight - headerHeight - 80;
-    $('.box-guide').css('min-height', fullHeightBox);
-    $('.box-guide-content').css('height', fullHeightContent);
-  };
-  setHeight();
+  // video dimensions
+  $('#home-hero-vid').setVideoBg();
   $(window).resize(function() {
-    setHeight();
-  });*/
+    $('#home-hero-vid').setVideoBg();
+  });
 
 });/* jshint ignore:start */

@@ -1,5 +1,25 @@
-			<!-- HERO -->
+			<!-- HERO IMAGE
 	    <section id="home-hero" class="uk-block uk-block-primary hero hero-homepage">
+				<div class="uk-width-medium-1-3 uk-container-center">
+					<div class="uk-panel uk-panel-box uk-panel-box-primary uk-text-contrast uk-position-relative uk-position-cover uk-position-z-index">
+						<h1 class="uk-text-center">Une personne sur douze est daltonienne</h1>
+						<p class="yell">Visionary propose une solution qui corrige les couleurs du web pour elle, ainsi qu'un guide de bonnes pratiques pour les designers</p>
+						<p class="uk-text-center"><a href="/download" class="uk-button uk-button-default uk-button-large">Installer la solution</a></p>
+						<p class="uk-text-center"><a href="/guide" class="negative">Consulter le guide</a></p>
+					</div>
+				</div>
+	    </section>-->
+
+			<!-- HERO VIDEO -->
+	    <section id="home-hero" class="uk-block uk-block-primary hero hero-homepage">
+				<div class="hero-homepage-wrapper">
+					<video id="home-hero-vid" playsinline autoplay muted loop>
+							  <source src="assets/video/street.webm" type="video/webm">
+	              <source src="assets/video/street.mp4" type="video/mp4">
+								<source src="assets/video/street.ogg" type="video/ogg">
+	              <!--<source src="http://www.quirksmode.org/html5/videos/big_buck_bunny.ogv?test1" type="video/ogg">-->
+	        </video>
+				</div>
 				<div class="uk-width-medium-1-3 uk-container-center">
 					<div class="uk-panel uk-panel-box uk-panel-box-primary uk-text-contrast uk-position-relative uk-position-cover uk-position-z-index">
 						<h1 class="uk-text-center">Une personne sur douze est daltonienne</h1>
@@ -52,7 +72,6 @@
 					</div>
 				</div>
 			</section>
-			<!-- -->
 
     	<!-- VISIONARY -->
     	<section id="home-visionary" class="uk-block uk-block-primary block-diagonal off-top uk-text-contrast">
@@ -77,4 +96,3 @@
 					</div>
 				</div>
     	</section>
-    	<!-- -->
