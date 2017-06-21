@@ -11,7 +11,7 @@
         <meta name="theme-color" content="#000000">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Visionary | <?php echo $metatags['title']; ?></title>
+        <title><?php echo $metatags['title']; ?> | Visionary</title>
 
         <link rel="apple-touch-icon" sizes="57x57" href="assets/images/icons/apple-touch-icon-57x57.png?v=vMMWa37WBk">
         <link rel="apple-touch-icon" sizes="60x60" href="assets/images/icons/apple-touch-icon-60x60.png?v=vMMWa37WBk">
@@ -33,7 +33,7 @@
         <link rel="mask-icon" href="assets/images/icons/safari-pinned-tab.svg?v=vMMWa37WBk" color="#333333">
         <link rel="shortcut icon" href="assets/images/icons/favicon.ico?v=vMMWa37WBk">
 
-        <meta property="og:title" content="Visionary | <?php echo $metatags['title']; ?>"/>
+        <meta property="og:title" content="<?php echo $metatags['title']; ?> | Visionary"/>
         <meta property="og:image" content="<?php echo $metatags['image']; ?>"/>
         <meta property="og:site_name" content="Visionary | <?php echo $metatags['title']; ?>"/>
         <meta property="og:description" content="<?php echo $metatags['description']; ?>"/>

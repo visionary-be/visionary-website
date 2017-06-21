@@ -2,10 +2,7 @@
 // Setup head info
 define('WWWROOT', '//'.$_SERVER["HTTP_HOST"]);
 define('LOCALROOT', '//'.$_SERVER["DOCUMENT_ROOT"]);
-//global $metatags = array(
 
-
-global $metatags;
 $metatags = array(
 	'title'=>"Visionary",
 	'image'=>WWWROOT.'/assets/images/Browser.png',
@@ -34,6 +31,7 @@ $f3->route('GET /',
 	function($f3) {
 		$f3->set('title', 'Le web accessible pour les daltoniens');
 		$f3->set('content', 'page.home.php');
+		$f3->set('metatags', $metatags );
 		echo View::instance()->render('layout.htm');
 	}
 );
@@ -46,7 +44,6 @@ $f3->route('GET /about',
 		$f3->set('current_url', 'about');
 		$metatags['title'] = "A propos de Visionary";
 		$metatags['description'] = "le contenu de la meta description";
-		$metatags['url'];
 		$f3->set('metatags', $metatags);
 		echo View::instance()->render('layout.htm');
 	}
@@ -59,6 +56,8 @@ $f3->route('GET /colour-blindness',
 		$f3->set('current_url', 'colour');
 		$f3->set('title', 'Qu\'est-ce que le daltonisme');
 		$f3->set('content', 'page.colour.php');
+		$f3->set('metatags', $metatags );
+
 		echo View::instance()->render('layout.htm');
 	}
 );
@@ -67,9 +66,11 @@ $f3->route('GET /colour-blindness',
 $f3->route('GET /guide',
 	function($f3) {
 		global $metatags;
+		$metatags['title'] = 'Le guide de conception d\'interfaces accessibles aux daltoniens';
 		$f3->set('current_url', 'guide');
 		$f3->set('title', 'Le guide de conception des écrans accessibles aux daltoniens');
 		$f3->set('content', 'page.guide.php');
+		$f3->set('metatags', $metatags );
 		echo View::instance()->render('layout.htm');
 	}
 );
@@ -78,9 +79,11 @@ $f3->route('GET /guide',
 $f3->route('GET /download',
 	function($f3) {
 		global $metatags;
+			$metatags['title'] = 'Installer l\'extension pour Chrome';
 		$f3->set('current_url', 'download');
-		$f3->set('title', 'Installer l\'extension pour Chrome');
+		$f3->set('title', $metatags['title']);
 		$f3->set('content', 'page.download.php');
+		$f3->set('metatags', $metatags );
 		echo View::instance()->render('layout.htm');
 	}
 );
@@ -92,6 +95,7 @@ $f3->route('GET /contact',
 		$f3->set('current_url', 'contact');
 		$f3->set('title', 'Contacter Visionary');
 		$f3->set('content', 'page.contact.php');
+		$f3->set('metatags', $metatags );
 		echo View::instance()->render('layout.htm');
 	}
 );
@@ -101,6 +105,7 @@ $f3->set('ONERROR',
 	function($f3){
 		global $metatags;
 		$f3->set('content', 'error.htm');
+		$f3->set('metatags', $metatags );
 		echo \Template::instance()->render('layout.htm');
 	});
 
