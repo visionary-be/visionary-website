@@ -79,7 +79,7 @@ $f3->route('GET /guide',
 $f3->route('GET /download',
 	function($f3) {
 		global $metatags;
-			$metatags['title'] = 'Installer l\'extension pour Chrome';
+		$metatags['title'] = 'Installer l\'extension pour Chrome';
 		$f3->set('current_url', 'download');
 		$f3->set('title', $metatags['title']);
 		$f3->set('content', 'page.download.php');
