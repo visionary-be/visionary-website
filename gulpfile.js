@@ -73,7 +73,7 @@ gulp.task('copy:php', function() {
 
 gulp.task('scripts', function() {
 	// Process scripts and concatenate them into one output file
-	return gulp.src(['jquery.js', 'uikit.min.js', 'tooltip.min.js', 'sticky.min.js', 'smooth-scroll.min.js', 'app.js'], {
+	return gulp.src(['jquery.js', 'uikit.min.js', 'tooltip.min.js', 'sticky.min.js', 'smooth-scroll.min.js', 'scrollspy.min.js', 'app.js'], {
 		cwd: project.src_dir + 'assets/js/'
 	}).pipe(changed(project.src_dir + 'assets/js/min/')).pipe(sourcemaps.init()).pipe(jshint()).pipe(jshint.reporter('default')).pipe(uglify()).pipe(concat('app.min.js')).pipe(sourcemaps.write('./')).pipe(gulp.dest(project.src_dir + 'assets/js/min/'));
 });

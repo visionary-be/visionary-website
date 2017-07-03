@@ -29,7 +29,8 @@ $f3->set('header', 'inc.header.php');
 //route HOME
 $f3->route('GET /',
 	function($f3) {
-		$f3->set('title', 'Le web accessible pour les daltoniens');
+		global $metatags;
+		$metatags['title'] = "Le web accessible pour les daltoniens";
 		$f3->set('content', 'page.home.php');
 		$f3->set('metatags', $metatags );
 		echo View::instance()->render('layout.htm');
@@ -38,12 +39,11 @@ $f3->route('GET /',
 //route ABOUT
 $f3->route('GET /about',
 	function($f3) {
-
 		global $metatags;
 		$f3->set('content', 'page.about.php');
 		$f3->set('current_url', 'about');
 		$metatags['title'] = "A propos de Visionary";
-		$metatags['description'] = "le contenu de la meta description";
+		$metatags['description'] = "Visionary est un projet de recherche de solutions améliorant l’accessibilité du web pour les daltoniens.";
 		$f3->set('metatags', $metatags);
 		echo View::instance()->render('layout.htm');
 	}
@@ -54,10 +54,10 @@ $f3->route('GET /colour-blindness',
 	function($f3) {
 		global $metatags;
 		$f3->set('current_url', 'colour');
-		$f3->set('title', 'Qu\'est-ce que le daltonisme');
+		$metatags['title'] = "Qu'est-ce que le daltonisme ?";
+		$metatags['description'] = "Le daltonisme est une anomalie de la vision affectant la perception des couleurs.";
 		$f3->set('content', 'page.colour.php');
 		$f3->set('metatags', $metatags );
-
 		echo View::instance()->render('layout.htm');
 	}
 );
@@ -66,9 +66,9 @@ $f3->route('GET /colour-blindness',
 $f3->route('GET /guide',
 	function($f3) {
 		global $metatags;
-		$metatags['title'] = 'Le guide de conception d\'interfaces accessibles aux daltoniens';
 		$f3->set('current_url', 'guide');
-		$f3->set('title', 'Le guide de conception des écrans accessibles aux daltoniens');
+		$metatags['title'] = "Le guide de conception d'interfaces accessibles aux daltoniens";
+		$metatags['description'] = "Comment concevoir des écrans accessibles aux daltoniens.";
 		$f3->set('content', 'page.guide.php');
 		$f3->set('metatags', $metatags );
 		echo View::instance()->render('layout.htm');
@@ -80,6 +80,7 @@ $f3->route('GET /download',
 	function($f3) {
 		global $metatags;
 		$metatags['title'] = 'Installer l\'extension pour Chrome';
+		$metatags['description'] = "Cette extension permet aux personnes daltoniennes d’améliorer la clarté des sites consultés.";
 		$f3->set('current_url', 'download');
 		$f3->set('title', $metatags['title']);
 		$f3->set('content', 'page.download.php');
@@ -92,6 +93,8 @@ $f3->route('GET /download',
 $f3->route('GET /contact',
 	function($f3) {
 		global $metatags;
+		$metatags['title'] = 'Contact';
+		$metatags['description'] = "Complétez le formulaire ou adressez-nous un email à team@colour-blindness.org.";
 		$f3->set('current_url', 'contact');
 		$f3->set('title', 'Contacter Visionary');
 		$f3->set('content', 'page.contact.php');

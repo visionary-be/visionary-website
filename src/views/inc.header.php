@@ -35,15 +35,15 @@
 
         <meta property="og:title" content="<?php echo $metatags['title']; ?> | Visionary"/>
         <meta property="og:image" content="<?php echo $metatags['image']; ?>"/>
-        <meta property="og:site_name" content="Visionary | <?php echo $metatags['title']; ?>"/>
+        <meta property="og:site_name" content="<?php echo $metatags['title']; ?> | Visionary"/>
         <meta property="og:description" content="<?php echo $metatags['description']; ?>"/>
         <meta property="og:url" content="<?php echo $metatags['url'].'/'.$current_url; ?>">
         <meta property="og:type" content="article">
 
         <meta name="twitter:card" content="summary">
-		    <meta name="twitter:title" content="Visionary | <?php echo $metatags['title']; ?>">
-		    <meta name="twitter:description" content="<?php echo $metatags['description']; ?>">
-		    <meta name="twitter:image" content="<?php echo $metatags['image']; ?>">
+        <meta name="twitter:title" content="<?php echo $metatags['title']; ?> | Visionary">
+        <meta name="twitter:description" content="<?php echo $metatags['description']; ?>">
+        <meta name="twitter:image" content="<?php echo $metatags['image']; ?>">
 
         <base href="<?php echo WWWROOT; ?>" />
 

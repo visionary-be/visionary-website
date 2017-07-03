@@ -3,8 +3,8 @@
 
 	    	<div class="uk-grid">
 
-          <div class="uk-width-medium-1-3 uk-hidden-small">
-            <div class="box-guide-menu uk-text-contrast" id="guide-menu" data-uk-sticky>
+          <div class="uk-width-medium-1-3 uk-hidden-small" id="guide-menu-wrapper">
+            <div class="box-guide-menu uk-text-contrast" id="guide-menu" data-uk-sticky="{top:-200,getWidthFrom:#guide-menu-wrapper}">
 		         <h1>Le guide</h1>
 		         <p>Comment concevoir des écrans accessibles aux daltoniens.</p>
   		       <ul class="uk-nav uk-nav-side uk-nav-parent-icon" data-uk-nav>

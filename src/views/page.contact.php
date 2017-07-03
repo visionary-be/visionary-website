@@ -1,7 +1,7 @@
 			<!-- HERO -->
 			<section id="contact-hero" class="uk-block uk-block-primary uk-text-contrast">
 				<div class="uk-grid">
-					<div class="uk-width-medium-1-3 uk-container-center">
+					<div class="uk-width-large-1-3 uk-container-center">
 						<div class="uk-panel uk-panel-box uk-panel-box-secondary positive">
 							<h1 class="uk-text-center">Contacter Visionary</h1>
 			        <p>Complétez le formulaire ci-dessous ou adressez-nous un email à <a href="mailto:team@colour-blindness.org">team@colour-blindness.org</a>. Nous reviendrons vers vous dès que possible.</p>

@@ -141,8 +141,10 @@
 
 
 //guide > box
+#guide-menu{width: auto!important;}
 .box-guide{
   border-top:20px solid $white;
+  $transition: width 0.5s; /* Safari */
 }
 .box-guide-menu{
   padding:$panel-box-padding/2;
