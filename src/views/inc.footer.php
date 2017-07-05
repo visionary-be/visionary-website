@@ -37,6 +37,6 @@
   	    	</div>
         </div>
     	</footer>
-        <script src="/assets/js/app.min.js"></script>
+        <script src="/assets/js/app.min.js?v={VERSION}"></script>
     </body>
 </html>

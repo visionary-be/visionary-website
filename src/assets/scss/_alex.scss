@@ -1,0 +1,23 @@
+input.invis{
+	display:none !important;
+	background:red;
+}
+
+#contactform{
+	input,
+	select,
+	textarea{
+		width:100%;
+		max-width:500px;
+	}
+	
+	fieldset{
+		max-width:500px;
+		margin:auto;
+	}
+}
+label.uk-form-label span.mandatory{
+	font-size: 88%;
+	opacity:.8;
+	font-weight:normal;
+}

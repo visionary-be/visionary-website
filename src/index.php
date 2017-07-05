@@ -90,12 +90,63 @@ $f3->route('GET /download',
 );
 
 //route CONTACT
-$f3->route('GET /contact',
+$f3->route('GET|POST /contact',
 	function($f3) {
+
+		// Form processing
+		if ( isset($_POST) && !empty($_POST)){
+
+			// honeypot
+			if(isset($_POST['email']) && !empty($_POST['email'])){
+				die("Email sent, thank you much, love.");
+			}
+
+			// Sanitization
+			$args = array('fullname'=> FILTER_SANITIZE_STRING, 'message' => FILTER_SANITIZE_STRING, 'em-ail'=> FILTER_SANITIZE_EMAIL );
+			$post = filter_var_array($_POST, $args);
+
+			// Validation
+			$errors= array();
+			
+			if(!$post){
+				$errors['result']= 'Veuillez vérifier vos informations.';
+
+			}
+			
+			if(empty(trim($post['em-ail']))){
+				$errors['em-ail']= 'Veuillez indiquer votre adresse email';
+			}
+			if(empty(trim($post['message']))){
+				$errors['message']= 'Veuillez indiquer votre message';
+			}
+			// Execution
+			if(count($errors)<1){
+
+				$message = $post['message']. "\n---From: {$post['fullname']} {$post['em-ail']}";
+				$smtp = new SMTP( 'mail.gandi.net', '465', 'ssl', 'alexandre@colour-blindness.org', 'L0veIsA77!' );
+				$smtp->set('Errors-to', '<support@colour-blindness.org>');
+				$smtp->set('To', '"Team Visionary" <team@colour-blindness.org>');
+				$smtp->set('From', '"Visionary" <support@colour-blindness.org>');
+				$smtp->set('Subject', 'Visionary Contact Form');
+				if(!$smtp->send($message)){
+					$errors['result']= 'Il y a eu un problème à l\'envoi par ce formulaire. Vous pouvez nous contacter directement à team@colour-blindness.org';
+					$result= false;
+				} else{
+					$result= true;
+				}
+			}
+			if(!empty($errors)){
+				$f3->set('errors', $errors);			
+			}
+			$f3->set('result', $result);
+		}
+
+
 		global $metatags;
 		$metatags['title'] = 'Contact';
 		$metatags['description'] = "Complétez le formulaire ou adressez-nous un email à team@colour-blindness.org.";
 		$f3->set('current_url', 'contact');
+
 		$f3->set('title', 'Contacter Visionary');
 		$f3->set('content', 'page.contact.php');
 		$f3->set('metatags', $metatags );
