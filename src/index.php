@@ -160,7 +160,7 @@ $f3->set('ONERROR',
 		global $metatags;
 		$f3->set('content', 'error.htm');
 		$f3->set('metatags', $metatags );
-		echo \Template::instance()->render('layout.htm');
+		echo View::instance()->render('layout.htm');
 	});
 
 // VARIABLES
