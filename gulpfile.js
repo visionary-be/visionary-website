@@ -175,9 +175,9 @@ gulp.task("version:bump", function() {
 //
 gulp.task('cache:bust', function() {
 	// Append app version to CSS/JS dependencies.
-	return gulp.src([project.build_dir + '/**/*.php'])
+	return gulp.src([project.build_dir + 'views/*.php'])
 	.pipe(replace('{VERSION}', app_version))
-	.pipe(gulp.dest(project.build_dir));
+	.pipe(gulp.dest(project.build_dir + 'views/'));
 });
 
 // A development task to run anytime a file changes
