@@ -19,7 +19,7 @@
 								<!--<source src="assets/video/street.ogg" type="video/ogg">-->
 	        </video>
 				</div>
-				<div class="uk-width-medium-1-3 uk-container-center">
+				<div class="uk-width-small-3-4 uk-width-medium-2-3 uk-width-large-1-2 uk-width-xlarge-1-3 uk-container-center">
 					<div class="uk-panel uk-panel-box uk-panel-box-primary uk-text-contrast uk-position-relative uk-position-cover uk-position-z-index">
 						<h1 class="uk-text-center">Une personne sur douze est daltonienne</h1>
 						<p class="yell">Visionary propose une solution qui corrige les couleurs du web pour elle, ainsi qu'un guide de bonnes pratiques pour les designers.</p>
