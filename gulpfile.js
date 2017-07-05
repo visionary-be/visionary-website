@@ -18,7 +18,7 @@ var sftp = require('gulp-sftp');
 var replace = require('gulp-replace');
 var prompt = require('gulp-prompt');
 var bump = require('gulp-bump');
-
+var semver = require('semver');
 var project = require('./project.json');
 var pkg = require('./package.json');
 var app_version = pkg.version;
