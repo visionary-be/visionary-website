@@ -18,7 +18,7 @@ var sftp = require('gulp-sftp');
 var replace = require('gulp-replace');
 var prompt = require('gulp-prompt');
 var bump = require('gulp-bump');
-
+var semver = require('semver');
 var project = require('./project.json');
 var pkg = require('./package.json');
 var app_version = pkg.version;
@@ -175,9 +175,9 @@ gulp.task("version:bump", function() {
 //
 gulp.task('cache:bust', function() {
 	// Append app version to CSS/JS dependencies.
-	return gulp.src([project.build_dir + '/**/*.php'])
+	return gulp.src([project.build_dir + 'views/*.php'])
 	.pipe(replace('{VERSION}', app_version))
-	.pipe(gulp.dest(project.build_dir));
+	.pipe(gulp.dest(project.build_dir + 'views/'));
 });
 
 // A development task to run anytime a file changes
