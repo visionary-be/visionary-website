@@ -63,20 +63,27 @@
     }
   }
 }
+@media (min-width: 1200px) {
+  .hero{
+    &.hero-homepage{
+      min-height: 600px;
+      .hero-homepage-wrapper{
+        min-height: 600px;
+      }
+    }
+  }
+}
 @media (min-width: $breakpoint-medium) {
   .hero{
     min-height: 400px;
     &.hero-homepage{
-      min-height: 600px;
       .uk-position-cover{top:150px;}
       .hero-homepage-wrapper{
-        min-height: 600px;
         video {
           display: block;
         }
       }
     }
-
   }
 }
 @media (max-width: $breakpoint-small-max) {
