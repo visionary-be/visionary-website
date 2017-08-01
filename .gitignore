@@ -7,3 +7,6 @@ build/*
 src/assets/scss/.sass-cache/*
 .DS_Store
 src/vendor
+/src/vendor
+src/vendor/*
+/src/vendor/*
