@@ -1,26 +1,17 @@
-# Visionary Website
-Site de visionary
-
-## Responsable de la branche MASTER + CONVERT-UIKIT:
-Benoit Vrins
+# Visionary 
+URL : https://colour-blindness.org
 
 ## comment démarrer
 Le site se fait en PHP.
-Pour lancer un serveur local:
 
-`php -t ~/path/to/site/from-your-home/folder -S localhost:1973 `
+Dans le dossier `./src`  :  `composer update ` pour installer le framework MVC FatFree
 
-## Pour du texte traduisible
-utiliser les fonctions gettext de php
-Exemple:
-`<p><?= _("Bonjour!"); ?></p>` ou `<?php _e('Bonjour'); ?>`
+## Framework PHP
+https://fatfreeframework.com/
 
 ## Framework CSS
 https://getuikit.com/
 v2 > scss
-
-## Framework PHP
-https://fatfreeframework.com/
 
 ## Installer Gulp
 
@@ -30,13 +21,11 @@ https://fatfreeframework.com/
 4. Installer les modules spécifiques utilisés dans notre gulpfile: `npm install --save-dev`
 
 ## Développer
-1. `gulp` pour créer une version fraîche du site dans le dossier build, puis développer en browsersync.
+1. `gulp` pour créer une version fraîche du site dans le dossier build et lancer en browsersync.
 
 ## Livrer
 Pour pusher une nouvelle version sur le serveur:
-`gulp release`
+`gulp version:bump`  puis `gulp release`
 
-## Questions
-### Twig ?
-Il faut la version 7 de PHP sur l'ordi (Sierra est en 5.6)
-### Comment mettre en place le multilinguisme avec F3 ?
+## Maintenance
+Dans le dossier `./src`  :  `composer update ` 
