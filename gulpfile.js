@@ -15,30 +15,49 @@ var reload = browsersync.reload;
 var runSequence = require('run-sequence');
 var php = require('gulp-connect-php');
 var sftp = require('gulp-sftp');
-
-project = require('./project.json');
-pkg = require('./package.json');
-
+var replace = require('gulp-replace');
+var prompt = require('gulp-prompt');
+var bump = require('gulp-bump');
+var semver = require('semver');
+var project = require('./project.json');
+var pkg = require('./package.json');
+var app_version = pkg.version;
 
 // Empties the Build folder
 gulp.task('clean', function() {
 	return del([project.build_dir + '**/*']);
 });
 
+gulp.task('clean:tmp-folder', function(){
+		return del([project.build_dir + 'tmp']);
+
+})
+
 // Imagemin images and ouput them in dist
 gulp.task('imagemin', function() {
 	return gulp.src(['**/*.png', '**/*.jpg', '**/*.jpeg', '**/*.gif', '**/*.svg'], {
 		cwd: project.build_dir + 'assets/images/**'
-	}).pipe(imagemin()).pipe(gulp.dest(project.build_dir + 'assets/images/'));
+	})
+	.pipe(imagemin({
+		optimizationLevel: 5
+	}))
+	.pipe(gulp.dest(project.build_dir + 'assets/images/'));
 });
 
 gulp.task('copy:images', function() {
 	// Copy Images into build
 	return gulp.src(['**/*.png', '**/*.jpg', '**/*.jpeg', '**/*.gif', '**/*.svg'], {
 		cwd: project.src_dir + 'assets/images/**'
-	}).pipe(changed(project.build_dir + 'assets/images/')).pipe(imagemin({
-		optimizationLevel: 5
-	})).pipe(gulp.dest(project.build_dir + 'assets/images/'));
+	})
+	.pipe(changed(project.build_dir + 'assets/images/'))
+	.pipe(gulp.dest(project.build_dir + 'assets/images/'));
+});
+
+gulp.task('copy:video', function() {
+	// Copy Videos into build
+	return gulp.src(['**/*'], {
+		cwd: project.src_dir + 'assets/video/**'
+	}).pipe(changed(project.build_dir + 'assets/video/')).pipe(gulp.dest(project.build_dir + 'assets/video/'));
 });
 
 gulp.task('copy:fonts', function() {
@@ -58,9 +77,18 @@ gulp.task('copy:php', function() {
 
 gulp.task('scripts', function() {
 	// Process scripts and concatenate them into one output file
-	return gulp.src(['jquery.js', 'uikit.min.js', 'app.js'], {
+	return gulp.src(['jquery.js', 'uikit.min.js', 'tooltip.min.js', 'sticky.min.js', 'smooth-scroll.min.js', 'scrollspy.min.js', 'app.js'], {
 		cwd: project.src_dir + 'assets/js/'
-	}).pipe(changed(project.src_dir + 'assets/js/min/')).pipe(sourcemaps.init()).pipe(jshint()).pipe(jshint.reporter('default')).pipe(uglify()).pipe(concat('app.min.js')).pipe(sourcemaps.write('./')).pipe(gulp.dest(project.src_dir + 'assets/js/min/'));
+	})
+	.pipe(changed(project.src_dir + 'assets/js/min/'))
+	.pipe(sourcemaps.init())
+/*
+	.pipe(jshint())
+	.pipe(jshint.reporter('default'))
+*/
+	.pipe(uglify()).pipe(concat('app.min.js'))
+	.pipe(sourcemaps.write('./'))
+	.pipe(gulp.dest(project.src_dir + 'assets/js/min/'));
 });
 
 gulp.task('copy:js', function() {
@@ -74,9 +102,9 @@ gulp.task('copy:js', function() {
 });
 
 gulp.task('styles', function() {
-	
+
 	// Process sass files into one minified app.css
-		
+
 	return gulp.src('app.scss', {
 		cwd: project.src_dir + 'assets/scss/'
 	})
@@ -92,9 +120,9 @@ gulp.task('styles', function() {
 });
 
 gulp.task('copy:css', function() {
-	
+
 	// copy compiled css into build
-	
+
 	return gulp.src(['min/app.css', 'min/app.css.map'], {
 		cwd: project.src_dir + 'assets/css/'
 	})
@@ -107,10 +135,10 @@ gulp.task('copy:css', function() {
 
 //////////////////////////////////////// MAIN WORKFLOW
 gulp.task('build', function() {
-	
+
 	// Build a fresh copy
 
-	runSequence('clean', 'copy:fonts', 'scripts', 'styles', 'copy:js', 'copy:css', 'copy:images', 'copy:php', function(error) {
+	runSequence('clean', 'copy:fonts', 'scripts', 'styles', 'copy:js', 'copy:css', 'copy:images', 'copy:video', 'copy:php','cache:bust', function(error) {
 		if (error) {
 			console.log(error.message);
 		} else {
@@ -135,20 +163,57 @@ gulp.task('browsersync', function() {
 		open: true,
 		notify: true
 	});
+});
 
+gulp.task('browsersync-alex', function() {
+	return browsersync.init({
+		injectChanges: true,
+		proxy: 'visionary.loc',
+		open: true,
+		notify: true
+	});
+});
+
+// Version
+gulp.task("version:bump", function() {
+	// Versioning update.
+	return gulp.src("*").pipe(
+	prompt.prompt({
+		type: 'list',
+		name: 'bump',
+		message: 'Which type of release: "patch", "minor", or "major" ?',
+		choices: ['patch', 'minor', 'major'],
+	default:
+		'patch'
+	}, function(res) {
+		//value is in res.bump
+		app_version = semver.inc(pkg.version, res.bump);
+		return gulp.src("./package.json").pipe(bump({
+			type: res.bump
+		})).pipe(gulp.dest("./"));
+	}));
+});
+//
+gulp.task('cache:bust', function() {
+	// Append app version to CSS/JS dependencies.
+	return gulp.src([project.build_dir + 'views/*.php'])
+	.pipe(replace('{VERSION}', app_version))
+	.pipe(gulp.dest(project.build_dir + 'views/'));
 });
 
 // A development task to run anytime a file changes
-gulp.task('watch', ['php'], function() {
+//gulp.task('watch', ['php'], function() {
+gulp.task('watch', function() {
 	gulp.watch([project.src_dir + 'assets/scss/**/*.scss'], ['styles']);
 	gulp.watch([project.src_dir + 'assets/css/min/*'], ['copy:css', reload]);
 	gulp.watch(['app.js'], {
-		cwd: project.src_dir + '/assets/js/'
+		cwd: project.src_dir + 'assets/js/'
 	}, ['scripts', reload]);
 	gulp.watch([project.src_dir + 'assets/js/min/app.min.js'], ['copy:js', reload]);
 	gulp.watch([project.src_dir + 'assets/fonts/**/*'], ['copy:fonts', reload]);
+	gulp.watch([project.src_dir + 'assets/video/**/*'], ['copy:video', reload]);
 	gulp.watch([project.src_dir + 'assets/images/**/*'], ['copy:images', reload]);
-	gulp.watch(['**/*.php', '**/*.html', '**/*.htm', '*.*'], {
+	gulp.watch(['*.ini', '.htaccess', '**/*.html', '**/*.htm', '**/*.php', '!composer.json', '!composer.lock'], {
 		cwd: project.src_dir
 	}, ['copy:php', reload]);
 });
@@ -158,13 +223,15 @@ gulp.task('default', function(callback) {
 	return runSequence('build', 'php', 'browsersync', 'watch', callback);
 });
 
-
+gulp.task('dev:alex', function(callback) {
+	return runSequence('build', 'browsersync-alex', 'watch', callback);
+});
 //////// RELEASE
-gulp.task('release', ['sftp-deploy']);
+gulp.task('release', ['imagemin','sftp-deploy']);
 
 // Upload
 var errorHandler;
-gulp.task('sftp-deploy', function() {
+gulp.task('sftp-deploy', ['clean:tmp-folder'], function() {
 	return gulp.src('./build/**/*').pipe(plumber(errorHandler)).pipe(sftp({
 		host: project.ftp_host,
 		user: project.ftp_user,

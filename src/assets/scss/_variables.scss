@@ -42,8 +42,8 @@ $base-h2-font-size:                              28px !default;
 $base-h2-line-height:                            39px !default;
 $base-h3-font-size:                              16px !default;
 $base-h3-line-height:                            24px !default;
-$base-h4-font-size:                              16px !default;
-$base-h4-line-height:                            22px !default;
+$base-h4-font-size:                              18px !default;
+$base-h4-line-height:                            20px !default;
 $base-h5-font-size:                              14px !default;
 $base-h5-line-height:                            20px !default;
 $base-h6-font-size:                              12px !default;
@@ -82,6 +82,7 @@ $block-muted-background:                         $grayLight !default;
 $block-primary-background:                       $blue !default;
 $block-secondary-background:                     $black !default;
 // buttons
+$button-font-size:                               0.8rem !default;
 $button-height:                                  40px !default;
 $button-mini-height:                             20px !default;
 $button-small-height:                            25px !default;

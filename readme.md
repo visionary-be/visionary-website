@@ -40,4 +40,3 @@ Pour pusher une nouvelle version sur le serveur:
 ### Twig ?
 Il faut la version 7 de PHP sur l'ordi (Sierra est en 5.6)
 ### Comment mettre en place le multilinguisme avec F3 ?
-### Comment stocker la variable de la page courante en F3 pour avoir un menu dynamique ?

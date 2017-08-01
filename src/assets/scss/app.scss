@@ -23,13 +23,13 @@
 
 @import "core/subnav.scss";
 //@import "core/breadcrumb.scss";
-@import "core/pagination.scss";
-@import "core/tab.scss";
+//@import "core/pagination.scss";
+//@import "core/tab.scss";
 //@import "core/thumbnav.scss";
 
 // Elements
-@import "core/list.scss";
-@import "core/description-list.scss";
+//@import "core/list.scss";
+//@import "core/description-list.scss";
 @import "core/table.scss";
 @import "core/form.scss";
 
@@ -37,9 +37,9 @@
 @import "core/button.scss";
 @import "core/icon.scss";
 @import "core/close.scss";
-@import "core/badge.scss";
+//@import "core/badge.scss";
 @import "core/alert.scss";
-@import "core/thumbnail.scss";
+//@import "core/thumbnail.scss";
 @import "core/overlay.scss";
 @import "core/column.scss";
 @import "core/animation.scss";
@@ -48,16 +48,17 @@
 @import "core/dropdown.scss";
 @import "core/modal.scss";
 @import "core/offcanvas.scss";
-@import "core/switcher.scss";
+//@import "core/switcher.scss";
 
 // Need to be loaded last
 @import "core/text.scss";
 @import "core/utility.scss";
 @import "core/flex.scss";
 @import "core/contrast.scss";
+@import "components/tooltip.scss";
 //@import "core/print.scss";
 
 // Visionary Specific Stuff
-
 @import "fonts";
 @import "layout";
+@import "alex";
