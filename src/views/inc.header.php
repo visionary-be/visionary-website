@@ -75,8 +75,8 @@
                 </ul>
               </div>
             </div>-->
-            <a class="uk-button uk-button-default" href="https://dev.colour-blindness.org/" data-uk-tooltip="{pos:'bottom',animation:true}" title="<?php echo $navButton1Title; ?>"><?php echo $navButton1; ?></a>
-            <a class="uk-button uk-button-primary" href="https://dev.colour-blindness.org/"><?php echo $navButton2; ?></a>
+            <a class="uk-button uk-button-default" href="https://test-your.colour-blindness.org/" data-uk-tooltip="{pos:'bottom',animation:true}" title="<?php echo $navButton1Title; ?>"><?php echo $navButton1; ?></a>
+            <a class="uk-button uk-button-primary" href="https://test-your.colour-blindness.org/"><?php echo $navButton2; ?></a>
           </div>
 
           <div class="uk-navbar-flip uk-visible-small">
@@ -92,8 +92,8 @@
                     <li id="menu-item-5"<?php echo ($current_url === 'contact') ? ' class="uk-active"': ''; ?>><a href="/contact"><?php echo $nav5; ?></a></li>
                   </ul>
                   <div class="uk-panel">
-                    <a class="uk-button uk-button-default" href="https://dev.colour-blindness.org/" data-uk-tooltip title="test"><?php echo $navButton1; ?></a>
-                    <a class="uk-button uk-button-primary" href="https://dev.colour-blindness.org/"><?php echo $navButton2; ?></a>
+                    <a class="uk-button uk-button-default" href="https://test-your.colour-blindness.org/" data-uk-tooltip title="test"><?php echo $navButton1; ?></a>
+                    <a class="uk-button uk-button-primary" href="https://test-your.colour-blindness.org/"><?php echo $navButton2; ?></a>
                   </div>
                 </div>
             </div>
