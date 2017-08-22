@@ -12,3 +12,4 @@ src/vendor/*
 /src/vendor/*
 src/assets/js/min/*
 src/assets/css/min/*
+project.json
