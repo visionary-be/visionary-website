@@ -1,84 +1,92 @@
 # Visionary website
 
-The Visionary project aims to find solutions to fix colors problems on the web. Currently the project put on the tables 2 solutions : a Chrome extension and a guide for webdesigners.
+The Visionary project aims to find solutions to fix colors problems on the web. Currently the project put on the table 2 solutions : a Chrome extension and a guide for webdesigners.
 
-Here is the repository of the end-users website of the project accessible here https://www.colour-blindness.org/
+Here is the repository of the end-users website of the project.
+
+This website is currently available here https://www.colour-blindness.org/
 
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 
-
-
 ### Prerequisites
 
-The website is made in PHP with the MVC framework  `FatFree `
+* Backend : the website is made in PHP with the MVC framework [FatFree](https://fatfreeframework.com/3.6/home)
+* Frontend : the website is made with the CSS Framework [UIKit(v2)](https://getuikit.com/) (compile in SCSS)
 
 ```
-In the folder `./src`  :  `composer update ` to install/update FatFree
+Check the folder `./src`
 ```
-
 
 ### Installing
 
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
+* Update/install FatFree
 
 ```
-In the folder `./src`  :  `composer update ` to install/update FatFree
+In the folder `./src`  :  `composer update `
 ```
-
-And repeat
+* Launch Gulp
 
 ```
-until finished
+1. Locally go to the root folder of the repository `cd ~/path/to/folder`
+2. Install Gulp `npm install gulp -g`
+3. Install Gulp locally `npm install gulp --save-dev`
+4. Instal specific modules (check the gulfile.js for more info) `npm install --save-dev`
+5. Launch Gulp (will create a fresh version of the website into the /build folder and will launch browsersync) `gulp`
 ```
-
-End with an example of getting some data out of the system or using it for a little demo
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
+Just save files, Gulp will look at the changes and compile a fresh version into the /build folder
 
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+Add a file called `project.json` on the root and add the lines :
 
+```
+{
+	"project_name": "Visionary Website",
+	"project_slug": "visionary-website",
+	"mamp_install": "visionary.loc",
+	"src_dir": "src/",
+	"build_dir": "build/",
+
+	"___comment": "// The git branch to commit to",
+	"git_branch": "development",
+
+	"___comment": "// ",
+	"git_token" : "",
+
+	"___comment": "// FTP for deployment",
+	"ftp_host" : "",
+	"ftp_port" : "",
+	"ftp_user": "",
+	"ftp_pass": "",
+	"ftp_remote_path": "www/to/path/public/"
+}
+```
+
+Fill in fields for the FTP deployment. Then release.
+
+```
+`gulp release`
+```
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [FatFree](http://www.dropwizard.io/1.0.2/docs/) - MVC Framework
+* [UIKit](https://maven.apache.org/) - CSS Framework
+* [Gulp](https://gulpjs.com/) - A toolkit for automating tasks in your development workflow
 
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Alexandre Plennevaux** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Alexandre Plennevaux** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Alexandre Plennevaux** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Alexandre Plennevaux** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
@@ -95,27 +103,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 
 ------------ OLD -----------------
-# Visionary
-URL : https://colour-blindness.org
 
-## comment démarrer
-Le site se fait en PHP.
-
-Dans le dossier `./src`  :  `composer update ` pour installer le framework MVC FatFree
-
-## Framework PHP
-https://fatfreeframework.com/
-
-## Framework CSS
-https://getuikit.com/
-v2 > scss
-
-## Installer Gulp
-
-1. Dans le terminal se rendre dans le dossier racine: `cd ~/path/to/folder`
-2. une fois dedans :  `npm install gulp -g` pour installer gulp globalement
-3. Installer gulp localement: `npm install gulp --save-dev`
-4. Installer les modules spécifiques utilisés dans notre gulpfile: `npm install --save-dev`
 
 ## Développer
 1. `gulp` pour créer une version fraîche du site dans le dossier build et lancer en browsersync.
