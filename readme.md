@@ -1,18 +1,24 @@
-# Project Title
+# Visionary website
 
-One Paragraph of project description goes here
+The Visionary project aims to find solutions to fix colors problems on the web. Currently the project put on the tables 2 solutions : a Chrome extension and a guide for webdesigners.
+
+Here is the repository of the end-users website of the project accessible here https://www.colour-blindness.org/
 
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
+
+
+
 ### Prerequisites
 
-What things you need to install the software and how to install them
+The website is made in PHP with the MVC framework  `FatFree `
 
 ```
-Give examples
+In the folder `./src`  :  `composer update ` to install/update FatFree
 ```
+
 
 ### Installing
 
@@ -21,7 +27,7 @@ A step by step series of examples that tell you have to get a development env ru
 Say what the step will be
 
 ```
-Give the example
+In the folder `./src`  :  `composer update ` to install/update FatFree
 ```
 
 And repeat
