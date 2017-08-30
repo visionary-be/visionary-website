@@ -13,8 +13,8 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-* Backend : the website is made in PHP with the MVC framework [FatFree](https://fatfreeframework.com/3.6/home)
-* Frontend : the website is made with the CSS Framework [UIKit(v2)](https://getuikit.com/) (compile in SCSS)
+* **Backend** : the website is made in PHP with the MVC framework [FatFree](https://fatfreeframework.com/3.6/home)
+* **Frontend** : the website is made with the CSS Framework [UIKit(v2)](https://getuikit.com/) (compile in SCSS)
 
 ```
 Check the folder `./src`
@@ -61,10 +61,10 @@ Add a file called `project.json` on the root and add the lines :
 	"git_token" : "",
 
 	"___comment": "// FTP for deployment",
-	"ftp_host" : "",
+	"ftp_host" : "myhost",
 	"ftp_port" : "",
-	"ftp_user": "",
-	"ftp_pass": "",
+	"ftp_user": "username",
+	"ftp_pass": "password",
 	"ftp_remote_path": "www/to/path/public/"
 }
 ```
@@ -74,43 +74,22 @@ Fill in fields for the FTP deployment. Then release.
 ```
 `gulp release`
 ```
+
 ## Built With
 
 * [FatFree](http://www.dropwizard.io/1.0.2/docs/) - MVC Framework
 * [UIKit](https://maven.apache.org/) - CSS Framework
 * [Gulp](https://gulpjs.com/) - A toolkit for automating tasks in your development workflow
 
-
 ## Authors
 
-* **Alexandre Plennevaux** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-* **Alexandre Plennevaux** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-* **Alexandre Plennevaux** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-* **Alexandre Plennevaux** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Alexandre Plennevaux** - *Coordinator, developer*
+* **Saria Hatoum** - *Developer*
+* **Benoit Vanderose** - *Developer*
+* **Benoit Vrins** - *UX/UI Designer*
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of [partners](https://www.colour-blindness.org/about) who participated in this project.
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
-
-
-
------------- OLD -----------------
-
-
-## Développer
-1. `gulp` pour créer une version fraîche du site dans le dossier build et lancer en browsersync.
-
-## Livrer
-Pour pusher une nouvelle version sur le serveur:
-`gulp version:bump`  puis `gulp release`
-
-## Maintenance
-Dans le dossier `./src`  :  `composer update `
