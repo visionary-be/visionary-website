@@ -77,3 +77,37 @@
 		    	</div>
 				</div>
     	</section>
+    	
+    	
+    	<section class="uk-block uk-block-muted" style="background:white">
+	    	<div class="uk-container uk-container-center">
+		    	<div class="uk-grid">
+			    	<div class="uk-width-medium-1-2 uk-container-center">
+				    	<h2 class="uk-text-center">Visionary dans les médias</h2>
+				    	<div class="uk-grid">
+
+
+ <dl class="uk-definition" style="background:white">
+                    <dt >
+                      <h3>Daily Science</h3>
+                    </dt>
+                    <dd style="background:white">
+                      <p>7 mars 2017 : "À Namur, on traduit les couleurs", Daily Science 
+                      <br /><a href="http://dailyscience.be/2017/03/07/a-namur-on-traduit-les-couleurs/" target="_blank">À Namur, on traduit les couleurs</a></p>
+                    </dd>
+                    <dt>
+                      <h3>Comprendre le daltonisme</h3>
+                    </dt>
+                    <dd style="background:white">
+                      <p>26 décembre 2016 : "Comprendre le daltonisme", Alexandre Plennevaux
+                      <br /><a href="https://medium.com/scribe/comprendre-le-daltonisme-ffc73e81666f" target="_blank">medium.com</a></p>
+                    </dd>
+ </dl>
+
+
+
+					    	</div>
+					    </div>
+		    	</div>
+	    	</div>
+    	</section>

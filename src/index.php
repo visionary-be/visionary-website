@@ -175,7 +175,7 @@ $f3->set('navButton1Title', 'L\'inscription est gratuite et permet le téléchar
 $f3->set('navButton2', 'Faire le test');
 $f3->set('footerLink1', 'Tester l\'extension');
 $f3->set('footerLink2', 'Développer pour les daltoniens');
-$f3->set('footerLink3', 'Qu\'est-ce que le daltonisme');
+$f3->set('footerLink3', 'Qu\'est-ce que le daltonisme ?');
 $f3->set('partners', 'Partenaires');
 $f3->set('networks', 'Réseaux');
 $f3->set('languages', 'Langues');
