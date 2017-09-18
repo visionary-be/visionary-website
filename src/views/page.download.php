@@ -58,7 +58,7 @@
 							<ol class="list-timeline">
 							 <li class="yell">L'extension nécessite le navigateur <strong>Google Chrome</strong>. Vous pouvez le <a href="https://www.google.com/chrome/browser/desktop/index.html">télécharger ici</a>.</li>
 							 <li class="yell">Inscrivez-vous sur <a href="https://test-your.colour-blindness.org/">test-your.colour-blindness.org</a> et effectuez le test.</li>
-							 <li class="yell">Terminé? <a href="https://chrome.google.com/webstore/detail/cvd-anderton-extension/jfjijgpgbagoncklhmnhdndnfjkijfha?hl=fr">Téléchargez l'extension sur le Google Play Store</a>.</li>
+							 <li class="yell">Terminé? <a href="http://tiny.cc/visionary-playstore">Téléchargez l'extension sur le Google Play Store</a>.</li>
 							 <li class="yell">Ouvrez l'extension et connectez-vous au compte que vous avez créé.</li>
 							 <li class="yell">Il ne vous reste plus qu'à l'utiliser!</li>
 						 </ol>
