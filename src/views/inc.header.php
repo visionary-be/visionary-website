@@ -49,6 +49,15 @@
 
         <link rel="stylesheet" href="/assets/css/app.css?v={VERSION}" />
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-162823-34"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-162823-34');
+</script>
+
     </head>
 
     <body>
