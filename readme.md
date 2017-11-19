@@ -2,11 +2,16 @@
 
 The Visionary project aims to find solutions to fix colors problems on the web. Currently the project put on the table 2 solutions : a Chrome extension and a guide for webdesigners.
 
-Here is the repository of the end-users website of the project.
+This is the repository of the end-users website of the project.
 
-This website is currently available here https://www.colour-blindness.org/
+This website is currently available here https://colour-blindness.org/
 
-## Getting Started
+All information about Visionary: https://github.com/visionary-be/visionary 
+
+## License : GNU General Public License v3.0
+[Read the license](./COPYING).
+
+## Installation
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
@@ -89,7 +94,3 @@ Fill in fields for the FTP deployment. Then release.
 * **Benoit Vrins** - *UX/UI Designer*
 
 See also the list of [partners](https://www.colour-blindness.org/about) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
