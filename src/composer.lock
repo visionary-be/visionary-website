@@ -1,27 +1,27 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
     "content-hash": "575089c5b8dafc8c20763653804c783b",
     "packages": [
         {
             "name": "bcosca/fatfree",
-            "version": "3.6.2",
+            "version": "3.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bcosca/fatfree.git",
-                "reference": "e9aec879272c7474294c51c6c00802615afa32a6"
+                "reference": "b51905e89d2bf970b34c4fbb37879eeb1572e76c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bcosca/fatfree/zipball/e9aec879272c7474294c51c6c00802615afa32a6",
-                "reference": "e9aec879272c7474294c51c6c00802615afa32a6",
+                "url": "https://api.github.com/repos/bcosca/fatfree/zipball/b51905e89d2bf970b34c4fbb37879eeb1572e76c",
+                "reference": "b51905e89d2bf970b34c4fbb37879eeb1572e76c",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.6"
+                "php": ">=5.4"
             },
             "type": "library",
             "autoload": {
@@ -35,7 +35,11 @@
             ],
             "description": "A powerful yet easy-to-use PHP micro-framework designed to help you build dynamic and robust Web applications - fast!",
             "homepage": "http://fatfreeframework.com/",
-            "time": "2017-06-26T10:14:59+00:00"
+            "support": {
+                "issues": "https://github.com/bcosca/fatfree/issues",
+                "source": "https://github.com/bcosca/fatfree/tree/3.7.2"
+            },
+            "time": "2020-05-28T16:20:24+00:00"
         }
     ],
     "packages-dev": [],
@@ -45,5 +49,6 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "2.6.0"
 }
